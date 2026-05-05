@@ -1,0 +1,19 @@
+[meta]
+name = "yazi"
+description = "Example pack for testing"
+os = "any"
+
+[[dotfiles]]
+src = "files/.config/yazi"
+target_linux = "~/.config/yazi"
+target_mac = "~/.config/yazi"
+
+[[packages]]
+name = "yazi"
+pacman = "yazi"
+brew = "yazi"
+
+[[packages]]
+name = "gum"
+pacman = "gum"
+

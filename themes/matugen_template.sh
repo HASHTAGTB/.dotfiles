@@ -1,0 +1,12 @@
+# themes/matugen_template.sh — copy to matugen templates dir
+CLR_BG="{{colors.surface.default.hex}}"
+CLR_BG_PANEL="{{colors.surface_variant.default.hex}}"
+CLR_BORDER="{{colors.outline_variant.default.hex}}"
+CLR_BORDER_FOCUS="{{colors.primary.default.hex}}"
+CLR_FG="{{colors.on_surface.default.hex}}"
+CLR_FG_DIM="{{colors.on_surface_variant.default.hex}}"
+CLR_ACCENT="{{colors.primary.default.hex}}"
+CLR_ACCENT2="{{colors.secondary.default.hex}}"
+CLR_APPLIED="{{colors.tertiary.default.hex}}"
+CLR_ERROR="{{colors.error.default.hex}}"
+CLR_WARN="{{colors.primary_fixed.default.hex}}"
