@@ -13,7 +13,3 @@ name = "yazi"
 pacman = "yazi"
 brew = "yazi"
 
-[[packages]]
-name = "gum"
-pacman = "gum"
-
