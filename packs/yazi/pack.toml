@@ -13,3 +13,8 @@ name = "yazi"
 pacman = "yazi"
 brew = "yazi"
 
+[[scripts]]
+name = "idk"
+file = "test"
+when = "post_dotfiles"
+
