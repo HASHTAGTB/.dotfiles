@@ -1,0 +1,44 @@
+[meta]
+name = "hyprland"
+description = ""
+os = "linux"
+
+[[dotfiles]]
+src = "files/.config/hypr"
+target_linux = "~/.config/hypr"
+target_mac = "~/.config/hypr"
+
+[[dotfiles]]
+src = "files/.config/rofi"
+target_linux = "~/.config/rofi"
+target_mac = "~/.config/rofi"
+
+[[dotfiles]]
+src = "files/.config/swappy"
+target_linux = "~/.config/swappy"
+target_mac = "~/.config/swappy"
+
+[[dotfiles]]
+src = "files/.config/swaync"
+target_linux = "~/.config/swaync"
+target_mac = "~/.config/swaync"
+
+[[dotfiles]]
+src = "files/.config/uwsm/env-hyprland"
+target_linux = "~/.config/uwsm/env-hyprland"
+target_mac = "~/.config/uwsm/env-hyprland"
+
+[[dotfiles]]
+src = "files/.config/wlogout"
+target_linux = "~/.config/wlogout"
+target_mac = "~/.config/wlogout"
+
+[[dotfiles]]
+src = "files/.config/waybar"
+target_linux = "~/.config/waybar"
+target_mac = "~/.config/waybar"
+
+[[dotfiles]]
+src = "files/.config/waypaper"
+target_linux = "~/.config/waypaper"
+target_mac = "~/.config/waypaper"
