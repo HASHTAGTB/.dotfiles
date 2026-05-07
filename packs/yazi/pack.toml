@@ -1,20 +1,49 @@
 [meta]
-name = "yazi"
-description = "Example pack for testing"
-os = "any"
-
-[[dotfiles]]
-src = "files/.config/yazi"
-target_linux = "~/.config/yazi"
-target_mac = "~/.config/yazi"
+name        = "yazi"
+description = "Terminal file manager with preview support"
+os          = "any"
 
 [[packages]]
-name = "yazi"
-pacman = "yazi"
-brew = "yazi"
+name   = "yazi"
+system = "yazi"
 
-[[scripts]]
-name = "idk"
-file = "test"
-when = "post_dotfiles"
+[[packages]]
+name   = "imagemagick"
+system = "imagemagick"
 
+[[packages]]
+name   = "fd"
+system = "fd"
+
+[[packages]]
+name   = "ripgrep"
+system = "ripgrep"
+
+[[packages]]
+name   = "zoxide"
+system = "zoxide"
+
+[[packages]]
+name   = "trash-cli"
+system = "trash-cli"
+
+[[packages]]
+name = "ffmpeg"
+system = "ffmpeg"
+
+[[packages]]
+name = "7zip"
+system = "7zip"
+
+[[packages]]
+name = "poppler"
+system = "poppler"
+
+[[packages]]
+name = "jq"
+system = "jq"
+
+[[dotfiles]]
+src          = "files/.config/yazi"
+target_linux = "~/.config/yazi"
+target_mac   = "~/.config/yazi"

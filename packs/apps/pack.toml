@@ -1,0 +1,64 @@
+[meta]
+name        = "apps"
+description = "GUI applications"
+os          = "linux"
+
+[[packages]]
+name   = "zen-browser-bin"
+system    = "zen-browser-bin"
+
+[[packages]]
+name   = "gnome-calculator"
+system = "gnome-calculator"
+
+[[packages]]
+name   = "gnome-clocks"
+system = "gnome-clocks"
+
+[[packages]]
+name   = "loupe"
+system = "loupe"
+
+[[packages]]
+name   = "libreoffice-fresh"
+system = "libreoffice-fresh"
+
+[[packages]]
+name   = "gimp"
+system = "gimp"
+
+[[packages]]
+name   = "krita"
+system = "krita"
+
+[[packages]]
+name   = "pinta"
+system    = "pinta"
+
+[[packages]]
+name   = "obsidian"
+system = "obsidian"
+
+[[packages]]
+name   = "vesktop-bin"
+system    = "vesktop-bin"
+
+[[packages]]
+name   = "uget"
+system = "uget"
+
+[[packages]]
+name   = "octopi"
+system = "octopi"
+
+[[packages]]
+name   = "pacseek-bin"
+system    = "pacseek-bin"
+
+[[packages]]
+name   = "fsearch"
+system    = "fsearch"
+
+[[packages]]
+name   = "dragon-drop"
+system    = "dragon-drop"

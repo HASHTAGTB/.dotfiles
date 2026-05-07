@@ -1,0 +1,56 @@
+[meta]
+name        = "system"
+description = "System services and utilities"
+os          = "linux"
+
+[[packages]]
+name   = "sddm"
+system = "sddm"
+
+[[packages]]
+name   = "blueman"
+system = "blueman"
+
+[[packages]]
+name   = "btrfs-assistant"
+system = "btrfs-assistant"
+
+[[packages]]
+name   = "cups-pdf"
+system = "cups-pdf"
+
+[[packages]]
+name   = "flatpak"
+system = "flatpak"
+
+[[packages]]
+name   = "gnome-disk-utility"
+system = "gnome-disk-utility"
+
+[[packages]]
+name   = "kopia"
+system = "kopia"
+
+[[packages]]
+name   = "polkit-kde-agent"
+system = "polkit-kde-agent"
+
+[[packages]]
+name   = "reflector"
+system = "reflector"
+
+[[packages]]
+name   = "tesseract"
+system = "tesseract"
+
+[[packages]]
+name   = "tesseract-data-eng"
+system = "tesseract-data-eng"
+
+[[packages]]
+name   = "chezmoi"
+system = "chezmoi"
+
+[[packages]]
+name   = "input-remapper-git"
+system    = "input-remapper-git"

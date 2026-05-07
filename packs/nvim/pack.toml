@@ -1,0 +1,33 @@
+[meta]
+name        = "nvim"
+description = "Neovim editor with LSP and formatting tooling"
+os          = "any"
+
+[[packages]]
+name   = "neovim"
+system = "neovim"
+
+[[packages]]
+name   = "ripgrep"
+system = "ripgrep"
+
+[[packages]]
+name   = "fd"
+system = "fd"
+
+[[packages]]
+name   = "nodejs"
+system = "nodejs"
+
+[[packages]]
+name   = "npm"
+system = "npm"
+
+[[packages]]
+name   = "stylua"
+system = "stylua"
+
+[[packages]]
+name   = "shfmt"
+system = "shfmt"
+

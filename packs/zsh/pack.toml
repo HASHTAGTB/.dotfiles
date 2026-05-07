@@ -1,0 +1,74 @@
+[meta]
+name        = "zsh"
+description = "Zsh shell with oh-my-zsh, powerlevel10k, and aliases"
+os          = "any"
+
+[[packages]]
+name   = "zsh"
+system = "zsh"
+
+
+[[packages]]
+name   = "zoxide"
+system = "zoxide"
+
+
+[[packages]]
+name   = "fzf"
+system = "fzf"
+
+
+[[packages]]
+name   = "zsh-syntax-highlighting"
+system = "zsh-syntax-highlighting"
+
+optional = true
+
+[[packages]]
+name   = "zsh-autosuggestions"
+system = "zsh-autosuggestions"
+
+optional = true
+
+[[packages]]
+name = "zsh-completions"
+system = "zsh-completions"
+optional = true
+
+[[packages]]
+name = "zsh-history-substring-search"
+system = "zsh-history-substring-search"
+optional = true
+
+[[packages]]
+name = "fd"
+system = "fd"
+
+[[packages]]
+name = "ripgrep"
+system = "ripgrep"
+
+[[scripts]]
+name = "Install oh-my-zsh"
+file = "scripts/install-ohmyzsh.sh"
+when = "pre_dotfiles"
+
+[[scripts]]
+name = "Install powerlevel10k"
+file = "scripts/install-p10k.sh"
+when = "pre_dotfiles"
+
+[[dotfiles]]
+src = "files/.zshrc"
+target_linux = "~/.zshrc"
+target_mac = "~/.zshrc"
+
+[[dotfiles]]
+src = "files/.oh-my-zsh/custom"
+target_linux = "~/.oh-my-zsh/custom"
+target_mac = "~/.oh-my-zsh/custom"
+
+[[dotfiles]]
+src = "files/.p10k.zsh"
+target_linux = "~/.p10k.zsh"
+target_mac = "~/.p10k.zsh"

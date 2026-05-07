@@ -1,44 +1,146 @@
 [meta]
-name = "hyprland"
-description = ""
-os = "linux"
+name        = "hyprland"
+description = "Wayland compositor and full session stack"
+os          = "linux"
+
+[[packages]]
+name   = "hyprland"
+system = "hyprland"
+
+[[packages]]
+name   = "hypridle"
+system = "hypridle"
+
+[[packages]]
+name   = "hyprlock"
+system = "hyprlock"
+
+[[packages]]
+name   = "hyprpicker"
+system = "hyprpicker"
+
+[[packages]]
+name   = "hyprpolkitagent"
+system = "hyprpolkitagent"
+
+[[packages]]
+name   = "waybar"
+system = "waybar"
+
+[[packages]]
+name   = "swaync"
+system = "swaync"
+
+[[packages]]
+name   = "wlogout"
+system = "wlogout"
+
+[[packages]]
+name   = "swappy"
+system = "swappy"
+optional = true
+
+[[packages]]
+name   = "waypaper"
+system = "waypaper"
+
+[[packages]]
+name   = "wev"
+system = "wev"
+
+[[packages]]
+name   = "qt6-wayland"
+system = "qt6-wayland"
+
+[[packages]]
+name   = "uwsm"
+system = "uwsm"
+
+[[packages]]
+name   = "grim"
+system = "grim"
+
+[[packages]]
+name   = "slurp"
+system = "slurp"
+
+[[packages]]
+name   = "rofi"
+system = "rofi"
+
+[[packages]]
+name   = "fuzzel"
+system = "fuzzel"
+optional = true
+
+[[packages]]
+name   = "cliphist"
+system = "cliphist"
+
+[[packages]]
+name   = "wl-clipboard"
+system = "wl-clipboard"
+
+[[packages]]
+name   = "xdg-desktop-portal-hyprland"
+system = "xdg-desktop-portal-hyprland"
+
+[[packages]]
+name   = "xdg-desktop-portal-gtk"
+system = "xdg-desktop-portal-gtk"
+
+[[packages]]
+name   = "playerctl"
+system = "playerctl"
+
+[[packages]]
+name   = "hyprshade"
+system    = "hyprshade"
+
+[[packages]]
+name   = "xdg-desktop-portal-termfilechooser"
+system    = "xdg-desktop-portal-termfilechooser-hunkyburrito-git"
+
+[[packages]]
+name   = "xdg-terminal-exec"
+system    = "xdg-terminal-exec"
 
 [[dotfiles]]
-src = "files/.config/hypr"
+src          = "files/.config/hypr"
 target_linux = "~/.config/hypr"
-target_mac = "~/.config/hypr"
+target_mac   = "~/.config/hypr"
 
 [[dotfiles]]
-src = "files/.config/rofi"
+src          = "files/.config/rofi"
 target_linux = "~/.config/rofi"
-target_mac = "~/.config/rofi"
+target_mac   = "~/.config/rofi"
 
 [[dotfiles]]
-src = "files/.config/swappy"
+src          = "files/.config/swappy"
 target_linux = "~/.config/swappy"
-target_mac = "~/.config/swappy"
+target_mac   = "~/.config/swappy"
 
 [[dotfiles]]
-src = "files/.config/swaync"
+src          = "files/.config/swaync"
 target_linux = "~/.config/swaync"
-target_mac = "~/.config/swaync"
+target_mac   = "~/.config/swaync"
 
 [[dotfiles]]
-src = "files/.config/uwsm/env-hyprland"
+src          = "files/.config/uwsm/env-hyprland"
 target_linux = "~/.config/uwsm/env-hyprland"
-target_mac = "~/.config/uwsm/env-hyprland"
+target_mac   = "~/.config/uwsm/env-hyprland"
 
 [[dotfiles]]
-src = "files/.config/wlogout"
+src          = "files/.config/wlogout"
 target_linux = "~/.config/wlogout"
-target_mac = "~/.config/wlogout"
+target_mac   = "~/.config/wlogout"
 
 [[dotfiles]]
-src = "files/.config/waybar"
+src          = "files/.config/waybar"
 target_linux = "~/.config/waybar"
-target_mac = "~/.config/waybar"
+target_mac   = "~/.config/waybar"
 
 [[dotfiles]]
-src = "files/.config/waypaper"
+src          = "files/.config/waypaper"
 target_linux = "~/.config/waypaper"
-target_mac = "~/.config/waypaper"
+target_mac   = "~/.config/waypaper"

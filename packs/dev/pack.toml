@@ -1,0 +1,26 @@
+[meta]
+name        = "dev"
+description = "Development tools and IDEs"
+os          = "any"
+
+[[packages]]
+name   = "code"
+system = "code"
+
+[[packages]]
+name   = "claude-code"
+system = "claude-code"
+npm    = "@anthropic-ai/claude-code"
+
+[[packages]]
+name   = "opencode"
+system = "opencode"
+
+[[packages]]
+name   = "android-studio"
+system    = "android-studio"
+
+[[packages]]
+name   = "scrcpy"
+system = "scrcpy"
+

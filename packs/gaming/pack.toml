@@ -1,0 +1,48 @@
+[meta]
+name        = "gaming"
+description = "Gaming platform and performance tools"
+os          = "linux"
+
+[[packages]]
+name   = "steam"
+system = "steam"
+
+[[packages]]
+name   = "gamemode"
+system = "gamemode"
+
+[[packages]]
+name   = "gamescope"
+system = "gamescope"
+
+[[packages]]
+name   = "mangohud"
+system = "mangohud"
+
+[[packages]]
+name   = "lib32-mangohud"
+system = "lib32-mangohud"
+
+[[packages]]
+name   = "vkbasalt"
+system = "vkbasalt"
+
+[[packages]]
+name   = "protonplus"
+system = "protonplus"
+
+[[packages]]
+name   = "cachyos-gaming-meta"
+system = "cachyos-gaming-meta"
+
+[[packages]]
+name   = "goverlay"
+system = "goverlay"
+
+[[packages]]
+name   = "lutris"
+system = "lutris"
+
+[[packages]]
+name   = "twintaillauncher-bin"
+system    = "twintaillauncher-bin"

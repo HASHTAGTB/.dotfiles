@@ -1,0 +1,53 @@
+[meta]
+name        = "media"
+description = "Audio, video, and music playback"
+os          = "linux"
+
+[[packages]]
+name   = "mpv"
+system = "mpv"
+
+[[packages]]
+name   = "mpv-mpris"
+system = "mpv-mpris"
+
+[[packages]]
+name   = "pavucontrol"
+system = "pavucontrol"
+
+[[packages]]
+name   = "pipewire-pulse"
+system = "pipewire-pulse"
+
+[[packages]]
+name   = "wireplumber"
+system = "wireplumber"
+
+[[packages]]
+name   = "playerctl"
+system = "playerctl"
+
+[[packages]]
+name   = "spicetify-cli"
+system = "spicetify-cli"
+
+[[packages]]
+name   = "yt-dlp"
+system = "yt-dlp"
+
+[[packages]]
+name   = "spotdl"
+system = "spotdl"
+
+[[packages]]
+name   = "quodlibet"
+system = "quodlibet"
+
+[[packages]]
+name   = "spotify"
+system    = "spotify"
+
+[[scripts]]
+name = "Apply Spicetify theme"
+file = "scripts/spicetify-apply.sh"
+when = "post_packages"

@@ -1,0 +1,12 @@
+[meta]
+name        = "kitty"
+description = "GPU-accelerated terminal emulator"
+os          = "any"
+
+[[packages]]
+name   = "kitty"
+system = "kitty"
+
+[[packages]]
+name   = "imagemagick"
+system = "imagemagick"

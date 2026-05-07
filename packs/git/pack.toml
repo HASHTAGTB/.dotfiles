@@ -1,0 +1,21 @@
+[meta]
+name        = "git"
+description = "Git version control toolchain"
+os          = "any"
+
+[[packages]]
+name   = "git"
+system = "git"
+
+[[packages]]
+name   = "git-delta"
+system = "git-delta"
+
+[[packages]]
+name   = "lazygit"
+system = "lazygit"
+
+[[packages]]
+name   = "github-desktop"
+system = "github-desktop"
+

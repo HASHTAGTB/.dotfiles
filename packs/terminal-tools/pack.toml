@@ -1,0 +1,28 @@
+[meta]
+name        = "terminal-tools"
+description = "CLI monitoring and system utilities"
+os          = "any"
+
+[[packages]]
+name   = "btop"
+system = "btop"
+
+[[packages]]
+name   = "fastfetch"
+system = "fastfetch"
+
+[[packages]]
+name   = "htop"
+system = "htop"
+
+[[packages]]
+name   = "nvtop"
+system = "nvtop"
+
+[[packages]]
+name   = "gdu"
+system = "gdu"
+
+[[packages]]
+name   = "wavemon"
+system = "wavemon"

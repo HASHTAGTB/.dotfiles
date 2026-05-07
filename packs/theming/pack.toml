@@ -1,0 +1,62 @@
+[meta]
+name        = "theming"
+description = "Fonts, icons, GTK/Qt styling and matugen color generation"
+os          = "linux"
+
+[[packages]]
+name   = "matugen"
+system = "matugen"
+
+[[packages]]
+name   = "adw-gtk-theme"
+system = "adw-gtk-theme"
+
+[[packages]]
+name   = "nwg-look"
+system = "nwg-look"
+
+[[packages]]
+name   = "qt5ct"
+system = "qt5ct"
+
+[[packages]]
+name   = "qt6ct"
+system = "qt6ct"
+
+[[packages]]
+name   = "qt5-graphicaleffects"
+system = "qt5-graphicaleffects"
+
+[[packages]]
+name   = "kvantum"
+system = "kvantum"
+optional = true
+
+[[packages]]
+name   = "kvantum-qt5"
+system = "kvantum-qt5"
+optional = true
+
+[[packages]]
+name   = "awesome-terminal-fonts"
+system = "awesome-terminal-fonts"
+
+[[packages]]
+name   = "ttf-jetbrains-mono-nerd"
+system = "ttf-jetbrains-mono-nerd"
+
+[[packages]]
+name   = "ttf-cascadia-code-nerd"
+system = "ttf-cascadia-code-nerd"
+
+[[packages]]
+name   = "cantarell-fonts"
+system = "cantarell-fonts"
+
+[[packages]]
+name   = "noto-fonts-emoji"
+system = "noto-fonts-emoji"
+
+[[packages]]
+name   = "fluent-icon-theme-git"
+system    = "fluent-icon-theme-git"

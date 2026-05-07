@@ -1,0 +1,74 @@
+# ~/.dotfiles/managers.toml
+# Package manager configuration for dotfiles TUI.
+#
+# Each [[managers]] entry defines a logical package manager group.
+#
+# id              : the key used in pack.toml, e.g. "system", "pip", "cargo".
+#                   Multiple entries can share the same id (e.g. two "system"
+#                   entries for Linux and macOS) — the first whose binary is
+#                   found on $PATH wins.
+# try             : binaries to check in order. First found on $PATH is used
+#                   as the install/uninstall binary. Also the pack.toml key
+#                   fallback chain: if a package has no key matching the found
+#                   binary, the remaining names in the list are tried.
+# install/uninstall: args passed to the detected binary; {pkg} expands to one
+#                   or more space-separated package names.
+# check (optional): shell command to test if a package is installed (exit 0 =
+#                   installed). {pkg} = package name. Pipes and shell syntax
+#                   are supported.
+# info (optional) : shell command to display package details in the TUI.
+#                   {pkg} = package name. Pipes and shell syntax are supported.
+#
+# To disable a manager, comment out its [[managers]] block.
+# To add a new manager, append a [[managers]] block and use its id as a key
+# in your pack.toml [[packages]] entries.
+
+# Linux system package manager (yay/paru/pacman family)
+[[managers]]
+id        = "system"
+try       = ["yay", "paru", "pacman"]
+install   = "--noconfirm -S {pkg}"
+uninstall = "--noconfirm -Rns {pkg}"
+check     = "{try} -Q {pkg}"
+info      = "{try} -Si {pkg}"
+
+# macOS system package manager
+[[managers]]
+id        = "system"
+try       = ["brew"]
+install   = "install {pkg}"
+uninstall = "uninstall {pkg}"
+check     = "brew list --formula {pkg}"
+info      = "brew info {pkg}"
+
+[[managers]]
+id        = "flatpak"
+try       = ["flatpak"]
+install   = "install -y {pkg}"
+uninstall = "uninstall -y {pkg}"
+check     = "flatpak info {pkg}"
+info      = "flatpak info {pkg}"
+
+[[managers]]
+id        = "pip"
+try       = ["pip"]
+install   = "install {pkg}"
+uninstall = "uninstall -y {pkg}"
+check     = "pip show {pkg}"
+info      = "pip show {pkg}"
+
+[[managers]]
+id        = "npm"
+try       = ["npm"]
+install   = "install -g {pkg}"
+uninstall = "uninstall -g {pkg}"
+check     = "npm list -g {pkg}"
+info      = "npm view {pkg}"
+
+[[managers]]
+id        = "cargo"
+try       = ["cargo"]
+install   = "install {pkg}"
+uninstall = "uninstall {pkg}"
+check     = "cargo install --list | grep -q ^{pkg}"
+info      = "cargo search --limit 1 {pkg}"
