@@ -1,0 +1,431 @@
+
+{"scope": "semantic", "name": "background", "variant": "default", "hex": "#1a110f", "hex_stripped": "1a110f", "rgb": "rgb(26, 17, 15)", "rgba": "rgba(26, 17, 15, 1)", "hsl": "hsl(11, 27%, 8%)", "hsla": "hsla(11, 27%, 8%, 1)", "r": 26, "g": 17, "b": 15, "h": 10, "s": 26, "l": 8}
+{"scope": "semantic", "name": "background", "variant": "light", "hex": "#fff8f6", "hex_stripped": "fff8f6", "rgb": "rgb(255, 248, 246)", "rgba": "rgba(255, 248, 246, 1)", "hsl": "hsl(13, 100%, 98%)", "hsla": "hsla(13, 100%, 98%, 1)", "r": 255, "g": 248, "b": 246, "h": 13, "s": 100, "l": 98}
+{"scope": "semantic", "name": "background", "variant": "dark", "hex": "#1a110f", "hex_stripped": "1a110f", "rgb": "rgb(26, 17, 15)", "rgba": "rgba(26, 17, 15, 1)", "hsl": "hsl(11, 27%, 8%)", "hsla": "hsla(11, 27%, 8%, 1)", "r": 26, "g": 17, "b": 15, "h": 10, "s": 26, "l": 8}
+
+{"scope": "semantic", "name": "error", "variant": "default", "hex": "#ffb4ab", "hex_stripped": "ffb4ab", "rgb": "rgb(255, 180, 171)", "rgba": "rgba(255, 180, 171, 1)", "hsl": "hsl(6, 100%, 84%)", "hsla": "hsla(6, 100%, 84%, 1)", "r": 255, "g": 180, "b": 171, "h": 6, "s": 100, "l": 83}
+{"scope": "semantic", "name": "error", "variant": "light", "hex": "#ba1a1a", "hex_stripped": "ba1a1a", "rgb": "rgb(186, 26, 26)", "rgba": "rgba(186, 26, 26, 1)", "hsl": "hsl(0, 75%, 42%)", "hsla": "hsla(0, 75%, 42%, 1)", "r": 186, "g": 26, "b": 26, "h": 0, "s": 75, "l": 41}
+{"scope": "semantic", "name": "error", "variant": "dark", "hex": "#ffb4ab", "hex_stripped": "ffb4ab", "rgb": "rgb(255, 180, 171)", "rgba": "rgba(255, 180, 171, 1)", "hsl": "hsl(6, 100%, 84%)", "hsla": "hsla(6, 100%, 84%, 1)", "r": 255, "g": 180, "b": 171, "h": 6, "s": 100, "l": 83}
+
+{"scope": "semantic", "name": "error_container", "variant": "default", "hex": "#93000a", "hex_stripped": "93000a", "rgb": "rgb(147, 0, 10)", "rgba": "rgba(147, 0, 10, 1)", "hsl": "hsl(356, 100%, 29%)", "hsla": "hsla(356, 100%, 29%, 1)", "r": 147, "g": 0, "b": 10, "h": 355, "s": 100, "l": 28}
+{"scope": "semantic", "name": "error_container", "variant": "light", "hex": "#ffdad6", "hex_stripped": "ffdad6", "rgb": "rgb(255, 218, 214)", "rgba": "rgba(255, 218, 214, 1)", "hsl": "hsl(6, 100%, 92%)", "hsla": "hsla(6, 100%, 92%, 1)", "r": 255, "g": 218, "b": 214, "h": 5, "s": 100, "l": 91}
+{"scope": "semantic", "name": "error_container", "variant": "dark", "hex": "#93000a", "hex_stripped": "93000a", "rgb": "rgb(147, 0, 10)", "rgba": "rgba(147, 0, 10, 1)", "hsl": "hsl(356, 100%, 29%)", "hsla": "hsla(356, 100%, 29%, 1)", "r": 147, "g": 0, "b": 10, "h": 355, "s": 100, "l": 28}
+
+{"scope": "semantic", "name": "inverse_on_surface", "variant": "default", "hex": "#392e2c", "hex_stripped": "392e2c", "rgb": "rgb(57, 46, 44)", "rgba": "rgba(57, 46, 44, 1)", "hsl": "hsl(9, 13%, 20%)", "hsla": "hsla(9, 13%, 20%, 1)", "r": 57, "g": 46, "b": 44, "h": 9, "s": 12, "l": 19}
+{"scope": "semantic", "name": "inverse_on_surface", "variant": "light", "hex": "#ffede9", "hex_stripped": "ffede9", "rgb": "rgb(255, 237, 233)", "rgba": "rgba(255, 237, 233, 1)", "hsl": "hsl(11, 100%, 96%)", "hsla": "hsla(11, 100%, 96%, 1)", "r": 255, "g": 237, "b": 233, "h": 10, "s": 100, "l": 95}
+{"scope": "semantic", "name": "inverse_on_surface", "variant": "dark", "hex": "#392e2c", "hex_stripped": "392e2c", "rgb": "rgb(57, 46, 44)", "rgba": "rgba(57, 46, 44, 1)", "hsl": "hsl(9, 13%, 20%)", "hsla": "hsla(9, 13%, 20%, 1)", "r": 57, "g": 46, "b": 44, "h": 9, "s": 12, "l": 19}
+
+{"scope": "semantic", "name": "inverse_primary", "variant": "default", "hex": "#904b3b", "hex_stripped": "904b3b", "rgb": "rgb(144, 75, 59)", "rgba": "rgba(144, 75, 59, 1)", "hsl": "hsl(11, 42%, 40%)", "hsla": "hsla(11, 42%, 40%, 1)", "r": 144, "g": 75, "b": 59, "h": 11, "s": 41, "l": 39}
+{"scope": "semantic", "name": "inverse_primary", "variant": "light", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+{"scope": "semantic", "name": "inverse_primary", "variant": "dark", "hex": "#904b3b", "hex_stripped": "904b3b", "rgb": "rgb(144, 75, 59)", "rgba": "rgba(144, 75, 59, 1)", "hsl": "hsl(11, 42%, 40%)", "hsla": "hsla(11, 42%, 40%, 1)", "r": 144, "g": 75, "b": 59, "h": 11, "s": 41, "l": 39}
+
+{"scope": "semantic", "name": "inverse_surface", "variant": "default", "hex": "#f1dfdb", "hex_stripped": "f1dfdb", "rgb": "rgb(241, 223, 219)", "rgba": "rgba(241, 223, 219, 1)", "hsl": "hsl(11, 44%, 90%)", "hsla": "hsla(11, 44%, 90%, 1)", "r": 241, "g": 223, "b": 219, "h": 10, "s": 44, "l": 90}
+{"scope": "semantic", "name": "inverse_surface", "variant": "light", "hex": "#392e2c", "hex_stripped": "392e2c", "rgb": "rgb(57, 46, 44)", "rgba": "rgba(57, 46, 44, 1)", "hsl": "hsl(9, 13%, 20%)", "hsla": "hsla(9, 13%, 20%, 1)", "r": 57, "g": 46, "b": 44, "h": 9, "s": 12, "l": 19}
+{"scope": "semantic", "name": "inverse_surface", "variant": "dark", "hex": "#f1dfdb", "hex_stripped": "f1dfdb", "rgb": "rgb(241, 223, 219)", "rgba": "rgba(241, 223, 219, 1)", "hsl": "hsl(11, 44%, 90%)", "hsla": "hsla(11, 44%, 90%, 1)", "r": 241, "g": 223, "b": 219, "h": 10, "s": 44, "l": 90}
+
+{"scope": "semantic", "name": "on_background", "variant": "default", "hex": "#f1dfdb", "hex_stripped": "f1dfdb", "rgb": "rgb(241, 223, 219)", "rgba": "rgba(241, 223, 219, 1)", "hsl": "hsl(11, 44%, 90%)", "hsla": "hsla(11, 44%, 90%, 1)", "r": 241, "g": 223, "b": 219, "h": 10, "s": 44, "l": 90}
+{"scope": "semantic", "name": "on_background", "variant": "light", "hex": "#231917", "hex_stripped": "231917", "rgb": "rgb(35, 25, 23)", "rgba": "rgba(35, 25, 23, 1)", "hsl": "hsl(10, 21%, 11%)", "hsla": "hsla(10, 21%, 11%, 1)", "r": 35, "g": 25, "b": 23, "h": 9, "s": 20, "l": 11}
+{"scope": "semantic", "name": "on_background", "variant": "dark", "hex": "#f1dfdb", "hex_stripped": "f1dfdb", "rgb": "rgb(241, 223, 219)", "rgba": "rgba(241, 223, 219, 1)", "hsl": "hsl(11, 44%, 90%)", "hsla": "hsla(11, 44%, 90%, 1)", "r": 241, "g": 223, "b": 219, "h": 10, "s": 44, "l": 90}
+
+{"scope": "semantic", "name": "on_error", "variant": "default", "hex": "#690005", "hex_stripped": "690005", "rgb": "rgb(105, 0, 5)", "rgba": "rgba(105, 0, 5, 1)", "hsl": "hsl(357, 100%, 21%)", "hsla": "hsla(357, 100%, 21%, 1)", "r": 105, "g": 0, "b": 5, "h": 357, "s": 100, "l": 20}
+{"scope": "semantic", "name": "on_error", "variant": "light", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+{"scope": "semantic", "name": "on_error", "variant": "dark", "hex": "#690005", "hex_stripped": "690005", "rgb": "rgb(105, 0, 5)", "rgba": "rgba(105, 0, 5, 1)", "hsl": "hsl(357, 100%, 21%)", "hsla": "hsla(357, 100%, 21%, 1)", "r": 105, "g": 0, "b": 5, "h": 357, "s": 100, "l": 20}
+
+{"scope": "semantic", "name": "on_error_container", "variant": "default", "hex": "#ffdad6", "hex_stripped": "ffdad6", "rgb": "rgb(255, 218, 214)", "rgba": "rgba(255, 218, 214, 1)", "hsl": "hsl(6, 100%, 92%)", "hsla": "hsla(6, 100%, 92%, 1)", "r": 255, "g": 218, "b": 214, "h": 5, "s": 100, "l": 91}
+{"scope": "semantic", "name": "on_error_container", "variant": "light", "hex": "#410002", "hex_stripped": "410002", "rgb": "rgb(65, 0, 2)", "rgba": "rgba(65, 0, 2, 1)", "hsl": "hsl(358, 100%, 13%)", "hsla": "hsla(358, 100%, 13%, 1)", "r": 65, "g": 0, "b": 2, "h": 358, "s": 100, "l": 12}
+{"scope": "semantic", "name": "on_error_container", "variant": "dark", "hex": "#ffdad6", "hex_stripped": "ffdad6", "rgb": "rgb(255, 218, 214)", "rgba": "rgba(255, 218, 214, 1)", "hsl": "hsl(6, 100%, 92%)", "hsla": "hsla(6, 100%, 92%, 1)", "r": 255, "g": 218, "b": 214, "h": 5, "s": 100, "l": 91}
+
+{"scope": "semantic", "name": "on_primary", "variant": "default", "hex": "#561f12", "hex_stripped": "561f12", "rgb": "rgb(86, 31, 18)", "rgba": "rgba(86, 31, 18, 1)", "hsl": "hsl(11, 65%, 20%)", "hsla": "hsla(11, 65%, 20%, 1)", "r": 86, "g": 31, "b": 18, "h": 11, "s": 65, "l": 20}
+{"scope": "semantic", "name": "on_primary", "variant": "light", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+{"scope": "semantic", "name": "on_primary", "variant": "dark", "hex": "#561f12", "hex_stripped": "561f12", "rgb": "rgb(86, 31, 18)", "rgba": "rgba(86, 31, 18, 1)", "hsl": "hsl(11, 65%, 20%)", "hsla": "hsla(11, 65%, 20%, 1)", "r": 86, "g": 31, "b": 18, "h": 11, "s": 65, "l": 20}
+
+{"scope": "semantic", "name": "on_primary_container", "variant": "default", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "on_primary_container", "variant": "light", "hex": "#3a0a02", "hex_stripped": "3a0a02", "rgb": "rgb(58, 10, 2)", "rgba": "rgba(58, 10, 2, 1)", "hsl": "hsl(9, 93%, 12%)", "hsla": "hsla(9, 93%, 12%, 1)", "r": 58, "g": 10, "b": 2, "h": 8, "s": 93, "l": 11}
+{"scope": "semantic", "name": "on_primary_container", "variant": "dark", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+
+{"scope": "semantic", "name": "on_primary_fixed", "variant": "default", "hex": "#3a0a02", "hex_stripped": "3a0a02", "rgb": "rgb(58, 10, 2)", "rgba": "rgba(58, 10, 2, 1)", "hsl": "hsl(9, 93%, 12%)", "hsla": "hsla(9, 93%, 12%, 1)", "r": 58, "g": 10, "b": 2, "h": 8, "s": 93, "l": 11}
+{"scope": "semantic", "name": "on_primary_fixed", "variant": "light", "hex": "#3a0a02", "hex_stripped": "3a0a02", "rgb": "rgb(58, 10, 2)", "rgba": "rgba(58, 10, 2, 1)", "hsl": "hsl(9, 93%, 12%)", "hsla": "hsla(9, 93%, 12%, 1)", "r": 58, "g": 10, "b": 2, "h": 8, "s": 93, "l": 11}
+{"scope": "semantic", "name": "on_primary_fixed", "variant": "dark", "hex": "#3a0a02", "hex_stripped": "3a0a02", "rgb": "rgb(58, 10, 2)", "rgba": "rgba(58, 10, 2, 1)", "hsl": "hsl(9, 93%, 12%)", "hsla": "hsla(9, 93%, 12%, 1)", "r": 58, "g": 10, "b": 2, "h": 8, "s": 93, "l": 11}
+
+{"scope": "semantic", "name": "on_primary_fixed_variant", "variant": "default", "hex": "#723426", "hex_stripped": "723426", "rgb": "rgb(114, 52, 38)", "rgba": "rgba(114, 52, 38, 1)", "hsl": "hsl(11, 50%, 30%)", "hsla": "hsla(11, 50%, 30%, 1)", "r": 114, "g": 52, "b": 38, "h": 11, "s": 49, "l": 29}
+{"scope": "semantic", "name": "on_primary_fixed_variant", "variant": "light", "hex": "#723426", "hex_stripped": "723426", "rgb": "rgb(114, 52, 38)", "rgba": "rgba(114, 52, 38, 1)", "hsl": "hsl(11, 50%, 30%)", "hsla": "hsla(11, 50%, 30%, 1)", "r": 114, "g": 52, "b": 38, "h": 11, "s": 49, "l": 29}
+{"scope": "semantic", "name": "on_primary_fixed_variant", "variant": "dark", "hex": "#723426", "hex_stripped": "723426", "rgb": "rgb(114, 52, 38)", "rgba": "rgba(114, 52, 38, 1)", "hsl": "hsl(11, 50%, 30%)", "hsla": "hsla(11, 50%, 30%, 1)", "r": 114, "g": 52, "b": 38, "h": 11, "s": 49, "l": 29}
+
+{"scope": "semantic", "name": "on_secondary", "variant": "default", "hex": "#442a23", "hex_stripped": "442a23", "rgb": "rgb(68, 42, 35)", "rgba": "rgba(68, 42, 35, 1)", "hsl": "hsl(13, 32%, 20%)", "hsla": "hsla(13, 32%, 20%, 1)", "r": 68, "g": 42, "b": 35, "h": 12, "s": 32, "l": 20}
+{"scope": "semantic", "name": "on_secondary", "variant": "light", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+{"scope": "semantic", "name": "on_secondary", "variant": "dark", "hex": "#442a23", "hex_stripped": "442a23", "rgb": "rgb(68, 42, 35)", "rgba": "rgba(68, 42, 35, 1)", "hsl": "hsl(13, 32%, 20%)", "hsla": "hsla(13, 32%, 20%, 1)", "r": 68, "g": 42, "b": 35, "h": 12, "s": 32, "l": 20}
+
+{"scope": "semantic", "name": "on_secondary_container", "variant": "default", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "on_secondary_container", "variant": "light", "hex": "#2c1510", "hex_stripped": "2c1510", "rgb": "rgb(44, 21, 16)", "rgba": "rgba(44, 21, 16, 1)", "hsl": "hsl(11, 47%, 12%)", "hsla": "hsla(11, 47%, 12%, 1)", "r": 44, "g": 21, "b": 16, "h": 10, "s": 46, "l": 11}
+{"scope": "semantic", "name": "on_secondary_container", "variant": "dark", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+
+{"scope": "semantic", "name": "on_secondary_fixed", "variant": "default", "hex": "#2c1510", "hex_stripped": "2c1510", "rgb": "rgb(44, 21, 16)", "rgba": "rgba(44, 21, 16, 1)", "hsl": "hsl(11, 47%, 12%)", "hsla": "hsla(11, 47%, 12%, 1)", "r": 44, "g": 21, "b": 16, "h": 10, "s": 46, "l": 11}
+{"scope": "semantic", "name": "on_secondary_fixed", "variant": "light", "hex": "#2c1510", "hex_stripped": "2c1510", "rgb": "rgb(44, 21, 16)", "rgba": "rgba(44, 21, 16, 1)", "hsl": "hsl(11, 47%, 12%)", "hsla": "hsla(11, 47%, 12%, 1)", "r": 44, "g": 21, "b": 16, "h": 10, "s": 46, "l": 11}
+{"scope": "semantic", "name": "on_secondary_fixed", "variant": "dark", "hex": "#2c1510", "hex_stripped": "2c1510", "rgb": "rgb(44, 21, 16)", "rgba": "rgba(44, 21, 16, 1)", "hsl": "hsl(11, 47%, 12%)", "hsla": "hsla(11, 47%, 12%, 1)", "r": 44, "g": 21, "b": 16, "h": 10, "s": 46, "l": 11}
+
+{"scope": "semantic", "name": "on_secondary_fixed_variant", "variant": "default", "hex": "#5d3f39", "hex_stripped": "5d3f39", "rgb": "rgb(93, 63, 57)", "rgba": "rgba(93, 63, 57, 1)", "hsl": "hsl(10, 24%, 29%)", "hsla": "hsla(10, 24%, 29%, 1)", "r": 93, "g": 63, "b": 57, "h": 9, "s": 24, "l": 29}
+{"scope": "semantic", "name": "on_secondary_fixed_variant", "variant": "light", "hex": "#5d3f39", "hex_stripped": "5d3f39", "rgb": "rgb(93, 63, 57)", "rgba": "rgba(93, 63, 57, 1)", "hsl": "hsl(10, 24%, 29%)", "hsla": "hsla(10, 24%, 29%, 1)", "r": 93, "g": 63, "b": 57, "h": 9, "s": 24, "l": 29}
+{"scope": "semantic", "name": "on_secondary_fixed_variant", "variant": "dark", "hex": "#5d3f39", "hex_stripped": "5d3f39", "rgb": "rgb(93, 63, 57)", "rgba": "rgba(93, 63, 57, 1)", "hsl": "hsl(10, 24%, 29%)", "hsla": "hsla(10, 24%, 29%, 1)", "r": 93, "g": 63, "b": 57, "h": 9, "s": 24, "l": 29}
+
+{"scope": "semantic", "name": "on_surface", "variant": "default", "hex": "#f1dfdb", "hex_stripped": "f1dfdb", "rgb": "rgb(241, 223, 219)", "rgba": "rgba(241, 223, 219, 1)", "hsl": "hsl(11, 44%, 90%)", "hsla": "hsla(11, 44%, 90%, 1)", "r": 241, "g": 223, "b": 219, "h": 10, "s": 44, "l": 90}
+{"scope": "semantic", "name": "on_surface", "variant": "light", "hex": "#231917", "hex_stripped": "231917", "rgb": "rgb(35, 25, 23)", "rgba": "rgba(35, 25, 23, 1)", "hsl": "hsl(10, 21%, 11%)", "hsla": "hsla(10, 21%, 11%, 1)", "r": 35, "g": 25, "b": 23, "h": 9, "s": 20, "l": 11}
+{"scope": "semantic", "name": "on_surface", "variant": "dark", "hex": "#f1dfdb", "hex_stripped": "f1dfdb", "rgb": "rgb(241, 223, 219)", "rgba": "rgba(241, 223, 219, 1)", "hsl": "hsl(11, 44%, 90%)", "hsla": "hsla(11, 44%, 90%, 1)", "r": 241, "g": 223, "b": 219, "h": 10, "s": 44, "l": 90}
+
+{"scope": "semantic", "name": "on_surface_variant", "variant": "default", "hex": "#d8c2bd", "hex_stripped": "d8c2bd", "rgb": "rgb(216, 194, 189)", "rgba": "rgba(216, 194, 189, 1)", "hsl": "hsl(11, 26%, 79%)", "hsla": "hsla(11, 26%, 79%, 1)", "r": 216, "g": 194, "b": 189, "h": 11, "s": 25, "l": 79}
+{"scope": "semantic", "name": "on_surface_variant", "variant": "light", "hex": "#534340", "hex_stripped": "534340", "rgb": "rgb(83, 67, 64)", "rgba": "rgba(83, 67, 64, 1)", "hsl": "hsl(9, 13%, 29%)", "hsla": "hsla(9, 13%, 29%, 1)", "r": 83, "g": 67, "b": 64, "h": 9, "s": 12, "l": 28}
+{"scope": "semantic", "name": "on_surface_variant", "variant": "dark", "hex": "#d8c2bd", "hex_stripped": "d8c2bd", "rgb": "rgb(216, 194, 189)", "rgba": "rgba(216, 194, 189, 1)", "hsl": "hsl(11, 26%, 79%)", "hsla": "hsla(11, 26%, 79%, 1)", "r": 216, "g": 194, "b": 189, "h": 11, "s": 25, "l": 79}
+
+{"scope": "semantic", "name": "on_tertiary", "variant": "default", "hex": "#3c2f04", "hex_stripped": "3c2f04", "rgb": "rgb(60, 47, 4)", "rgba": "rgba(60, 47, 4, 1)", "hsl": "hsl(46, 87%, 13%)", "hsla": "hsla(46, 87%, 13%, 1)", "r": 60, "g": 47, "b": 4, "h": 46, "s": 87, "l": 12}
+{"scope": "semantic", "name": "on_tertiary", "variant": "light", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+{"scope": "semantic", "name": "on_tertiary", "variant": "dark", "hex": "#3c2f04", "hex_stripped": "3c2f04", "rgb": "rgb(60, 47, 4)", "rgba": "rgba(60, 47, 4, 1)", "hsl": "hsl(46, 87%, 13%)", "hsla": "hsla(46, 87%, 13%, 1)", "r": 60, "g": 47, "b": 4, "h": 46, "s": 87, "l": 12}
+
+{"scope": "semantic", "name": "on_tertiary_container", "variant": "default", "hex": "#f8e1a6", "hex_stripped": "f8e1a6", "rgb": "rgb(248, 225, 166)", "rgba": "rgba(248, 225, 166, 1)", "hsl": "hsl(43, 85%, 81%)", "hsla": "hsla(43, 85%, 81%, 1)", "r": 248, "g": 225, "b": 166, "h": 43, "s": 85, "l": 81}
+{"scope": "semantic", "name": "on_tertiary_container", "variant": "light", "hex": "#241a00", "hex_stripped": "241a00", "rgb": "rgb(36, 26, 0)", "rgba": "rgba(36, 26, 0, 1)", "hsl": "hsl(43, 100%, 7%)", "hsla": "hsla(43, 100%, 7%, 1)", "r": 36, "g": 26, "b": 0, "h": 43, "s": 100, "l": 7}
+{"scope": "semantic", "name": "on_tertiary_container", "variant": "dark", "hex": "#f8e1a6", "hex_stripped": "f8e1a6", "rgb": "rgb(248, 225, 166)", "rgba": "rgba(248, 225, 166, 1)", "hsl": "hsl(43, 85%, 81%)", "hsla": "hsla(43, 85%, 81%, 1)", "r": 248, "g": 225, "b": 166, "h": 43, "s": 85, "l": 81}
+
+{"scope": "semantic", "name": "on_tertiary_fixed", "variant": "default", "hex": "#241a00", "hex_stripped": "241a00", "rgb": "rgb(36, 26, 0)", "rgba": "rgba(36, 26, 0, 1)", "hsl": "hsl(43, 100%, 7%)", "hsla": "hsla(43, 100%, 7%, 1)", "r": 36, "g": 26, "b": 0, "h": 43, "s": 100, "l": 7}
+{"scope": "semantic", "name": "on_tertiary_fixed", "variant": "light", "hex": "#241a00", "hex_stripped": "241a00", "rgb": "rgb(36, 26, 0)", "rgba": "rgba(36, 26, 0, 1)", "hsl": "hsl(43, 100%, 7%)", "hsla": "hsla(43, 100%, 7%, 1)", "r": 36, "g": 26, "b": 0, "h": 43, "s": 100, "l": 7}
+{"scope": "semantic", "name": "on_tertiary_fixed", "variant": "dark", "hex": "#241a00", "hex_stripped": "241a00", "rgb": "rgb(36, 26, 0)", "rgba": "rgba(36, 26, 0, 1)", "hsl": "hsl(43, 100%, 7%)", "hsla": "hsla(43, 100%, 7%, 1)", "r": 36, "g": 26, "b": 0, "h": 43, "s": 100, "l": 7}
+
+{"scope": "semantic", "name": "on_tertiary_fixed_variant", "variant": "default", "hex": "#544519", "hex_stripped": "544519", "rgb": "rgb(84, 69, 25)", "rgba": "rgba(84, 69, 25, 1)", "hsl": "hsl(45, 54%, 21%)", "hsla": "hsla(45, 54%, 21%, 1)", "r": 84, "g": 69, "b": 25, "h": 44, "s": 54, "l": 21}
+{"scope": "semantic", "name": "on_tertiary_fixed_variant", "variant": "light", "hex": "#544519", "hex_stripped": "544519", "rgb": "rgb(84, 69, 25)", "rgba": "rgba(84, 69, 25, 1)", "hsl": "hsl(45, 54%, 21%)", "hsla": "hsla(45, 54%, 21%, 1)", "r": 84, "g": 69, "b": 25, "h": 44, "s": 54, "l": 21}
+{"scope": "semantic", "name": "on_tertiary_fixed_variant", "variant": "dark", "hex": "#544519", "hex_stripped": "544519", "rgb": "rgb(84, 69, 25)", "rgba": "rgba(84, 69, 25, 1)", "hsl": "hsl(45, 54%, 21%)", "hsla": "hsla(45, 54%, 21%, 1)", "r": 84, "g": 69, "b": 25, "h": 44, "s": 54, "l": 21}
+
+{"scope": "semantic", "name": "outline", "variant": "default", "hex": "#a08c88", "hex_stripped": "a08c88", "rgb": "rgb(160, 140, 136)", "rgba": "rgba(160, 140, 136, 1)", "hsl": "hsl(10, 11%, 58%)", "hsla": "hsla(10, 11%, 58%, 1)", "r": 160, "g": 140, "b": 136, "h": 10, "s": 11, "l": 58}
+{"scope": "semantic", "name": "outline", "variant": "light", "hex": "#85736f", "hex_stripped": "85736f", "rgb": "rgb(133, 115, 111)", "rgba": "rgba(133, 115, 111, 1)", "hsl": "hsl(11, 9%, 48%)", "hsla": "hsla(11, 9%, 48%, 1)", "r": 133, "g": 115, "b": 111, "h": 10, "s": 9, "l": 47}
+{"scope": "semantic", "name": "outline", "variant": "dark", "hex": "#a08c88", "hex_stripped": "a08c88", "rgb": "rgb(160, 140, 136)", "rgba": "rgba(160, 140, 136, 1)", "hsl": "hsl(10, 11%, 58%)", "hsla": "hsla(10, 11%, 58%, 1)", "r": 160, "g": 140, "b": 136, "h": 10, "s": 11, "l": 58}
+
+{"scope": "semantic", "name": "outline_variant", "variant": "default", "hex": "#534340", "hex_stripped": "534340", "rgb": "rgb(83, 67, 64)", "rgba": "rgba(83, 67, 64, 1)", "hsl": "hsl(9, 13%, 29%)", "hsla": "hsla(9, 13%, 29%, 1)", "r": 83, "g": 67, "b": 64, "h": 9, "s": 12, "l": 28}
+{"scope": "semantic", "name": "outline_variant", "variant": "light", "hex": "#d8c2bd", "hex_stripped": "d8c2bd", "rgb": "rgb(216, 194, 189)", "rgba": "rgba(216, 194, 189, 1)", "hsl": "hsl(11, 26%, 79%)", "hsla": "hsla(11, 26%, 79%, 1)", "r": 216, "g": 194, "b": 189, "h": 11, "s": 25, "l": 79}
+{"scope": "semantic", "name": "outline_variant", "variant": "dark", "hex": "#534340", "hex_stripped": "534340", "rgb": "rgb(83, 67, 64)", "rgba": "rgba(83, 67, 64, 1)", "hsl": "hsl(9, 13%, 29%)", "hsla": "hsla(9, 13%, 29%, 1)", "r": 83, "g": 67, "b": 64, "h": 9, "s": 12, "l": 28}
+
+{"scope": "semantic", "name": "primary", "variant": "default", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+{"scope": "semantic", "name": "primary", "variant": "light", "hex": "#904b3b", "hex_stripped": "904b3b", "rgb": "rgb(144, 75, 59)", "rgba": "rgba(144, 75, 59, 1)", "hsl": "hsl(11, 42%, 40%)", "hsla": "hsla(11, 42%, 40%, 1)", "r": 144, "g": 75, "b": 59, "h": 11, "s": 41, "l": 39}
+{"scope": "semantic", "name": "primary", "variant": "dark", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+
+{"scope": "semantic", "name": "primary_container", "variant": "default", "hex": "#723426", "hex_stripped": "723426", "rgb": "rgb(114, 52, 38)", "rgba": "rgba(114, 52, 38, 1)", "hsl": "hsl(11, 50%, 30%)", "hsla": "hsla(11, 50%, 30%, 1)", "r": 114, "g": 52, "b": 38, "h": 11, "s": 49, "l": 29}
+{"scope": "semantic", "name": "primary_container", "variant": "light", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "primary_container", "variant": "dark", "hex": "#723426", "hex_stripped": "723426", "rgb": "rgb(114, 52, 38)", "rgba": "rgba(114, 52, 38, 1)", "hsl": "hsl(11, 50%, 30%)", "hsla": "hsla(11, 50%, 30%, 1)", "r": 114, "g": 52, "b": 38, "h": 11, "s": 49, "l": 29}
+
+{"scope": "semantic", "name": "primary_fixed", "variant": "default", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "primary_fixed", "variant": "light", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "primary_fixed", "variant": "dark", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+
+{"scope": "semantic", "name": "primary_fixed_dim", "variant": "default", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+{"scope": "semantic", "name": "primary_fixed_dim", "variant": "light", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+{"scope": "semantic", "name": "primary_fixed_dim", "variant": "dark", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+
+{"scope": "semantic", "name": "scrim", "variant": "default", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+{"scope": "semantic", "name": "scrim", "variant": "light", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+{"scope": "semantic", "name": "scrim", "variant": "dark", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "semantic", "name": "secondary", "variant": "default", "hex": "#e7bdb3", "hex_stripped": "e7bdb3", "rgb": "rgb(231, 189, 179)", "rgba": "rgba(231, 189, 179, 1)", "hsl": "hsl(12, 52%, 80%)", "hsla": "hsla(12, 52%, 80%, 1)", "r": 231, "g": 189, "b": 179, "h": 11, "s": 52, "l": 80}
+{"scope": "semantic", "name": "secondary", "variant": "light", "hex": "#77574f", "hex_stripped": "77574f", "rgb": "rgb(119, 87, 79)", "rgba": "rgba(119, 87, 79, 1)", "hsl": "hsl(12, 20%, 39%)", "hsla": "hsla(12, 20%, 39%, 1)", "r": 119, "g": 87, "b": 79, "h": 12, "s": 20, "l": 38}
+{"scope": "semantic", "name": "secondary", "variant": "dark", "hex": "#e7bdb3", "hex_stripped": "e7bdb3", "rgb": "rgb(231, 189, 179)", "rgba": "rgba(231, 189, 179, 1)", "hsl": "hsl(12, 52%, 80%)", "hsla": "hsla(12, 52%, 80%, 1)", "r": 231, "g": 189, "b": 179, "h": 11, "s": 52, "l": 80}
+
+{"scope": "semantic", "name": "secondary_container", "variant": "default", "hex": "#5d3f39", "hex_stripped": "5d3f39", "rgb": "rgb(93, 63, 57)", "rgba": "rgba(93, 63, 57, 1)", "hsl": "hsl(10, 24%, 29%)", "hsla": "hsla(10, 24%, 29%, 1)", "r": 93, "g": 63, "b": 57, "h": 9, "s": 24, "l": 29}
+{"scope": "semantic", "name": "secondary_container", "variant": "light", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "secondary_container", "variant": "dark", "hex": "#5d3f39", "hex_stripped": "5d3f39", "rgb": "rgb(93, 63, 57)", "rgba": "rgba(93, 63, 57, 1)", "hsl": "hsl(10, 24%, 29%)", "hsla": "hsla(10, 24%, 29%, 1)", "r": 93, "g": 63, "b": 57, "h": 9, "s": 24, "l": 29}
+
+{"scope": "semantic", "name": "secondary_fixed", "variant": "default", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "secondary_fixed", "variant": "light", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+{"scope": "semantic", "name": "secondary_fixed", "variant": "dark", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+
+{"scope": "semantic", "name": "secondary_fixed_dim", "variant": "default", "hex": "#e7bdb3", "hex_stripped": "e7bdb3", "rgb": "rgb(231, 189, 179)", "rgba": "rgba(231, 189, 179, 1)", "hsl": "hsl(12, 52%, 80%)", "hsla": "hsla(12, 52%, 80%, 1)", "r": 231, "g": 189, "b": 179, "h": 11, "s": 52, "l": 80}
+{"scope": "semantic", "name": "secondary_fixed_dim", "variant": "light", "hex": "#e7bdb3", "hex_stripped": "e7bdb3", "rgb": "rgb(231, 189, 179)", "rgba": "rgba(231, 189, 179, 1)", "hsl": "hsl(12, 52%, 80%)", "hsla": "hsla(12, 52%, 80%, 1)", "r": 231, "g": 189, "b": 179, "h": 11, "s": 52, "l": 80}
+{"scope": "semantic", "name": "secondary_fixed_dim", "variant": "dark", "hex": "#e7bdb3", "hex_stripped": "e7bdb3", "rgb": "rgb(231, 189, 179)", "rgba": "rgba(231, 189, 179, 1)", "hsl": "hsl(12, 52%, 80%)", "hsla": "hsla(12, 52%, 80%, 1)", "r": 231, "g": 189, "b": 179, "h": 11, "s": 52, "l": 80}
+
+{"scope": "semantic", "name": "shadow", "variant": "default", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+{"scope": "semantic", "name": "shadow", "variant": "light", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+{"scope": "semantic", "name": "shadow", "variant": "dark", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "semantic", "name": "source_color", "variant": "default", "hex": "#ce4222", "hex_stripped": "ce4222", "rgb": "rgb(206, 66, 34)", "rgba": "rgba(206, 66, 34, 1)", "hsl": "hsl(11, 72%, 47%)", "hsla": "hsla(11, 72%, 47%, 1)", "r": 206, "g": 66, "b": 34, "h": 11, "s": 71, "l": 47}
+{"scope": "semantic", "name": "source_color", "variant": "light", "hex": "#ce4222", "hex_stripped": "ce4222", "rgb": "rgb(206, 66, 34)", "rgba": "rgba(206, 66, 34, 1)", "hsl": "hsl(11, 72%, 47%)", "hsla": "hsla(11, 72%, 47%, 1)", "r": 206, "g": 66, "b": 34, "h": 11, "s": 71, "l": 47}
+{"scope": "semantic", "name": "source_color", "variant": "dark", "hex": "#ce4222", "hex_stripped": "ce4222", "rgb": "rgb(206, 66, 34)", "rgba": "rgba(206, 66, 34, 1)", "hsl": "hsl(11, 72%, 47%)", "hsla": "hsla(11, 72%, 47%, 1)", "r": 206, "g": 66, "b": 34, "h": 11, "s": 71, "l": 47}
+
+{"scope": "semantic", "name": "surface", "variant": "default", "hex": "#1a110f", "hex_stripped": "1a110f", "rgb": "rgb(26, 17, 15)", "rgba": "rgba(26, 17, 15, 1)", "hsl": "hsl(11, 27%, 8%)", "hsla": "hsla(11, 27%, 8%, 1)", "r": 26, "g": 17, "b": 15, "h": 10, "s": 26, "l": 8}
+{"scope": "semantic", "name": "surface", "variant": "light", "hex": "#fff8f6", "hex_stripped": "fff8f6", "rgb": "rgb(255, 248, 246)", "rgba": "rgba(255, 248, 246, 1)", "hsl": "hsl(13, 100%, 98%)", "hsla": "hsla(13, 100%, 98%, 1)", "r": 255, "g": 248, "b": 246, "h": 13, "s": 100, "l": 98}
+{"scope": "semantic", "name": "surface", "variant": "dark", "hex": "#1a110f", "hex_stripped": "1a110f", "rgb": "rgb(26, 17, 15)", "rgba": "rgba(26, 17, 15, 1)", "hsl": "hsl(11, 27%, 8%)", "hsla": "hsla(11, 27%, 8%, 1)", "r": 26, "g": 17, "b": 15, "h": 10, "s": 26, "l": 8}
+
+{"scope": "semantic", "name": "surface_bright", "variant": "default", "hex": "#423734", "hex_stripped": "423734", "rgb": "rgb(66, 55, 52)", "rgba": "rgba(66, 55, 52, 1)", "hsl": "hsl(13, 12%, 23%)", "hsla": "hsla(13, 12%, 23%, 1)", "r": 66, "g": 55, "b": 52, "h": 12, "s": 11, "l": 23}
+{"scope": "semantic", "name": "surface_bright", "variant": "light", "hex": "#fff8f6", "hex_stripped": "fff8f6", "rgb": "rgb(255, 248, 246)", "rgba": "rgba(255, 248, 246, 1)", "hsl": "hsl(13, 100%, 98%)", "hsla": "hsla(13, 100%, 98%, 1)", "r": 255, "g": 248, "b": 246, "h": 13, "s": 100, "l": 98}
+{"scope": "semantic", "name": "surface_bright", "variant": "dark", "hex": "#423734", "hex_stripped": "423734", "rgb": "rgb(66, 55, 52)", "rgba": "rgba(66, 55, 52, 1)", "hsl": "hsl(13, 12%, 23%)", "hsla": "hsla(13, 12%, 23%, 1)", "r": 66, "g": 55, "b": 52, "h": 12, "s": 11, "l": 23}
+
+{"scope": "semantic", "name": "surface_container", "variant": "default", "hex": "#271d1b", "hex_stripped": "271d1b", "rgb": "rgb(39, 29, 27)", "rgba": "rgba(39, 29, 27, 1)", "hsl": "hsl(10, 18%, 13%)", "hsla": "hsla(10, 18%, 13%, 1)", "r": 39, "g": 29, "b": 27, "h": 9, "s": 18, "l": 12}
+{"scope": "semantic", "name": "surface_container", "variant": "light", "hex": "#fceae6", "hex_stripped": "fceae6", "rgb": "rgb(252, 234, 230)", "rgba": "rgba(252, 234, 230, 1)", "hsl": "hsl(11, 79%, 95%)", "hsla": "hsla(11, 79%, 95%, 1)", "r": 252, "g": 234, "b": 230, "h": 10, "s": 78, "l": 94}
+{"scope": "semantic", "name": "surface_container", "variant": "dark", "hex": "#271d1b", "hex_stripped": "271d1b", "rgb": "rgb(39, 29, 27)", "rgba": "rgba(39, 29, 27, 1)", "hsl": "hsl(10, 18%, 13%)", "hsla": "hsla(10, 18%, 13%, 1)", "r": 39, "g": 29, "b": 27, "h": 9, "s": 18, "l": 12}
+
+{"scope": "semantic", "name": "surface_container_high", "variant": "default", "hex": "#322825", "hex_stripped": "322825", "rgb": "rgb(50, 40, 37)", "rgba": "rgba(50, 40, 37, 1)", "hsl": "hsl(14, 15%, 17%)", "hsla": "hsla(14, 15%, 17%, 1)", "r": 50, "g": 40, "b": 37, "h": 13, "s": 14, "l": 17}
+{"scope": "semantic", "name": "surface_container_high", "variant": "light", "hex": "#f7e4e0", "hex_stripped": "f7e4e0", "rgb": "rgb(247, 228, 224)", "rgba": "rgba(247, 228, 224, 1)", "hsl": "hsl(10, 59%, 92%)", "hsla": "hsla(10, 59%, 92%, 1)", "r": 247, "g": 228, "b": 224, "h": 10, "s": 58, "l": 92}
+{"scope": "semantic", "name": "surface_container_high", "variant": "dark", "hex": "#322825", "hex_stripped": "322825", "rgb": "rgb(50, 40, 37)", "rgba": "rgba(50, 40, 37, 1)", "hsl": "hsl(14, 15%, 17%)", "hsla": "hsla(14, 15%, 17%, 1)", "r": 50, "g": 40, "b": 37, "h": 13, "s": 14, "l": 17}
+
+{"scope": "semantic", "name": "surface_container_highest", "variant": "default", "hex": "#3d3230", "hex_stripped": "3d3230", "rgb": "rgb(61, 50, 48)", "rgba": "rgba(61, 50, 48, 1)", "hsl": "hsl(9, 12%, 21%)", "hsla": "hsla(9, 12%, 21%, 1)", "r": 61, "g": 50, "b": 48, "h": 9, "s": 11, "l": 21}
+{"scope": "semantic", "name": "surface_container_highest", "variant": "light", "hex": "#f1dfdb", "hex_stripped": "f1dfdb", "rgb": "rgb(241, 223, 219)", "rgba": "rgba(241, 223, 219, 1)", "hsl": "hsl(11, 44%, 90%)", "hsla": "hsla(11, 44%, 90%, 1)", "r": 241, "g": 223, "b": 219, "h": 10, "s": 44, "l": 90}
+{"scope": "semantic", "name": "surface_container_highest", "variant": "dark", "hex": "#3d3230", "hex_stripped": "3d3230", "rgb": "rgb(61, 50, 48)", "rgba": "rgba(61, 50, 48, 1)", "hsl": "hsl(9, 12%, 21%)", "hsla": "hsla(9, 12%, 21%, 1)", "r": 61, "g": 50, "b": 48, "h": 9, "s": 11, "l": 21}
+
+{"scope": "semantic", "name": "surface_container_low", "variant": "default", "hex": "#231917", "hex_stripped": "231917", "rgb": "rgb(35, 25, 23)", "rgba": "rgba(35, 25, 23, 1)", "hsl": "hsl(10, 21%, 11%)", "hsla": "hsla(10, 21%, 11%, 1)", "r": 35, "g": 25, "b": 23, "h": 9, "s": 20, "l": 11}
+{"scope": "semantic", "name": "surface_container_low", "variant": "light", "hex": "#fff0ed", "hex_stripped": "fff0ed", "rgb": "rgb(255, 240, 237)", "rgba": "rgba(255, 240, 237, 1)", "hsl": "hsl(10, 100%, 96%)", "hsla": "hsla(10, 100%, 96%, 1)", "r": 255, "g": 240, "b": 237, "h": 10, "s": 100, "l": 96}
+{"scope": "semantic", "name": "surface_container_low", "variant": "dark", "hex": "#231917", "hex_stripped": "231917", "rgb": "rgb(35, 25, 23)", "rgba": "rgba(35, 25, 23, 1)", "hsl": "hsl(10, 21%, 11%)", "hsla": "hsla(10, 21%, 11%, 1)", "r": 35, "g": 25, "b": 23, "h": 9, "s": 20, "l": 11}
+
+{"scope": "semantic", "name": "surface_container_lowest", "variant": "default", "hex": "#140c0a", "hex_stripped": "140c0a", "rgb": "rgb(20, 12, 10)", "rgba": "rgba(20, 12, 10, 1)", "hsl": "hsl(12, 33%, 6%)", "hsla": "hsla(12, 33%, 6%, 1)", "r": 20, "g": 12, "b": 10, "h": 11, "s": 33, "l": 5}
+{"scope": "semantic", "name": "surface_container_lowest", "variant": "light", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+{"scope": "semantic", "name": "surface_container_lowest", "variant": "dark", "hex": "#140c0a", "hex_stripped": "140c0a", "rgb": "rgb(20, 12, 10)", "rgba": "rgba(20, 12, 10, 1)", "hsl": "hsl(12, 33%, 6%)", "hsla": "hsla(12, 33%, 6%, 1)", "r": 20, "g": 12, "b": 10, "h": 11, "s": 33, "l": 5}
+
+{"scope": "semantic", "name": "surface_dim", "variant": "default", "hex": "#1a110f", "hex_stripped": "1a110f", "rgb": "rgb(26, 17, 15)", "rgba": "rgba(26, 17, 15, 1)", "hsl": "hsl(11, 27%, 8%)", "hsla": "hsla(11, 27%, 8%, 1)", "r": 26, "g": 17, "b": 15, "h": 10, "s": 26, "l": 8}
+{"scope": "semantic", "name": "surface_dim", "variant": "light", "hex": "#e8d6d2", "hex_stripped": "e8d6d2", "rgb": "rgb(232, 214, 210)", "rgba": "rgba(232, 214, 210, 1)", "hsl": "hsl(11, 32%, 87%)", "hsla": "hsla(11, 32%, 87%, 1)", "r": 232, "g": 214, "b": 210, "h": 10, "s": 32, "l": 86}
+{"scope": "semantic", "name": "surface_dim", "variant": "dark", "hex": "#1a110f", "hex_stripped": "1a110f", "rgb": "rgb(26, 17, 15)", "rgba": "rgba(26, 17, 15, 1)", "hsl": "hsl(11, 27%, 8%)", "hsla": "hsla(11, 27%, 8%, 1)", "r": 26, "g": 17, "b": 15, "h": 10, "s": 26, "l": 8}
+
+{"scope": "semantic", "name": "surface_tint", "variant": "default", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+{"scope": "semantic", "name": "surface_tint", "variant": "light", "hex": "#904b3b", "hex_stripped": "904b3b", "rgb": "rgb(144, 75, 59)", "rgba": "rgba(144, 75, 59, 1)", "hsl": "hsl(11, 42%, 40%)", "hsla": "hsla(11, 42%, 40%, 1)", "r": 144, "g": 75, "b": 59, "h": 11, "s": 41, "l": 39}
+{"scope": "semantic", "name": "surface_tint", "variant": "dark", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+
+{"scope": "semantic", "name": "surface_variant", "variant": "default", "hex": "#534340", "hex_stripped": "534340", "rgb": "rgb(83, 67, 64)", "rgba": "rgba(83, 67, 64, 1)", "hsl": "hsl(9, 13%, 29%)", "hsla": "hsla(9, 13%, 29%, 1)", "r": 83, "g": 67, "b": 64, "h": 9, "s": 12, "l": 28}
+{"scope": "semantic", "name": "surface_variant", "variant": "light", "hex": "#f5ddd8", "hex_stripped": "f5ddd8", "rgb": "rgb(245, 221, 216)", "rgba": "rgba(245, 221, 216, 1)", "hsl": "hsl(10, 59%, 90%)", "hsla": "hsla(10, 59%, 90%, 1)", "r": 245, "g": 221, "b": 216, "h": 10, "s": 59, "l": 90}
+{"scope": "semantic", "name": "surface_variant", "variant": "dark", "hex": "#534340", "hex_stripped": "534340", "rgb": "rgb(83, 67, 64)", "rgba": "rgba(83, 67, 64, 1)", "hsl": "hsl(9, 13%, 29%)", "hsla": "hsla(9, 13%, 29%, 1)", "r": 83, "g": 67, "b": 64, "h": 9, "s": 12, "l": 28}
+
+{"scope": "semantic", "name": "tertiary", "variant": "default", "hex": "#dbc58c", "hex_stripped": "dbc58c", "rgb": "rgb(219, 197, 140)", "rgba": "rgba(219, 197, 140, 1)", "hsl": "hsl(43, 52%, 70%)", "hsla": "hsla(43, 52%, 70%, 1)", "r": 219, "g": 197, "b": 140, "h": 43, "s": 52, "l": 70}
+{"scope": "semantic", "name": "tertiary", "variant": "light", "hex": "#6d5d2e", "hex_stripped": "6d5d2e", "rgb": "rgb(109, 93, 46)", "rgba": "rgba(109, 93, 46, 1)", "hsl": "hsl(45, 41%, 30%)", "hsla": "hsla(45, 41%, 30%, 1)", "r": 109, "g": 93, "b": 46, "h": 44, "s": 40, "l": 30}
+{"scope": "semantic", "name": "tertiary", "variant": "dark", "hex": "#dbc58c", "hex_stripped": "dbc58c", "rgb": "rgb(219, 197, 140)", "rgba": "rgba(219, 197, 140, 1)", "hsl": "hsl(43, 52%, 70%)", "hsla": "hsla(43, 52%, 70%, 1)", "r": 219, "g": 197, "b": 140, "h": 43, "s": 52, "l": 70}
+
+{"scope": "semantic", "name": "tertiary_container", "variant": "default", "hex": "#544519", "hex_stripped": "544519", "rgb": "rgb(84, 69, 25)", "rgba": "rgba(84, 69, 25, 1)", "hsl": "hsl(45, 54%, 21%)", "hsla": "hsla(45, 54%, 21%, 1)", "r": 84, "g": 69, "b": 25, "h": 44, "s": 54, "l": 21}
+{"scope": "semantic", "name": "tertiary_container", "variant": "light", "hex": "#f8e1a6", "hex_stripped": "f8e1a6", "rgb": "rgb(248, 225, 166)", "rgba": "rgba(248, 225, 166, 1)", "hsl": "hsl(43, 85%, 81%)", "hsla": "hsla(43, 85%, 81%, 1)", "r": 248, "g": 225, "b": 166, "h": 43, "s": 85, "l": 81}
+{"scope": "semantic", "name": "tertiary_container", "variant": "dark", "hex": "#544519", "hex_stripped": "544519", "rgb": "rgb(84, 69, 25)", "rgba": "rgba(84, 69, 25, 1)", "hsl": "hsl(45, 54%, 21%)", "hsla": "hsla(45, 54%, 21%, 1)", "r": 84, "g": 69, "b": 25, "h": 44, "s": 54, "l": 21}
+
+{"scope": "semantic", "name": "tertiary_fixed", "variant": "default", "hex": "#f8e1a6", "hex_stripped": "f8e1a6", "rgb": "rgb(248, 225, 166)", "rgba": "rgba(248, 225, 166, 1)", "hsl": "hsl(43, 85%, 81%)", "hsla": "hsla(43, 85%, 81%, 1)", "r": 248, "g": 225, "b": 166, "h": 43, "s": 85, "l": 81}
+{"scope": "semantic", "name": "tertiary_fixed", "variant": "light", "hex": "#f8e1a6", "hex_stripped": "f8e1a6", "rgb": "rgb(248, 225, 166)", "rgba": "rgba(248, 225, 166, 1)", "hsl": "hsl(43, 85%, 81%)", "hsla": "hsla(43, 85%, 81%, 1)", "r": 248, "g": 225, "b": 166, "h": 43, "s": 85, "l": 81}
+{"scope": "semantic", "name": "tertiary_fixed", "variant": "dark", "hex": "#f8e1a6", "hex_stripped": "f8e1a6", "rgb": "rgb(248, 225, 166)", "rgba": "rgba(248, 225, 166, 1)", "hsl": "hsl(43, 85%, 81%)", "hsla": "hsla(43, 85%, 81%, 1)", "r": 248, "g": 225, "b": 166, "h": 43, "s": 85, "l": 81}
+
+{"scope": "semantic", "name": "tertiary_fixed_dim", "variant": "default", "hex": "#dbc58c", "hex_stripped": "dbc58c", "rgb": "rgb(219, 197, 140)", "rgba": "rgba(219, 197, 140, 1)", "hsl": "hsl(43, 52%, 70%)", "hsla": "hsla(43, 52%, 70%, 1)", "r": 219, "g": 197, "b": 140, "h": 43, "s": 52, "l": 70}
+{"scope": "semantic", "name": "tertiary_fixed_dim", "variant": "light", "hex": "#dbc58c", "hex_stripped": "dbc58c", "rgb": "rgb(219, 197, 140)", "rgba": "rgba(219, 197, 140, 1)", "hsl": "hsl(43, 52%, 70%)", "hsla": "hsla(43, 52%, 70%, 1)", "r": 219, "g": 197, "b": 140, "h": 43, "s": 52, "l": 70}
+{"scope": "semantic", "name": "tertiary_fixed_dim", "variant": "dark", "hex": "#dbc58c", "hex_stripped": "dbc58c", "rgb": "rgb(219, 197, 140)", "rgba": "rgba(219, 197, 140, 1)", "hsl": "hsl(43, 52%, 70%)", "hsla": "hsla(43, 52%, 70%, 1)", "r": 219, "g": 197, "b": 140, "h": 43, "s": 52, "l": 70}
+
+
+
+
+{"scope": "palette", "name": "error", "tone": "0", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "palette", "name": "error", "tone": "10", "hex": "#410002", "hex_stripped": "410002", "rgb": "rgb(65, 0, 2)", "rgba": "rgba(65, 0, 2, 1)", "hsl": "hsl(358, 100%, 13%)", "hsla": "hsla(358, 100%, 13%, 1)", "r": 65, "g": 0, "b": 2, "h": 358, "s": 100, "l": 12}
+
+{"scope": "palette", "name": "error", "tone": "100", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+
+{"scope": "palette", "name": "error", "tone": "15", "hex": "#540003", "hex_stripped": "540003", "rgb": "rgb(84, 0, 3)", "rgba": "rgba(84, 0, 3, 1)", "hsl": "hsl(358, 100%, 16%)", "hsla": "hsla(358, 100%, 16%, 1)", "r": 84, "g": 0, "b": 3, "h": 357, "s": 100, "l": 16}
+
+{"scope": "palette", "name": "error", "tone": "20", "hex": "#690005", "hex_stripped": "690005", "rgb": "rgb(105, 0, 5)", "rgba": "rgba(105, 0, 5, 1)", "hsl": "hsl(357, 100%, 21%)", "hsla": "hsla(357, 100%, 21%, 1)", "r": 105, "g": 0, "b": 5, "h": 357, "s": 100, "l": 20}
+
+{"scope": "palette", "name": "error", "tone": "25", "hex": "#7e0007", "hex_stripped": "7e0007", "rgb": "rgb(126, 0, 7)", "rgba": "rgba(126, 0, 7, 1)", "hsl": "hsl(357, 100%, 25%)", "hsla": "hsla(357, 100%, 25%, 1)", "r": 126, "g": 0, "b": 7, "h": 356, "s": 100, "l": 24}
+
+{"scope": "palette", "name": "error", "tone": "30", "hex": "#93000a", "hex_stripped": "93000a", "rgb": "rgb(147, 0, 10)", "rgba": "rgba(147, 0, 10, 1)", "hsl": "hsl(356, 100%, 29%)", "hsla": "hsla(356, 100%, 29%, 1)", "r": 147, "g": 0, "b": 10, "h": 355, "s": 100, "l": 28}
+
+{"scope": "palette", "name": "error", "tone": "35", "hex": "#a80710", "hex_stripped": "a80710", "rgb": "rgb(168, 7, 16)", "rgba": "rgba(168, 7, 16, 1)", "hsl": "hsl(357, 92%, 34%)", "hsla": "hsla(357, 92%, 34%, 1)", "r": 168, "g": 7, "b": 16, "h": 356, "s": 92, "l": 34}
+
+{"scope": "palette", "name": "error", "tone": "40", "hex": "#ba1a1a", "hex_stripped": "ba1a1a", "rgb": "rgb(186, 26, 26)", "rgba": "rgba(186, 26, 26, 1)", "hsl": "hsl(0, 75%, 42%)", "hsla": "hsla(0, 75%, 42%, 1)", "r": 186, "g": 26, "b": 26, "h": 0, "s": 75, "l": 41}
+
+{"scope": "palette", "name": "error", "tone": "5", "hex": "#2d0001", "hex_stripped": "2d0001", "rgb": "rgb(45, 0, 1)", "rgba": "rgba(45, 0, 1, 1)", "hsl": "hsl(359, 100%, 9%)", "hsla": "hsla(359, 100%, 9%, 1)", "r": 45, "g": 0, "b": 1, "h": 358, "s": 100, "l": 8}
+
+{"scope": "palette", "name": "error", "tone": "50", "hex": "#de3730", "hex_stripped": "de3730", "rgb": "rgb(222, 55, 48)", "rgba": "rgba(222, 55, 48, 1)", "hsl": "hsl(2, 73%, 53%)", "hsla": "hsla(2, 73%, 53%, 1)", "r": 222, "g": 55, "b": 48, "h": 2, "s": 72, "l": 52}
+
+{"scope": "palette", "name": "error", "tone": "60", "hex": "#ff5449", "hex_stripped": "ff5449", "rgb": "rgb(255, 84, 73)", "rgba": "rgba(255, 84, 73, 1)", "hsl": "hsl(4, 100%, 64%)", "hsla": "hsla(4, 100%, 64%, 1)", "r": 255, "g": 84, "b": 73, "h": 3, "s": 100, "l": 64}
+
+{"scope": "palette", "name": "error", "tone": "70", "hex": "#ff897d", "hex_stripped": "ff897d", "rgb": "rgb(255, 137, 125)", "rgba": "rgba(255, 137, 125, 1)", "hsl": "hsl(6, 100%, 75%)", "hsla": "hsla(6, 100%, 75%, 1)", "r": 255, "g": 137, "b": 125, "h": 5, "s": 100, "l": 74}
+
+{"scope": "palette", "name": "error", "tone": "80", "hex": "#ffb4ab", "hex_stripped": "ffb4ab", "rgb": "rgb(255, 180, 171)", "rgba": "rgba(255, 180, 171, 1)", "hsl": "hsl(6, 100%, 84%)", "hsla": "hsla(6, 100%, 84%, 1)", "r": 255, "g": 180, "b": 171, "h": 6, "s": 100, "l": 83}
+
+{"scope": "palette", "name": "error", "tone": "90", "hex": "#ffdad6", "hex_stripped": "ffdad6", "rgb": "rgb(255, 218, 214)", "rgba": "rgba(255, 218, 214, 1)", "hsl": "hsl(6, 100%, 92%)", "hsla": "hsla(6, 100%, 92%, 1)", "r": 255, "g": 218, "b": 214, "h": 5, "s": 100, "l": 91}
+
+{"scope": "palette", "name": "error", "tone": "95", "hex": "#ffedea", "hex_stripped": "ffedea", "rgb": "rgb(255, 237, 234)", "rgba": "rgba(255, 237, 234, 1)", "hsl": "hsl(9, 100%, 96%)", "hsla": "hsla(9, 100%, 96%, 1)", "r": 255, "g": 237, "b": 234, "h": 8, "s": 100, "l": 95}
+
+{"scope": "palette", "name": "error", "tone": "98", "hex": "#fff8f7", "hex_stripped": "fff8f7", "rgb": "rgb(255, 248, 247)", "rgba": "rgba(255, 248, 247, 1)", "hsl": "hsl(8, 100%, 98%)", "hsla": "hsla(8, 100%, 98%, 1)", "r": 255, "g": 248, "b": 247, "h": 7, "s": 100, "l": 98}
+
+{"scope": "palette", "name": "error", "tone": "99", "hex": "#fffbff", "hex_stripped": "fffbff", "rgb": "rgb(255, 251, 255)", "rgba": "rgba(255, 251, 255, 1)", "hsl": "hsl(300, 100%, 99%)", "hsla": "hsla(300, 100%, 99%, 1)", "r": 255, "g": 251, "b": 255, "h": 300, "s": 100, "l": 99}
+
+
+
+{"scope": "palette", "name": "neutral", "tone": "0", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "palette", "name": "neutral", "tone": "10", "hex": "#201a19", "hex_stripped": "201a19", "rgb": "rgb(32, 26, 25)", "rgba": "rgba(32, 26, 25, 1)", "hsl": "hsl(9, 12%, 11%)", "hsla": "hsla(9, 12%, 11%, 1)", "r": 32, "g": 26, "b": 25, "h": 8, "s": 12, "l": 11}
+
+{"scope": "palette", "name": "neutral", "tone": "100", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+
+{"scope": "palette", "name": "neutral", "tone": "15", "hex": "#2b2423", "hex_stripped": "2b2423", "rgb": "rgb(43, 36, 35)", "rgba": "rgba(43, 36, 35, 1)", "hsl": "hsl(8, 10%, 15%)", "hsla": "hsla(8, 10%, 15%, 1)", "r": 43, "g": 36, "b": 35, "h": 7, "s": 10, "l": 15}
+
+{"scope": "palette", "name": "neutral", "tone": "20", "hex": "#362f2d", "hex_stripped": "362f2d", "rgb": "rgb(54, 47, 45)", "rgba": "rgba(54, 47, 45, 1)", "hsl": "hsl(13, 9%, 19%)", "hsla": "hsla(13, 9%, 19%, 1)", "r": 54, "g": 47, "b": 45, "h": 13, "s": 9, "l": 19}
+
+{"scope": "palette", "name": "neutral", "tone": "25", "hex": "#413a38", "hex_stripped": "413a38", "rgb": "rgb(65, 58, 56)", "rgba": "rgba(65, 58, 56, 1)", "hsl": "hsl(13, 7%, 24%)", "hsla": "hsla(13, 7%, 24%, 1)", "r": 65, "g": 58, "b": 56, "h": 13, "s": 7, "l": 23}
+
+{"scope": "palette", "name": "neutral", "tone": "30", "hex": "#4d4543", "hex_stripped": "4d4543", "rgb": "rgb(77, 69, 67)", "rgba": "rgba(77, 69, 67, 1)", "hsl": "hsl(12, 7%, 28%)", "hsla": "hsla(12, 7%, 28%, 1)", "r": 77, "g": 69, "b": 67, "h": 12, "s": 6, "l": 28}
+
+{"scope": "palette", "name": "neutral", "tone": "35", "hex": "#59504f", "hex_stripped": "59504f", "rgb": "rgb(89, 80, 79)", "rgba": "rgba(89, 80, 79, 1)", "hsl": "hsl(6, 6%, 33%)", "hsla": "hsla(6, 6%, 33%, 1)", "r": 89, "g": 80, "b": 79, "h": 6, "s": 5, "l": 32}
+
+{"scope": "palette", "name": "neutral", "tone": "40", "hex": "#655c5a", "hex_stripped": "655c5a", "rgb": "rgb(101, 92, 90)", "rgba": "rgba(101, 92, 90, 1)", "hsl": "hsl(11, 6%, 37%)", "hsla": "hsla(11, 6%, 37%, 1)", "r": 101, "g": 92, "b": 90, "h": 10, "s": 5, "l": 37}
+
+{"scope": "palette", "name": "neutral", "tone": "5", "hex": "#15100e", "hex_stripped": "15100e", "rgb": "rgb(21, 16, 14)", "rgba": "rgba(21, 16, 14, 1)", "hsl": "hsl(17, 20%, 7%)", "hsla": "hsla(17, 20%, 7%, 1)", "r": 21, "g": 16, "b": 14, "h": 17, "s": 20, "l": 6}
+
+{"scope": "palette", "name": "neutral", "tone": "50", "hex": "#7f7573", "hex_stripped": "7f7573", "rgb": "rgb(127, 117, 115)", "rgba": "rgba(127, 117, 115, 1)", "hsl": "hsl(10, 5%, 47%)", "hsla": "hsla(10, 5%, 47%, 1)", "r": 127, "g": 117, "b": 115, "h": 10, "s": 4, "l": 47}
+
+{"scope": "palette", "name": "neutral", "tone": "60", "hex": "#998e8c", "hex_stripped": "998e8c", "rgb": "rgb(153, 142, 140)", "rgba": "rgba(153, 142, 140, 1)", "hsl": "hsl(9, 6%, 57%)", "hsla": "hsla(9, 6%, 57%, 1)", "r": 153, "g": 142, "b": 140, "h": 9, "s": 5, "l": 57}
+
+{"scope": "palette", "name": "neutral", "tone": "70", "hex": "#b4a9a6", "hex_stripped": "b4a9a6", "rgb": "rgb(180, 169, 166)", "rgba": "rgba(180, 169, 166, 1)", "hsl": "hsl(13, 9%, 68%)", "hsla": "hsla(13, 9%, 68%, 1)", "r": 180, "g": 169, "b": 166, "h": 12, "s": 8, "l": 67}
+
+{"scope": "palette", "name": "neutral", "tone": "80", "hex": "#d0c4c1", "hex_stripped": "d0c4c1", "rgb": "rgb(208, 196, 193)", "rgba": "rgba(208, 196, 193, 1)", "hsl": "hsl(12, 14%, 79%)", "hsla": "hsla(12, 14%, 79%, 1)", "r": 208, "g": 196, "b": 193, "h": 12, "s": 13, "l": 78}
+
+{"scope": "palette", "name": "neutral", "tone": "90", "hex": "#ede0dd", "hex_stripped": "ede0dd", "rgb": "rgb(237, 224, 221)", "rgba": "rgba(237, 224, 221, 1)", "hsl": "hsl(11, 31%, 90%)", "hsla": "hsla(11, 31%, 90%, 1)", "r": 237, "g": 224, "b": 221, "h": 11, "s": 30, "l": 89}
+
+{"scope": "palette", "name": "neutral", "tone": "95", "hex": "#fbeeeb", "hex_stripped": "fbeeeb", "rgb": "rgb(251, 238, 235)", "rgba": "rgba(251, 238, 235, 1)", "hsl": "hsl(11, 67%, 95%)", "hsla": "hsla(11, 67%, 95%, 1)", "r": 251, "g": 238, "b": 235, "h": 11, "s": 66, "l": 95}
+
+{"scope": "palette", "name": "neutral", "tone": "98", "hex": "#fff8f6", "hex_stripped": "fff8f6", "rgb": "rgb(255, 248, 246)", "rgba": "rgba(255, 248, 246, 1)", "hsl": "hsl(13, 100%, 98%)", "hsla": "hsla(13, 100%, 98%, 1)", "r": 255, "g": 248, "b": 246, "h": 13, "s": 100, "l": 98}
+
+{"scope": "palette", "name": "neutral", "tone": "99", "hex": "#fffbff", "hex_stripped": "fffbff", "rgb": "rgb(255, 251, 255)", "rgba": "rgba(255, 251, 255, 1)", "hsl": "hsl(300, 100%, 99%)", "hsla": "hsla(300, 100%, 99%, 1)", "r": 255, "g": 251, "b": 255, "h": 300, "s": 100, "l": 99}
+
+
+
+{"scope": "palette", "name": "neutral_variant", "tone": "0", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "10", "hex": "#251916", "hex_stripped": "251916", "rgb": "rgb(37, 25, 22)", "rgba": "rgba(37, 25, 22, 1)", "hsl": "hsl(12, 25%, 12%)", "hsla": "hsla(12, 25%, 12%, 1)", "r": 37, "g": 25, "b": 22, "h": 11, "s": 25, "l": 11}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "100", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "15", "hex": "#302320", "hex_stripped": "302320", "rgb": "rgb(48, 35, 32)", "rgba": "rgba(48, 35, 32, 1)", "hsl": "hsl(11, 20%, 16%)", "hsla": "hsla(11, 20%, 16%, 1)", "r": 48, "g": 35, "b": 32, "h": 11, "s": 19, "l": 15}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "20", "hex": "#3b2d2a", "hex_stripped": "3b2d2a", "rgb": "rgb(59, 45, 42)", "rgba": "rgba(59, 45, 42, 1)", "hsl": "hsl(11, 17%, 20%)", "hsla": "hsla(11, 17%, 20%, 1)", "r": 59, "g": 45, "b": 42, "h": 10, "s": 16, "l": 19}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "25", "hex": "#473835", "hex_stripped": "473835", "rgb": "rgb(71, 56, 53)", "rgba": "rgba(71, 56, 53, 1)", "hsl": "hsl(10, 15%, 24%)", "hsla": "hsla(10, 15%, 24%, 1)", "r": 71, "g": 56, "b": 53, "h": 9, "s": 14, "l": 24}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "30", "hex": "#534340", "hex_stripped": "534340", "rgb": "rgb(83, 67, 64)", "rgba": "rgba(83, 67, 64, 1)", "hsl": "hsl(9, 13%, 29%)", "hsla": "hsla(9, 13%, 29%, 1)", "r": 83, "g": 67, "b": 64, "h": 9, "s": 12, "l": 28}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "35", "hex": "#5f4f4b", "hex_stripped": "5f4f4b", "rgb": "rgb(95, 79, 75)", "rgba": "rgba(95, 79, 75, 1)", "hsl": "hsl(12, 12%, 33%)", "hsla": "hsla(12, 12%, 33%, 1)", "r": 95, "g": 79, "b": 75, "h": 12, "s": 11, "l": 33}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "40", "hex": "#6c5b57", "hex_stripped": "6c5b57", "rgb": "rgb(108, 91, 87)", "rgba": "rgba(108, 91, 87, 1)", "hsl": "hsl(11, 11%, 38%)", "hsla": "hsla(11, 11%, 38%, 1)", "r": 108, "g": 91, "b": 87, "h": 11, "s": 10, "l": 38}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "5", "hex": "#190e0c", "hex_stripped": "190e0c", "rgb": "rgb(25, 14, 12)", "rgba": "rgba(25, 14, 12, 1)", "hsl": "hsl(9, 35%, 7%)", "hsla": "hsla(9, 35%, 7%, 1)", "r": 25, "g": 14, "b": 12, "h": 9, "s": 35, "l": 7}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "50", "hex": "#85736f", "hex_stripped": "85736f", "rgb": "rgb(133, 115, 111)", "rgba": "rgba(133, 115, 111, 1)", "hsl": "hsl(11, 9%, 48%)", "hsla": "hsla(11, 9%, 48%, 1)", "r": 133, "g": 115, "b": 111, "h": 10, "s": 9, "l": 47}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "60", "hex": "#a08c88", "hex_stripped": "a08c88", "rgb": "rgb(160, 140, 136)", "rgba": "rgba(160, 140, 136, 1)", "hsl": "hsl(10, 11%, 58%)", "hsla": "hsla(10, 11%, 58%, 1)", "r": 160, "g": 140, "b": 136, "h": 10, "s": 11, "l": 58}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "70", "hex": "#bca7a2", "hex_stripped": "bca7a2", "rgb": "rgb(188, 167, 162)", "rgba": "rgba(188, 167, 162, 1)", "hsl": "hsl(12, 16%, 69%)", "hsla": "hsla(12, 16%, 69%, 1)", "r": 188, "g": 167, "b": 162, "h": 11, "s": 16, "l": 68}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "80", "hex": "#d8c2bd", "hex_stripped": "d8c2bd", "rgb": "rgb(216, 194, 189)", "rgba": "rgba(216, 194, 189, 1)", "hsl": "hsl(11, 26%, 79%)", "hsla": "hsla(11, 26%, 79%, 1)", "r": 216, "g": 194, "b": 189, "h": 11, "s": 25, "l": 79}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "90", "hex": "#f5ddd8", "hex_stripped": "f5ddd8", "rgb": "rgb(245, 221, 216)", "rgba": "rgba(245, 221, 216, 1)", "hsl": "hsl(10, 59%, 90%)", "hsla": "hsla(10, 59%, 90%, 1)", "r": 245, "g": 221, "b": 216, "h": 10, "s": 59, "l": 90}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "95", "hex": "#ffede9", "hex_stripped": "ffede9", "rgb": "rgb(255, 237, 233)", "rgba": "rgba(255, 237, 233, 1)", "hsl": "hsl(11, 100%, 96%)", "hsla": "hsla(11, 100%, 96%, 1)", "r": 255, "g": 237, "b": 233, "h": 10, "s": 100, "l": 95}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "98", "hex": "#fff8f6", "hex_stripped": "fff8f6", "rgb": "rgb(255, 248, 246)", "rgba": "rgba(255, 248, 246, 1)", "hsl": "hsl(13, 100%, 98%)", "hsla": "hsla(13, 100%, 98%, 1)", "r": 255, "g": 248, "b": 246, "h": 13, "s": 100, "l": 98}
+
+{"scope": "palette", "name": "neutral_variant", "tone": "99", "hex": "#fffbff", "hex_stripped": "fffbff", "rgb": "rgb(255, 251, 255)", "rgba": "rgba(255, 251, 255, 1)", "hsl": "hsl(300, 100%, 99%)", "hsla": "hsla(300, 100%, 99%, 1)", "r": 255, "g": 251, "b": 255, "h": 300, "s": 100, "l": 99}
+
+
+
+{"scope": "palette", "name": "primary", "tone": "0", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "palette", "name": "primary", "tone": "10", "hex": "#3d0600", "hex_stripped": "3d0600", "rgb": "rgb(61, 6, 0)", "rgba": "rgba(61, 6, 0, 1)", "hsl": "hsl(6, 100%, 12%)", "hsla": "hsla(6, 100%, 12%, 1)", "r": 61, "g": 6, "b": 0, "h": 5, "s": 100, "l": 11}
+
+{"scope": "palette", "name": "primary", "tone": "100", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+
+{"scope": "palette", "name": "primary", "tone": "15", "hex": "#4f0b00", "hex_stripped": "4f0b00", "rgb": "rgb(79, 11, 0)", "rgba": "rgba(79, 11, 0, 1)", "hsl": "hsl(8, 100%, 15%)", "hsla": "hsla(8, 100%, 15%, 1)", "r": 79, "g": 11, "b": 0, "h": 8, "s": 100, "l": 15}
+
+{"scope": "palette", "name": "primary", "tone": "20", "hex": "#631000", "hex_stripped": "631000", "rgb": "rgb(99, 16, 0)", "rgba": "rgba(99, 16, 0, 1)", "hsl": "hsl(10, 100%, 19%)", "hsla": "hsla(10, 100%, 19%, 1)", "r": 99, "g": 16, "b": 0, "h": 9, "s": 100, "l": 19}
+
+{"scope": "palette", "name": "primary", "tone": "25", "hex": "#771500", "hex_stripped": "771500", "rgb": "rgb(119, 21, 0)", "rgba": "rgba(119, 21, 0, 1)", "hsl": "hsl(11, 100%, 23%)", "hsla": "hsla(11, 100%, 23%, 1)", "r": 119, "g": 21, "b": 0, "h": 10, "s": 100, "l": 23}
+
+{"scope": "palette", "name": "primary", "tone": "30", "hex": "#8b1a00", "hex_stripped": "8b1a00", "rgb": "rgb(139, 26, 0)", "rgba": "rgba(139, 26, 0, 1)", "hsl": "hsl(11, 100%, 27%)", "hsla": "hsla(11, 100%, 27%, 1)", "r": 139, "g": 26, "b": 0, "h": 11, "s": 100, "l": 27}
+
+{"scope": "palette", "name": "primary", "tone": "35", "hex": "#a02102", "hex_stripped": "a02102", "rgb": "rgb(160, 33, 2)", "rgba": "rgba(160, 33, 2, 1)", "hsl": "hsl(12, 98%, 32%)", "hsla": "hsla(12, 98%, 32%, 1)", "r": 160, "g": 33, "b": 2, "h": 11, "s": 97, "l": 31}
+
+{"scope": "palette", "name": "primary", "tone": "40", "hex": "#b12d0e", "hex_stripped": "b12d0e", "rgb": "rgb(177, 45, 14)", "rgba": "rgba(177, 45, 14, 1)", "hsl": "hsl(11, 85%, 37%)", "hsla": "hsla(11, 85%, 37%, 1)", "r": 177, "g": 45, "b": 14, "h": 11, "s": 85, "l": 37}
+
+{"scope": "palette", "name": "primary", "tone": "5", "hex": "#2a0300", "hex_stripped": "2a0300", "rgb": "rgb(42, 3, 0)", "rgba": "rgba(42, 3, 0, 1)", "hsl": "hsl(4, 100%, 8%)", "hsla": "hsla(4, 100%, 8%, 1)", "r": 42, "g": 3, "b": 0, "h": 4, "s": 100, "l": 8}
+
+{"scope": "palette", "name": "primary", "tone": "50", "hex": "#d34626", "hex_stripped": "d34626", "rgb": "rgb(211, 70, 38)", "rgba": "rgba(211, 70, 38, 1)", "hsl": "hsl(11, 69%, 49%)", "hsla": "hsla(11, 69%, 49%, 1)", "r": 211, "g": 70, "b": 38, "h": 11, "s": 69, "l": 48}
+
+{"scope": "palette", "name": "primary", "tone": "60", "hex": "#f65f3c", "hex_stripped": "f65f3c", "rgb": "rgb(246, 95, 60)", "rgba": "rgba(246, 95, 60, 1)", "hsl": "hsl(11, 91%, 60%)", "hsla": "hsla(11, 91%, 60%, 1)", "r": 246, "g": 95, "b": 60, "h": 11, "s": 91, "l": 60}
+
+{"scope": "palette", "name": "primary", "tone": "70", "hex": "#ff8b6f", "hex_stripped": "ff8b6f", "rgb": "rgb(255, 139, 111)", "rgba": "rgba(255, 139, 111, 1)", "hsl": "hsl(12, 100%, 72%)", "hsla": "hsla(12, 100%, 72%, 1)", "r": 255, "g": 139, "b": 111, "h": 11, "s": 100, "l": 71}
+
+{"scope": "palette", "name": "primary", "tone": "80", "hex": "#ffb4a3", "hex_stripped": "ffb4a3", "rgb": "rgb(255, 180, 163)", "rgba": "rgba(255, 180, 163, 1)", "hsl": "hsl(11, 100%, 82%)", "hsla": "hsla(11, 100%, 82%, 1)", "r": 255, "g": 180, "b": 163, "h": 11, "s": 100, "l": 81}
+
+{"scope": "palette", "name": "primary", "tone": "90", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+
+{"scope": "palette", "name": "primary", "tone": "95", "hex": "#ffede9", "hex_stripped": "ffede9", "rgb": "rgb(255, 237, 233)", "rgba": "rgba(255, 237, 233, 1)", "hsl": "hsl(11, 100%, 96%)", "hsla": "hsla(11, 100%, 96%, 1)", "r": 255, "g": 237, "b": 233, "h": 10, "s": 100, "l": 95}
+
+{"scope": "palette", "name": "primary", "tone": "98", "hex": "#fff8f6", "hex_stripped": "fff8f6", "rgb": "rgb(255, 248, 246)", "rgba": "rgba(255, 248, 246, 1)", "hsl": "hsl(13, 100%, 98%)", "hsla": "hsla(13, 100%, 98%, 1)", "r": 255, "g": 248, "b": 246, "h": 13, "s": 100, "l": 98}
+
+{"scope": "palette", "name": "primary", "tone": "99", "hex": "#fffbff", "hex_stripped": "fffbff", "rgb": "rgb(255, 251, 255)", "rgba": "rgba(255, 251, 255, 1)", "hsl": "hsl(300, 100%, 99%)", "hsla": "hsla(300, 100%, 99%, 1)", "r": 255, "g": 251, "b": 255, "h": 300, "s": 100, "l": 99}
+
+
+
+{"scope": "palette", "name": "secondary", "tone": "0", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "palette", "name": "secondary", "tone": "10", "hex": "#2c1510", "hex_stripped": "2c1510", "rgb": "rgb(44, 21, 16)", "rgba": "rgba(44, 21, 16, 1)", "hsl": "hsl(11, 47%, 12%)", "hsla": "hsla(11, 47%, 12%, 1)", "r": 44, "g": 21, "b": 16, "h": 10, "s": 46, "l": 11}
+
+{"scope": "palette", "name": "secondary", "tone": "100", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+
+{"scope": "palette", "name": "secondary", "tone": "15", "hex": "#381f19", "hex_stripped": "381f19", "rgb": "rgb(56, 31, 25)", "rgba": "rgba(56, 31, 25, 1)", "hsl": "hsl(12, 38%, 16%)", "hsla": "hsla(12, 38%, 16%, 1)", "r": 56, "g": 31, "b": 25, "h": 11, "s": 38, "l": 15}
+
+{"scope": "palette", "name": "secondary", "tone": "20", "hex": "#442a23", "hex_stripped": "442a23", "rgb": "rgb(68, 42, 35)", "rgba": "rgba(68, 42, 35, 1)", "hsl": "hsl(13, 32%, 20%)", "hsla": "hsla(13, 32%, 20%, 1)", "r": 68, "g": 42, "b": 35, "h": 12, "s": 32, "l": 20}
+
+{"scope": "palette", "name": "secondary", "tone": "25", "hex": "#51342e", "hex_stripped": "51342e", "rgb": "rgb(81, 52, 46)", "rgba": "rgba(81, 52, 46, 1)", "hsl": "hsl(10, 28%, 25%)", "hsla": "hsla(10, 28%, 25%, 1)", "r": 81, "g": 52, "b": 46, "h": 10, "s": 27, "l": 24}
+
+{"scope": "palette", "name": "secondary", "tone": "30", "hex": "#5d3f39", "hex_stripped": "5d3f39", "rgb": "rgb(93, 63, 57)", "rgba": "rgba(93, 63, 57, 1)", "hsl": "hsl(10, 24%, 29%)", "hsla": "hsla(10, 24%, 29%, 1)", "r": 93, "g": 63, "b": 57, "h": 9, "s": 24, "l": 29}
+
+{"scope": "palette", "name": "secondary", "tone": "35", "hex": "#6a4b44", "hex_stripped": "6a4b44", "rgb": "rgb(106, 75, 68)", "rgba": "rgba(106, 75, 68, 1)", "hsl": "hsl(11, 22%, 34%)", "hsla": "hsla(11, 22%, 34%, 1)", "r": 106, "g": 75, "b": 68, "h": 11, "s": 21, "l": 34}
+
+{"scope": "palette", "name": "secondary", "tone": "40", "hex": "#77574f", "hex_stripped": "77574f", "rgb": "rgb(119, 87, 79)", "rgba": "rgba(119, 87, 79, 1)", "hsl": "hsl(12, 20%, 39%)", "hsla": "hsla(12, 20%, 39%, 1)", "r": 119, "g": 87, "b": 79, "h": 12, "s": 20, "l": 38}
+
+{"scope": "palette", "name": "secondary", "tone": "5", "hex": "#200b06", "hex_stripped": "200b06", "rgb": "rgb(32, 11, 6)", "rgba": "rgba(32, 11, 6, 1)", "hsl": "hsl(12, 68%, 7%)", "hsla": "hsla(12, 68%, 7%, 1)", "r": 32, "g": 11, "b": 6, "h": 11, "s": 68, "l": 7}
+
+{"scope": "palette", "name": "secondary", "tone": "50", "hex": "#926f67", "hex_stripped": "926f67", "rgb": "rgb(146, 111, 103)", "rgba": "rgba(146, 111, 103, 1)", "hsl": "hsl(11, 17%, 49%)", "hsla": "hsla(11, 17%, 49%, 1)", "r": 146, "g": 111, "b": 103, "h": 11, "s": 17, "l": 48}
+
+{"scope": "palette", "name": "secondary", "tone": "60", "hex": "#ae887f", "hex_stripped": "ae887f", "rgb": "rgb(174, 136, 127)", "rgba": "rgba(174, 136, 127, 1)", "hsl": "hsl(11, 22%, 59%)", "hsla": "hsla(11, 22%, 59%, 1)", "r": 174, "g": 136, "b": 127, "h": 11, "s": 22, "l": 59}
+
+{"scope": "palette", "name": "secondary", "tone": "70", "hex": "#caa299", "hex_stripped": "caa299", "rgb": "rgb(202, 162, 153)", "rgba": "rgba(202, 162, 153, 1)", "hsl": "hsl(11, 32%, 70%)", "hsla": "hsla(11, 32%, 70%, 1)", "r": 202, "g": 162, "b": 153, "h": 11, "s": 31, "l": 69}
+
+{"scope": "palette", "name": "secondary", "tone": "80", "hex": "#e7bdb3", "hex_stripped": "e7bdb3", "rgb": "rgb(231, 189, 179)", "rgba": "rgba(231, 189, 179, 1)", "hsl": "hsl(12, 52%, 80%)", "hsla": "hsla(12, 52%, 80%, 1)", "r": 231, "g": 189, "b": 179, "h": 11, "s": 52, "l": 80}
+
+{"scope": "palette", "name": "secondary", "tone": "90", "hex": "#ffdad2", "hex_stripped": "ffdad2", "rgb": "rgb(255, 218, 210)", "rgba": "rgba(255, 218, 210, 1)", "hsl": "hsl(11, 100%, 91%)", "hsla": "hsla(11, 100%, 91%, 1)", "r": 255, "g": 218, "b": 210, "h": 10, "s": 100, "l": 91}
+
+{"scope": "palette", "name": "secondary", "tone": "95", "hex": "#ffede9", "hex_stripped": "ffede9", "rgb": "rgb(255, 237, 233)", "rgba": "rgba(255, 237, 233, 1)", "hsl": "hsl(11, 100%, 96%)", "hsla": "hsla(11, 100%, 96%, 1)", "r": 255, "g": 237, "b": 233, "h": 10, "s": 100, "l": 95}
+
+{"scope": "palette", "name": "secondary", "tone": "98", "hex": "#fff8f6", "hex_stripped": "fff8f6", "rgb": "rgb(255, 248, 246)", "rgba": "rgba(255, 248, 246, 1)", "hsl": "hsl(13, 100%, 98%)", "hsla": "hsla(13, 100%, 98%, 1)", "r": 255, "g": 248, "b": 246, "h": 13, "s": 100, "l": 98}
+
+{"scope": "palette", "name": "secondary", "tone": "99", "hex": "#fffbff", "hex_stripped": "fffbff", "rgb": "rgb(255, 251, 255)", "rgba": "rgba(255, 251, 255, 1)", "hsl": "hsl(300, 100%, 99%)", "hsla": "hsla(300, 100%, 99%, 1)", "r": 255, "g": 251, "b": 255, "h": 300, "s": 100, "l": 99}
+
+
+
+{"scope": "palette", "name": "tertiary", "tone": "0", "hex": "#000000", "hex_stripped": "000000", "rgb": "rgb(0, 0, 0)", "rgba": "rgba(0, 0, 0, 1)", "hsl": "hsl(0, 0%, 0%)", "hsla": "hsla(0, 0%, 0%, 1)", "r": 0, "g": 0, "b": 0, "h": 0, "s": 0, "l": 0}
+
+{"scope": "palette", "name": "tertiary", "tone": "10", "hex": "#241a00", "hex_stripped": "241a00", "rgb": "rgb(36, 26, 0)", "rgba": "rgba(36, 26, 0, 1)", "hsl": "hsl(43, 100%, 7%)", "hsla": "hsla(43, 100%, 7%, 1)", "r": 36, "g": 26, "b": 0, "h": 43, "s": 100, "l": 7}
+
+{"scope": "palette", "name": "tertiary", "tone": "100", "hex": "#ffffff", "hex_stripped": "ffffff", "rgb": "rgb(255, 255, 255)", "rgba": "rgba(255, 255, 255, 1)", "hsl": "hsl(0, 0%, 100%)", "hsla": "hsla(0, 0%, 100%, 1)", "r": 255, "g": 255, "b": 255, "h": 0, "s": 0, "l": 100}
+
+{"scope": "palette", "name": "tertiary", "tone": "15", "hex": "#302400", "hex_stripped": "302400", "rgb": "rgb(48, 36, 0)", "rgba": "rgba(48, 36, 0, 1)", "hsl": "hsl(45, 100%, 9%)", "hsla": "hsla(45, 100%, 9%, 1)", "r": 48, "g": 36, "b": 0, "h": 45, "s": 100, "l": 9}
+
+{"scope": "palette", "name": "tertiary", "tone": "20", "hex": "#3c2f04", "hex_stripped": "3c2f04", "rgb": "rgb(60, 47, 4)", "rgba": "rgba(60, 47, 4, 1)", "hsl": "hsl(46, 87%, 13%)", "hsla": "hsla(46, 87%, 13%, 1)", "r": 60, "g": 47, "b": 4, "h": 46, "s": 87, "l": 12}
+
+{"scope": "palette", "name": "tertiary", "tone": "25", "hex": "#483a0e", "hex_stripped": "483a0e", "rgb": "rgb(72, 58, 14)", "rgba": "rgba(72, 58, 14, 1)", "hsl": "hsl(46, 67%, 17%)", "hsla": "hsla(46, 67%, 17%, 1)", "r": 72, "g": 58, "b": 14, "h": 45, "s": 67, "l": 16}
+
+{"scope": "palette", "name": "tertiary", "tone": "30", "hex": "#544519", "hex_stripped": "544519", "rgb": "rgb(84, 69, 25)", "rgba": "rgba(84, 69, 25, 1)", "hsl": "hsl(45, 54%, 21%)", "hsla": "hsla(45, 54%, 21%, 1)", "r": 84, "g": 69, "b": 25, "h": 44, "s": 54, "l": 21}
+
+{"scope": "palette", "name": "tertiary", "tone": "35", "hex": "#605124", "hex_stripped": "605124", "rgb": "rgb(96, 81, 36)", "rgba": "rgba(96, 81, 36, 1)", "hsl": "hsl(45, 45%, 26%)", "hsla": "hsla(45, 45%, 26%, 1)", "r": 96, "g": 81, "b": 36, "h": 45, "s": 45, "l": 25}
+
+{"scope": "palette", "name": "tertiary", "tone": "40", "hex": "#6d5d2e", "hex_stripped": "6d5d2e", "rgb": "rgb(109, 93, 46)", "rgba": "rgba(109, 93, 46, 1)", "hsl": "hsl(45, 41%, 30%)", "hsla": "hsla(45, 41%, 30%, 1)", "r": 109, "g": 93, "b": 46, "h": 44, "s": 40, "l": 30}
+
+{"scope": "palette", "name": "tertiary", "tone": "5", "hex": "#171000", "hex_stripped": "171000", "rgb": "rgb(23, 16, 0)", "rgba": "rgba(23, 16, 0, 1)", "hsl": "hsl(42, 100%, 5%)", "hsla": "hsla(42, 100%, 5%, 1)", "r": 23, "g": 16, "b": 0, "h": 41, "s": 100, "l": 4}
+
+{"scope": "palette", "name": "tertiary", "tone": "50", "hex": "#877544", "hex_stripped": "877544", "rgb": "rgb(135, 117, 68)", "rgba": "rgba(135, 117, 68, 1)", "hsl": "hsl(44, 33%, 40%)", "hsla": "hsla(44, 33%, 40%, 1)", "r": 135, "g": 117, "b": 68, "h": 43, "s": 33, "l": 39}
+
+{"scope": "palette", "name": "tertiary", "tone": "60", "hex": "#a28f5b", "hex_stripped": "a28f5b", "rgb": "rgb(162, 143, 91)", "rgba": "rgba(162, 143, 91, 1)", "hsl": "hsl(44, 28%, 50%)", "hsla": "hsla(44, 28%, 50%, 1)", "r": 162, "g": 143, "b": 91, "h": 43, "s": 28, "l": 49}
+
+{"scope": "palette", "name": "tertiary", "tone": "70", "hex": "#bea973", "hex_stripped": "bea973", "rgb": "rgb(190, 169, 115)", "rgba": "rgba(190, 169, 115, 1)", "hsl": "hsl(43, 37%, 60%)", "hsla": "hsla(43, 37%, 60%, 1)", "r": 190, "g": 169, "b": 115, "h": 43, "s": 36, "l": 59}
+
+{"scope": "palette", "name": "tertiary", "tone": "80", "hex": "#dbc58c", "hex_stripped": "dbc58c", "rgb": "rgb(219, 197, 140)", "rgba": "rgba(219, 197, 140, 1)", "hsl": "hsl(43, 52%, 70%)", "hsla": "hsla(43, 52%, 70%, 1)", "r": 219, "g": 197, "b": 140, "h": 43, "s": 52, "l": 70}
+
+{"scope": "palette", "name": "tertiary", "tone": "90", "hex": "#f8e1a6", "hex_stripped": "f8e1a6", "rgb": "rgb(248, 225, 166)", "rgba": "rgba(248, 225, 166, 1)", "hsl": "hsl(43, 85%, 81%)", "hsla": "hsla(43, 85%, 81%, 1)", "r": 248, "g": 225, "b": 166, "h": 43, "s": 85, "l": 81}
+
+{"scope": "palette", "name": "tertiary", "tone": "95", "hex": "#ffefcd", "hex_stripped": "ffefcd", "rgb": "rgb(255, 239, 205)", "rgba": "rgba(255, 239, 205, 1)", "hsl": "hsl(41, 100%, 90%)", "hsla": "hsla(41, 100%, 90%, 1)", "r": 255, "g": 239, "b": 205, "h": 40, "s": 100, "l": 90}
+
+{"scope": "palette", "name": "tertiary", "tone": "98", "hex": "#fff8f1", "hex_stripped": "fff8f1", "rgb": "rgb(255, 248, 241)", "rgba": "rgba(255, 248, 241, 1)", "hsl": "hsl(30, 100%, 97%)", "hsla": "hsla(30, 100%, 97%, 1)", "r": 255, "g": 248, "b": 241, "h": 30, "s": 100, "l": 97}
+
+{"scope": "palette", "name": "tertiary", "tone": "99", "hex": "#fffbff", "hex_stripped": "fffbff", "rgb": "rgb(255, 251, 255)", "rgba": "rgba(255, 251, 255, 1)", "hsl": "hsl(300, 100%, 99%)", "hsla": "hsla(300, 100%, 99%, 1)", "r": 255, "g": 251, "b": 255, "h": 300, "s": 100, "l": 99}
+
+

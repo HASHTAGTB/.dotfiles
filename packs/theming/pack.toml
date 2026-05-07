@@ -60,3 +60,53 @@ system = "noto-fonts-emoji"
 [[packages]]
 name   = "fluent-icon-theme-git"
 system    = "fluent-icon-theme-git"
+
+[[packages]]
+name = "bibata-cursor-theme"
+system = "bibata-cursor-theme"
+optional = true
+
+[[dotfiles]]
+src = "files/.config/matugen"
+target_linux = "~/.config/matugen"
+target_mac = "~/.config/matugen"
+
+[[dotfiles]]
+src = "files/.config/qt5ct/qt5ct.conf"
+target_linux = "~/.config/qt5ct/qt5ct.conf"
+target_mac = "~/.config/qt5ct/qt5ct.conf"
+
+[[dotfiles]]
+src = "files/.config/qt5ct/style-colors.conf"
+target_linux = "~/.config/qt5ct/style-colors.conf"
+target_mac = "~/.config/qt5ct/style-colors.conf"
+
+[[dotfiles]]
+src = "files/.config/qt6ct/qt6ct.conf"
+target_linux = "~/.config/qt6ct/qt6ct.conf"
+target_mac = "~/.config/qt6ct/qt6ct.conf"
+
+[[dotfiles]]
+src = "files/.config/qt6ct/style-colors.conf"
+target_linux = "~/.config/qt6ct/style-colors.conf"
+target_mac = "~/.config/qt6ct/style-colors.conf"
+
+[[dotfiles]]
+src = "files/.config/gtk-3.0/settings.ini"
+target_linux = "~/.config/gtk-3.0/settings.ini"
+target_mac = "~/.config/gtk-3.0/settings.ini"
+
+[[dotfiles]]
+src = "files/.config/gtk-4.0"
+target_linux = "~/.config/gtk-4.0"
+target_mac = "~/.config/gtk-4.0"
+
+[[dotfiles]]
+src = "files/.gtkrc-2.0"
+target_linux = "~/.gtkrc-2.0"
+target_mac = "~/.gtkrc-2.0"
+
+[[dotfiles]]
+src = "files/.config/xsettingsd/xsettingsd.conf"
+target_linux = "~/.config/xsettingsd/xsettingsd.conf"
+target_mac = "~/.config/xsettingsd/xsettingsd.conf"

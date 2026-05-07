@@ -10,3 +10,8 @@ system = "kitty"
 [[packages]]
 name   = "imagemagick"
 system = "imagemagick"
+
+[[dotfiles]]
+src = "files/.config/kitty/kitty.conf"
+target_linux = "~/.config/kitty/kitty.conf"
+target_mac = "~/.config/kitty/kitty.conf"

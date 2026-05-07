@@ -72,3 +72,8 @@ target_mac = "~/.oh-my-zsh/custom"
 src = "files/.p10k.zsh"
 target_linux = "~/.p10k.zsh"
 target_mac = "~/.p10k.zsh"
+
+[[dotfiles]]
+src = "files/.zshenv"
+target_linux = "~/.zshenv"
+target_mac = "~/.zshenv"

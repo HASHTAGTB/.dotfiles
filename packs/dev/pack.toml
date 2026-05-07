@@ -6,21 +6,26 @@ os          = "any"
 [[packages]]
 name   = "code"
 system = "code"
+optional = true
 
 [[packages]]
 name   = "claude-code"
 system = "claude-code"
 npm    = "@anthropic-ai/claude-code"
+optional = true
 
 [[packages]]
 name   = "opencode"
 system = "opencode"
+optional = true
 
 [[packages]]
 name   = "android-studio"
 system    = "android-studio"
+optional = true
 
 [[packages]]
 name   = "scrcpy"
 system = "scrcpy"
+optional = true
 

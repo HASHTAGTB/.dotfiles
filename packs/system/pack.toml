@@ -30,6 +30,7 @@ system = "gnome-disk-utility"
 [[packages]]
 name   = "kopia"
 system = "kopia"
+optional = true
 
 [[packages]]
 name   = "polkit-kde-agent"
@@ -50,7 +51,33 @@ system = "tesseract-data-eng"
 [[packages]]
 name   = "chezmoi"
 system = "chezmoi"
+optional = true
 
 [[packages]]
 name   = "input-remapper-git"
 system    = "input-remapper-git"
+
+[[packages]]
+name = "easyeffects"
+system = "easyeffects"
+
+[[packages]]
+name = "lsp-plugins-lv2"
+system = "lsp-plugins-lv2"
+
+[[packages]]
+name = "zam-plugins-lv2"
+system = "zam-plugins-lv2"
+
+[[packages]]
+name = "mda.lv2"
+system = "mda.lv2"
+
+[[packages]]
+name = "calf"
+system = "calf"
+
+[[scripts]]
+name = "SDDM Theme"
+file = "scripts/sddm-theme.sh"
+when = "post_packages"

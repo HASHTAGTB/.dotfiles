@@ -10,24 +10,45 @@ system = "neovim"
 [[packages]]
 name   = "ripgrep"
 system = "ripgrep"
+optional = true
 
 [[packages]]
 name   = "fd"
 system = "fd"
+optional = true
 
 [[packages]]
 name   = "nodejs"
 system = "nodejs"
+optional = true
 
 [[packages]]
 name   = "npm"
 system = "npm"
+optional = true
 
 [[packages]]
 name   = "stylua"
 system = "stylua"
+optional = true
 
 [[packages]]
 name   = "shfmt"
 system = "shfmt"
+optional = true
+
+[[dotfiles]]
+src = "files/.config/nvim"
+target_linux = "~/.config/nvim"
+target_mac = "~/.config/nvim"
+
+[[dotfiles]]
+src = "files/.config/nvim.lazyvim"
+target_linux = "~/.config/nvim.lazyvim"
+target_mac = "~/.config/nvim.lazyvim"
+
+[[dotfiles]]
+src = "files/.config/nvim.own"
+target_linux = "~/.config/nvim.own"
+target_mac = "~/.config/nvim.own"
 

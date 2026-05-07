@@ -126,11 +126,6 @@ target_linux = "~/.config/swaync"
 target_mac   = "~/.config/swaync"
 
 [[dotfiles]]
-src          = "files/.config/uwsm/env-hyprland"
-target_linux = "~/.config/uwsm/env-hyprland"
-target_mac   = "~/.config/uwsm/env-hyprland"
-
-[[dotfiles]]
 src          = "files/.config/wlogout"
 target_linux = "~/.config/wlogout"
 target_mac   = "~/.config/wlogout"
@@ -144,3 +139,13 @@ target_mac   = "~/.config/waybar"
 src          = "files/.config/waypaper"
 target_linux = "~/.config/waypaper"
 target_mac   = "~/.config/waypaper"
+
+[[dotfiles]]
+src = "files/.config/uwsm"
+target_linux = "~/.config/uwsm"
+target_mac = "~/.config/uwsm"
+
+[[dotfiles]]
+src = "files/.config/xdg-desktop-portal-termfilechooser/config"
+target_linux = "~/.config/xdg-desktop-portal-termfilechooser/config"
+target_mac = "~/.config/xdg-desktop-portal-termfilechooser/config"

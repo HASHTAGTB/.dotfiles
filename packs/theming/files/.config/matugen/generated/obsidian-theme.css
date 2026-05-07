@@ -1,0 +1,124 @@
+
+.theme-dark {
+	--accent-h:calc(11/255*360);
+	--accent-s:calc(100/255*100%);
+	--accent-l:calc(81/255*100%);
+
+  --text-normal:#f1dfdb;
+  --text-muted:#d8c2bd;
+  --text-faint:#a08c88;
+
+  --background-primary:#1a110f; /* editor and right ribbon */
+  --background-secondary:#1a110f; /* left ribbon */ 
+  --background-modifier-hover:#5d3f39;
+  --background-modifier-active-hover:#e7bdb3;
+  --background-modifier-message:#1a110f;
+  --background-modifier-form-field:#723426;
+
+  --ribbon-background:#1a110f;
+  --divider-color:#5d3f39;
+  --scrollbar-thumb-bg:#ffdad2;
+  --status-bar-border-color:#5d3f39;
+  --status-bar-background:#1a110f;
+  --titlebar-background:#1a110f;
+  --titlebar-text-color:#f1dfdb;
+
+  --nav-item-color:#d8c2bd;
+  --nav-item-color-active:#ffdad2;
+  --nav-item-background-active:#723426;
+  --nav-item-color-hover:#ffdad2;
+  --nav-item-background-hover:#5d3f39;
+
+  --tab-background-active:#723426;
+  --tab-text-color-active:#ffdad2;
+  --tab-text-color:#d8c2bd;
+
+  --icon-color:#f1dfdb;
+
+  --h1-color:#ffb4a3;
+  --h2-color: color-mix(in srgb, #ffb4a3, #dbc58c);
+  --h3-color:#dbc58c;
+  --h4-color: color-mix(in srgb, #ffb4a3, #e7bdb3);
+  --h5-color:#e7bdb3;
+  --h6-color: color-mix(in srgb, #dbc58c, #e7bdb3);
+
+
+  }
+
+
+/* add parts not accessible without specific selector?*/
+.theme-dark .sidebar-toggle-button.mod-left {
+  color:#f1dfdb;
+  background:#1a110f;
+}
+.theme-dark .sidebar-toggle-button.mod-right {
+  color:#f1dfdb;
+  background:#1a110f;
+}
+
+.theme-dark .workspace-tab-header-container{
+  background:#1a110f;
+}
+
+
+/* copy for light mode */
+.theme-light {
+	--accent-h:calc(11/255*360);
+	--accent-s:calc(41/255*100%);
+	--accent-l:calc(39/255*100%);
+
+  --text-normal:#231917;
+  --text-muted:#534340;
+  --text-faint:#85736f;
+
+  --background-primary:#fff8f6; /* editor and right ribbon */
+  --background-secondary:#e8d6d2; /* left ribbon */ 
+  --background-modifier-hover:#ffdad2;
+  --background-modifier-active-hover:#77574f;
+  --background-modifier-message:#e8d6d2;
+  --background-modifier-form-field:#ffdad2;
+
+  --ribbon-background:#fff8f6;
+  --divider-color:#ffdad2;
+  --scrollbar-thumb-bg:#2c1510;
+  --status-bar-border-color:#ffdad2;
+  --status-bar-background:#fff8f6;
+  --titlebar-background:#fff8f6;
+  --titlebar-text-color:#231917;
+
+  --nav-item-color:#534340;
+  --nav-item-color-active:#3a0a02;
+  --nav-item-background-active:#ffdad2;
+  --nav-item-color-hover:#2c1510;
+  --nav-item-background-hover:#ffdad2;
+
+  --tab-background-active:#ffdad2;
+  --tab-text-color-active:#3a0a02;
+  --tab-text-color:#534340;
+
+  --icon-color:#231917;
+
+  --h1-color:#904b3b;
+  --h2-color: color-mix(in srgb, #904b3b, #6d5d2e);
+  --h3-color:#6d5d2e;
+  --h4-color: color-mix(in srgb, #904b3b, #77574f);
+  --h5-color:#77574f;
+  --h6-color: color-mix(in srgb, #6d5d2e, #77574f);
+
+
+  }
+
+
+/* add parts not accessible without specific selector?*/
+.theme-light .sidebar-toggle-button.mod-left {
+  color:#231917;
+  background:#fff8f6;
+}
+.theme-light .sidebar-toggle-button.mod-right {
+  color:#231917;
+  background:#fff8f6;
+}
+
+.theme-light .workspace-tab-header-container{
+  background:#fff8f6;
+}

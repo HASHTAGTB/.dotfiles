@@ -43,6 +43,10 @@ system = "poppler"
 name = "jq"
 system = "jq"
 
+[[packages]]
+name = "dragon-drop"
+system = "dragon-drop"
+
 [[dotfiles]]
 src          = "files/.config/yazi"
 target_linux = "~/.config/yazi"

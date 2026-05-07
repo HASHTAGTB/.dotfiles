@@ -22,14 +22,17 @@ system = "loupe"
 [[packages]]
 name   = "libreoffice-fresh"
 system = "libreoffice-fresh"
+optional = true
 
 [[packages]]
 name   = "gimp"
 system = "gimp"
+optional = true
 
 [[packages]]
 name   = "krita"
 system = "krita"
+optional = true
 
 [[packages]]
 name   = "pinta"
@@ -38,14 +41,17 @@ system    = "pinta"
 [[packages]]
 name   = "obsidian"
 system = "obsidian"
+optional = true
 
 [[packages]]
 name   = "vesktop-bin"
 system    = "vesktop-bin"
+optional = true
 
 [[packages]]
 name   = "uget"
 system = "uget"
+optional = true
 
 [[packages]]
 name   = "octopi"
@@ -58,7 +64,4 @@ system    = "pacseek-bin"
 [[packages]]
 name   = "fsearch"
 system    = "fsearch"
-
-[[packages]]
-name   = "dragon-drop"
-system    = "dragon-drop"
+optional = true

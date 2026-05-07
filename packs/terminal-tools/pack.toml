@@ -26,3 +26,34 @@ system = "gdu"
 [[packages]]
 name   = "wavemon"
 system = "wavemon"
+
+[[packages]]
+name = "cava"
+system = "cava"
+optional = true
+
+[[packages]]
+name = "ripgrep"
+system = "ripgrep"
+
+[[packages]]
+name = "fd"
+system = "fd"
+
+[[packages]]
+name = "viu"
+system = "viu"
+
+[[packages]]
+name = "bat"
+system = "bat"
+
+[[dotfiles]]
+src = "files/.config/btop/btop.conf"
+target_linux = "~/.config/btop/btop.conf"
+target_mac = "~/.config/btop/btop.conf"
+
+[[dotfiles]]
+src = "files/.config/fastfetch"
+target_linux = "~/.config/fastfetch"
+target_mac = "~/.config/fastfetch"

@@ -30,24 +30,44 @@ system = "playerctl"
 [[packages]]
 name   = "spicetify-cli"
 system = "spicetify-cli"
+optional = true
 
 [[packages]]
 name   = "yt-dlp"
 system = "yt-dlp"
+optional = true
 
 [[packages]]
 name   = "spotdl"
 system = "spotdl"
+optional = true
 
 [[packages]]
 name   = "quodlibet"
 system = "quodlibet"
+optional = true
 
 [[packages]]
 name   = "spotify"
 system    = "spotify"
+optional = true
 
 [[scripts]]
 name = "Apply Spicetify theme"
 file = "scripts/spicetify-apply.sh"
 when = "post_packages"
+
+[[scripts]]
+name = "Install/Update uosc"
+file = "scripts/install-update-uosc.sh"
+when = "post_dotfiles"
+
+[[dotfiles]]
+src = "files/.config/mpv"
+target_linux = "~/.config/mpv"
+target_mac = "~/.config/mpv"
+
+[[dotfiles]]
+src = "files/.config/spicetify"
+target_linux = "~/.config/spicetify"
+target_mac = "~/.config/spicetify"

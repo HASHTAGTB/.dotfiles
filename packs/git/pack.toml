@@ -14,8 +14,25 @@ system = "git-delta"
 [[packages]]
 name   = "lazygit"
 system = "lazygit"
+optional = true
 
 [[packages]]
 name   = "github-desktop"
 system = "github-desktop"
+optional = true
+
+[[dotfiles]]
+src = "files/.gitconfig"
+target_linux = "~/.gitconfig"
+target_mac = "~/.gitconfig"
+
+[[dotfiles]]
+src = "files/.config/git/ignore"
+target_linux = "~/.config/git/ignore"
+target_mac = "~/.config/git/ignore"
+
+[[dotfiles]]
+src = "files/.config/lazygit/config.yml"
+target_linux = "~/.config/lazygit/config.yml"
+target_mac = "~/.config/lazygit/config.yml"
 

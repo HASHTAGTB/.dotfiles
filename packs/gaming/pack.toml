@@ -18,14 +18,17 @@ system = "gamescope"
 [[packages]]
 name   = "mangohud"
 system = "mangohud"
+optional = true
 
 [[packages]]
 name   = "lib32-mangohud"
 system = "lib32-mangohud"
+optional = true
 
 [[packages]]
 name   = "vkbasalt"
 system = "vkbasalt"
+optional = true
 
 [[packages]]
 name   = "protonplus"
@@ -46,3 +49,8 @@ system = "lutris"
 [[packages]]
 name   = "twintaillauncher-bin"
 system    = "twintaillauncher-bin"
+
+[[dotfiles]]
+src = "files/.config/MangoHud/MangoHud.conf"
+target_linux = "~/.config/MangoHud/MangoHud.conf"
+target_mac = "~/.config/MangoHud/MangoHud.conf"
