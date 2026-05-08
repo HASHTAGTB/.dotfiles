@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Kaorukostream
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/npm start
+WorkingDirectory=/home/htb/Documents/code/react/mikustream/
+Restart=always
+
+[Install]
+WantedBy=default.target

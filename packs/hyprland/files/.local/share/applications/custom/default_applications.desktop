@@ -1,0 +1,8 @@
+
+[Desktop Entry]
+Type=Application
+Name=Default Applications
+Icon=xfce4-mime-settings
+Exec=xfce4-mime-settings
+Categories=Settings
+TryExec=xfce4-mime-settings

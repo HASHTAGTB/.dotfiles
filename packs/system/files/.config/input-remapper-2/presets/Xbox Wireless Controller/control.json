@@ -1,0 +1,15 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 3,
+                "code": 1,
+                "origin_hash": "00cf4169a3d72ddd82a7a291e1b61a1d"
+            }
+        ],
+        "target_uinput": "gamepad",
+        "output_type": 3,
+        "output_code": 1,
+        "mapping_type": "analog"
+    }
+]

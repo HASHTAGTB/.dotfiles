@@ -81,3 +81,28 @@ system = "calf"
 name = "SDDM Theme"
 file = "scripts/sddm-theme.sh"
 when = "post_packages"
+
+[[dotfiles]]
+src = "files/.config/easyeffects/db"
+target_linux = "~/.config/easyeffects/db"
+target_mac = "~/.config/easyeffects/db"
+
+[[dotfiles]]
+src = "files/.config/input-remapper-2"
+target_linux = "~/.config/input-remapper-2"
+target_mac = "~/.config/input-remapper-2"
+
+[[dotfiles]]
+src = "files/.config/systemd/user"
+target_linux = "~/.config/systemd/user"
+target_mac = "~/.config/systemd/user"
+
+[[dotfiles]]
+src = "files/.config/mimeapps.list"
+target_linux = "~/.config/mimeapps.list"
+target_mac = "~/.config/mimeapps.list"
+
+[[dotfiles]]
+src = "files/.config/xdg-terminals.list"
+target_linux = "~/.config/xdg-terminals.list"
+target_mac = "~/.config/xdg-terminals.list"

@@ -65,3 +65,8 @@ system    = "pacseek-bin"
 name   = "fsearch"
 system    = "fsearch"
 optional = true
+
+[[dotfiles]]
+src = "files/.config/pacseek/config.json"
+target_linux = "~/.config/pacseek/config.json"
+target_mac = "~/.config/pacseek/config.json"

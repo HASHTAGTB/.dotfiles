@@ -149,3 +149,18 @@ target_mac = "~/.config/uwsm"
 src = "files/.config/xdg-desktop-portal-termfilechooser/config"
 target_linux = "~/.config/xdg-desktop-portal-termfilechooser/config"
 target_mac = "~/.config/xdg-desktop-portal-termfilechooser/config"
+
+[[dotfiles]]
+src = "files/user_scripts"
+target_linux = "~/user_scripts"
+target_mac = "~/user_scripts"
+
+[[dotfiles]]
+src = "files/Pictures/wallpapers"
+target_linux = "~/Pictures/wallpapers"
+target_mac = "~/Pictures/wallpapers"
+
+[[dotfiles]]
+src = "files/.local/share/applications/custom"
+target_linux = "~/.local/share/applications/custom"
+target_mac = "~/.local/share/applications/custom"
