@@ -17,13 +17,8 @@ fi
 BIN_PATH="$DOTFILES_DIR/$BIN_NAME"
 
 if [ ! -f "$BIN_PATH" ]; then
-    echo "Binary not found at $BIN_PATH — building from source..."
-    if ! command -v cargo &>/dev/null; then
-        echo "Error: cargo not found. Install Rust or add a pre-built binary to the repo." >&2
-        exit 1
-    fi
-    cargo build --release --manifest-path "$DOTFILES_DIR/Cargo.toml"
-    BIN_PATH="$DOTFILES_DIR/target/release/$BIN_NAME"
+    echo "Error: binary not found at $BIN_PATH" >&2
+    exit 1
 fi
 
 mkdir -p "$BIN_DIR"
