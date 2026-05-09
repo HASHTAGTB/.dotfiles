@@ -95,6 +95,11 @@ system = "paru"
 optional = true
 
 [[scripts]]
+name = "Configure Reflector mirrors"
+file = "scripts/reflector-setup.sh"
+when = "post_packages"
+
+[[scripts]]
 name = "SDDM Theme"
 file = "scripts/sddm-theme.sh"
 when = "post_packages"

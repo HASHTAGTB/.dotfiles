@@ -67,6 +67,11 @@ system = "cachyos-packageinstaller"
 optional = true
 
 [[scripts]]
+name = "Enable CachyOS system services"
+file = "scripts/enable-arch-services.sh"
+when = "post_packages"
+
+[[scripts]]
 name = "Switch pacman repos (Arch ↔ CachyOS)"
 file = "scripts/switch-repos.sh"
 when = "post_packages"
