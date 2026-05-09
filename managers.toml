@@ -3,10 +3,11 @@
 #
 # Each [[managers]] entry defines a logical package manager group.
 #
-# id              : the key used in pack.toml, e.g. "system", "pip", "cargo".
-#                   Multiple entries can share the same id (e.g. two "system"
-#                   entries for Linux and macOS) — the first whose binary is
-#                   found on $PATH wins.
+# id              : the key used in pack.toml, e.g. "system", "python", "node".
+#                   Multiple entries sharing the same id form a fallback chain —
+#                   the first whose binary is found on $PATH wins. This lets you
+#                   swap the active manager (e.g. uv → pipx) without touching
+#                   any pack.toml files.
 # try             : binaries to check in order. First found on $PATH is used
 #                   as the install/uninstall binary. Also the pack.toml key
 #                   fallback chain: if a package has no key matching the found
@@ -17,22 +18,24 @@
 #                   installed). {pkg} = package name. Pipes and shell syntax
 #                   are supported.
 # info (optional) : shell command to display package details in the TUI.
-#                   {pkg} = package name. Pipes and shell syntax are supported.
+#                   {pkg} = package name. Tries local data first, falls back
+#                   to a network query if not found. Pipes and shell syntax
+#                   are supported.
 #
 # To disable a manager, comment out its [[managers]] block.
 # To add a new manager, append a [[managers]] block and use its id as a key
 # in your pack.toml [[packages]] entries.
 
-# Linux system package manager (yay/paru/pacman family)
+# ── System ────────────────────────────────────────────────────────────────────
+
 [[managers]]
 id        = "system"
 try       = ["yay", "paru", "pacman"]
 install   = "--noconfirm -S {pkg}"
 uninstall = "--noconfirm -Rns {pkg}"
 check     = "{try} -Q {pkg}"
-info      = "{try} -Si {pkg}"
+info      = "{try} -Qi {pkg} 2>/dev/null || {try} -Si {pkg}"
 
-# macOS system package manager
 [[managers]]
 id        = "system"
 try       = ["brew"]
@@ -44,31 +47,93 @@ info      = "brew info {pkg}"
 [[managers]]
 id        = "flatpak"
 try       = ["flatpak"]
-install   = "install -y {pkg}"
+install   = "install -y flathub {pkg}"
 uninstall = "uninstall -y {pkg}"
 check     = "flatpak info {pkg}"
-info      = "flatpak info {pkg}"
+info      = "flatpak info {pkg} 2>/dev/null || flatpak remote-info flathub {pkg}"
 
 [[managers]]
-id        = "pip"
-try       = ["pip"]
+id        = "snap"
+try       = ["snap"]
 install   = "install {pkg}"
-uninstall = "uninstall -y {pkg}"
-check     = "pip show {pkg}"
-info      = "pip show {pkg}"
+uninstall = "remove {pkg}"
+check     = "snap list {pkg}"
+info      = "snap info {pkg}"
+
+# ── Python ────────────────────────────────────────────────────────────────────
+# pack.toml key: python = "package-name"
+# uv is tried first; falls back to pipx if uv is not on PATH.
 
 [[managers]]
-id        = "npm"
+id        = "python"
+try       = ["uv"]
+install   = "tool install {pkg}"
+uninstall = "tool uninstall {pkg}"
+check     = "uv tool list | grep -E \"^{pkg}[[:space:]]\""
+info      = "uv tool list | grep -E \"^{pkg}[[:space:]]\" 2>/dev/null || pip show {pkg}"
+
+[[managers]]
+id        = "python"
+try       = ["pipx"]
+install   = "install {pkg}"
+uninstall = "uninstall {pkg}"
+check     = "pipx list | grep -E \"package {pkg}[[:space:]]\""
+info      = "pipx list | grep -E \"package {pkg}[[:space:]]\" 2>/dev/null || pip show {pkg}"
+
+# ── Node ──────────────────────────────────────────────────────────────────────
+# pack.toml key: node = "package-name"
+# bun → pnpm → yarn → npm, first found on PATH wins.
+
+[[managers]]
+id        = "node"
+try       = ["bun"]
+install   = "add -g {pkg}"
+uninstall = "remove -g {pkg}"
+check     = "bun pm ls -g 2>/dev/null | grep -q \" {pkg}@\""
+info      = "bun pm ls -g 2>/dev/null | grep \" {pkg}@\" || npm view {pkg}"
+
+[[managers]]
+id        = "node"
+try       = ["pnpm"]
+install   = "add -g {pkg}"
+uninstall = "remove -g {pkg}"
+check     = "pnpm list -g --depth=0 {pkg}"
+info      = "pnpm list -g 2>/dev/null | grep {pkg} || pnpm view {pkg}"
+
+[[managers]]
+id        = "node"
+try       = ["yarn"]
+install   = "global add {pkg}"
+uninstall = "global remove {pkg}"
+check     = "yarn global list 2>/dev/null | grep -q \" {pkg}@\""
+info      = "yarn global list 2>/dev/null | grep \" {pkg}@\" || yarn info {pkg}"
+
+[[managers]]
+id        = "node"
 try       = ["npm"]
 install   = "install -g {pkg}"
 uninstall = "uninstall -g {pkg}"
-check     = "npm list -g {pkg}"
-info      = "npm view {pkg}"
+check     = "npm list -g --depth=0 {pkg}"
+info      = "npm list -g --depth=0 {pkg} 2>/dev/null | grep {pkg} || npm view {pkg}"
+
+# ── Rust ──────────────────────────────────────────────────────────────────────
+# pack.toml key: rust = "crate-name"
 
 [[managers]]
-id        = "cargo"
+id        = "rust"
 try       = ["cargo"]
 install   = "install {pkg}"
 uninstall = "uninstall {pkg}"
-check     = "cargo install --list | grep -q ^{pkg}"
-info      = "cargo search --limit 1 {pkg}"
+check     = "cargo install --list | grep -q \"^{pkg} \""
+info      = "cargo install --list | grep -A1 \"^{pkg} \" || cargo search --limit 1 {pkg}"
+
+# ── Ruby ──────────────────────────────────────────────────────────────────────
+# pack.toml key: ruby = "gem-name"
+
+[[managers]]
+id        = "ruby"
+try       = ["gem"]
+install   = "install {pkg}"
+uninstall = "uninstall -x {pkg}"
+check     = "gem list -i \"^{pkg}$\""
+info      = "gem list --local {pkg} | grep -q \"^{pkg}\" && gem info {pkg} || gem info -r {pkg}"

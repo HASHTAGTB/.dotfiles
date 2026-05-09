@@ -8,7 +8,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "KEY_F10",
+        "output_symbol": "if_tap(key(KEY_ESC), hold(Control_L))",
         "mapping_type": "key_macro"
     },
     {

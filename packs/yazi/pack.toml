@@ -47,7 +47,17 @@ system = "jq"
 name = "dragon-drop"
 system = "dragon-drop"
 
+[[packages]]
+name = "rembg"
+python = "rembg"
+optional = true
+
 [[dotfiles]]
 src          = "files/.config/yazi"
 target_linux = "~/.config/yazi"
 target_mac   = "~/.config/yazi"
+
+[[scripts]]
+name = "rembg add [cpu,cli]"
+file = "scripts/rembg.sh"
+when = "pre_packages"
