@@ -12,6 +12,14 @@ name   = "blueman"
 system = "blueman"
 
 [[packages]]
+name   = "bluez"
+system = "bluez"
+
+[[packages]]
+name   = "ufw"
+system = "ufw"
+
+[[packages]]
 name   = "btrfs-assistant"
 system = "btrfs-assistant"
 
@@ -77,9 +85,33 @@ system = "mda.lv2"
 name = "calf"
 system = "calf"
 
+[[packages]]
+name = "yay"
+system = "yay"
+
+[[packages]]
+name = "paru"
+system = "paru"
+optional = true
+
 [[scripts]]
 name = "SDDM Theme"
 file = "scripts/sddm-theme.sh"
+when = "post_packages"
+
+[[scripts]]
+name = "Configure UFW firewall"
+file = "scripts/ufw-setup.sh"
+when = "post_packages"
+
+[[scripts]]
+name = "Enable system services"
+file = "scripts/enable-system-services.sh"
+when = "post_packages"
+
+[[scripts]]
+name = "Enable user services"
+file = "scripts/enable-user-services.sh"
 when = "post_packages"
 
 [[dotfiles]]

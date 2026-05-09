@@ -1,0 +1,52 @@
+[meta]
+name        = "fonts"
+description = "System fonts — nerd fonts, CJK, emoji, and UI fonts"
+os          = "linux"
+
+[[packages]]
+name   = "awesome-terminal-fonts"
+system = "awesome-terminal-fonts"
+
+[[packages]]
+name   = "cantarell-fonts"
+system = "cantarell-fonts"
+
+[[packages]]
+name   = "noto-fonts"
+system = "noto-fonts"
+
+[[packages]]
+name   = "noto-fonts-cjk"
+system = "noto-fonts-cjk"
+
+[[packages]]
+name   = "noto-fonts-emoji"
+system = "noto-fonts-emoji"
+
+[[packages]]
+name   = "ttf-bitstream-vera"
+system = "ttf-bitstream-vera"
+
+[[packages]]
+name   = "ttf-cascadia-code-nerd"
+system = "ttf-cascadia-code-nerd"
+
+[[packages]]
+name   = "ttf-dejavu"
+system = "ttf-dejavu"
+
+[[packages]]
+name   = "ttf-jetbrains-mono-nerd"
+system = "ttf-jetbrains-mono-nerd"
+
+[[packages]]
+name   = "ttf-liberation"
+system = "ttf-liberation"
+
+[[packages]]
+name   = "ttf-meslo-nerd"
+system = "ttf-meslo-nerd"
+
+[[packages]]
+name   = "ttf-opensans"
+system = "ttf-opensans"

@@ -1,0 +1,72 @@
+[meta]
+name        = "arch"
+description = "CachyOS-exclusive packages not present in standard Arch repos"
+os          = "linux"
+
+# --- Kernel ---
+
+[[packages]]
+name   = "linux-cachyos"
+system = "linux-cachyos"
+optional = true
+
+[[packages]]
+name   = "linux-cachyos-headers"
+system = "linux-cachyos-headers"
+optional = true
+
+[[packages]]
+name   = "scx-scheds"
+system = "scx-scheds"
+optional = true
+
+# --- Performance ---
+
+[[packages]]
+name   = "ananicy-cpp"
+system = "ananicy-cpp"
+optional = true
+
+[[packages]]
+name   = "cachyos-settings"
+system = "cachyos-settings"
+optional = true
+
+# --- Pacman / Repo ---
+
+[[packages]]
+name   = "cachyos-keyring"
+system = "cachyos-keyring"
+optional = true
+
+[[packages]]
+name   = "cachyos-mirrorlist"
+system = "cachyos-mirrorlist"
+optional = true
+
+[[packages]]
+name   = "cachyos-hooks"
+system = "cachyos-hooks"
+optional = true
+
+[[packages]]
+name   = "cachyos-rate-mirrors"
+system = "cachyos-rate-mirrors"
+optional = true
+
+# --- Tooling ---
+
+[[packages]]
+name   = "cachyos-hello"
+system = "cachyos-hello"
+optional = true
+
+[[packages]]
+name   = "cachyos-packageinstaller"
+system = "cachyos-packageinstaller"
+optional = true
+
+[[scripts]]
+name = "Switch pacman repos (Arch ↔ CachyOS)"
+file = "scripts/switch-repos.sh"
+when = "post_packages"

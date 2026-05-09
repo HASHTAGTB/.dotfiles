@@ -53,6 +53,11 @@ system    = "spotify"
 optional = true
 
 [[scripts]]
+name = "Enable audio services"
+file = "scripts/enable-audio-services.sh"
+when = "post_packages"
+
+[[scripts]]
 name = "Apply Spicetify theme"
 file = "scripts/spicetify-apply.sh"
 when = "post_packages"

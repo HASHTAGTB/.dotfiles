@@ -58,6 +58,11 @@ name = "Install powerlevel10k"
 file = "scripts/install-p10k.sh"
 when = "pre_dotfiles"
 
+[[scripts]]
+name = "Switch to zsh shell"
+file = "scripts/switch-to-zsh.sh"
+when = "post_packages"
+
 [[dotfiles]]
 src = "files/.zshrc"
 target_linux = "~/.zshrc"
