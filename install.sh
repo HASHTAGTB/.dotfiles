@@ -9,10 +9,9 @@ BIN_NAME="dotfiles"
 if [ -d "$DOTFILES_DIR" ]; then
     echo "~/.dotfiles already exists, pulling latest..."
     git -C "$DOTFILES_DIR" pull
-    git -C "$DOTFILES_DIR" submodule update --init --recursive
 else
     echo "Cloning $REPO..."
-    git clone --recurse-submodules "$REPO" "$DOTFILES_DIR"
+    git clone "$REPO" "$DOTFILES_DIR"
 fi
 
 BIN_PATH="$DOTFILES_DIR/$BIN_NAME"
