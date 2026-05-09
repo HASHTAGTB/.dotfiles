@@ -46,6 +46,10 @@ name = "bibata-cursor-theme"
 system = "bibata-cursor-theme"
 optional = true
 
+[[packages]]
+name = "awww"
+system = "awww"
+
 [[dotfiles]]
 src = "files/.config/matugen"
 target_linux = "~/.config/matugen"
