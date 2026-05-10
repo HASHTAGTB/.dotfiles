@@ -10,8 +10,7 @@ readonly C_RED=$'\e[31m'
 readonly C_BLUE=$'\e[34m'
 readonly C_CYAN=$'\e[36m'
 
-readonly PACMAN_CONF="/etc/pacman.conf"
-readonly BACKUP_DIR="/etc/pacman.d/repo-backups"
+readonly CACHYOS_REPO_URL="https://mirror.cachyos.org/cachyos-repo.tar.xz"
 
 trap 'printf "%s" "${C_RESET}"' EXIT INT TERM
 
@@ -28,120 +27,31 @@ fi
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
 is_cachyos_enabled() {
-    grep -qE '^\[cachyos\]' "$PACMAN_CONF"
+    grep -qE '^\[cachyos\]' /etc/pacman.conf
 }
 
-detect_cpu_level() {
-    local flags
-    flags=$(grep -m1 '^flags' /proc/cpuinfo 2>/dev/null || echo "")
-    if echo "$flags" | grep -qw 'avx512f'; then
-        echo "v4"
-    elif echo "$flags" | grep -qw 'avx2'; then
-        echo "v3"
-    else
-        echo "v2"
-    fi
-}
+run_official_script() {
+    local args=("$@")
+    local tmpdir
+    tmpdir=$(mktemp -d)
+    trap "rm -rf '$tmpdir'" RETURN
 
-backup_conf() {
-    mkdir -p "$BACKUP_DIR"
-    local backup="${BACKUP_DIR}/pacman.conf.$(date +%Y%m%d-%H%M%S)"
-    cp "$PACMAN_CONF" "$backup"
-    log_info "Backup saved: $backup"
-}
-
-# ── Repo block builders ───────────────────────────────────────────────────────
-
-cachyos_repos_v3() {
-    cat <<'EOF'
-
-# >>> CachyOS repos >>>
-[cachyos-core-v3]
-Include = /etc/pacman.d/cachyos-mirrorlist
-
-[cachyos-extra-v3]
-Include = /etc/pacman.d/cachyos-mirrorlist
-
-[cachyos]
-Include = /etc/pacman.d/cachyos-mirrorlist
-# <<< CachyOS repos <<<
-EOF
-}
-
-cachyos_repos_v4() {
-    cat <<'EOF'
-
-# >>> CachyOS repos >>>
-[cachyos-core-v4]
-Include = /etc/pacman.d/cachyos-mirrorlist
-
-[cachyos-extra-v4]
-Include = /etc/pacman.d/cachyos-mirrorlist
-
-[cachyos-core-v3]
-Include = /etc/pacman.d/cachyos-mirrorlist
-
-[cachyos-extra-v3]
-Include = /etc/pacman.d/cachyos-mirrorlist
-
-[cachyos]
-Include = /etc/pacman.d/cachyos-mirrorlist
-# <<< CachyOS repos <<<
-EOF
+    log_info "Downloading CachyOS repo script..."
+    curl -fsSL "$CACHYOS_REPO_URL" -o "$tmpdir/cachyos-repo.tar.xz"
+    tar xf "$tmpdir/cachyos-repo.tar.xz" -C "$tmpdir"
+    bash "$tmpdir/cachyos-repo/cachyos-repo.sh" "${args[@]}"
 }
 
 # ── Actions ───────────────────────────────────────────────────────────────────
 
 enable_cachyos() {
-    local cpu_level
-    cpu_level=$(detect_cpu_level)
-    log_info "Detected CPU level: x86-64-${cpu_level}"
-
-    if ! [[ -f /etc/pacman.d/cachyos-mirrorlist ]]; then
-        log_err "CachyOS mirrorlist not found at /etc/pacman.d/cachyos-mirrorlist"
-        log_err "Install cachyos-mirrorlist first, then re-run this script."
-        exit 1
-    fi
-
-    backup_conf
-
-    if [[ "$cpu_level" == "v4" ]]; then
-        cachyos_repos_v4 >> "$PACMAN_CONF"
-    else
-        cachyos_repos_v3 >> "$PACMAN_CONF"
-    fi
-
-    log_success "CachyOS repos (x86-64-${cpu_level}) added to $PACMAN_CONF"
-    pacman -Syy && log_success "Package databases synced"
+    run_official_script
+    log_success "CachyOS repos installed"
 }
 
 disable_cachyos() {
-    backup_conf
-
-    # Remove everything between the marker comments (inclusive)
-    sed -i '/^# >>> CachyOS repos >>>/,/^# <<< CachyOS repos <<</d' "$PACMAN_CONF"
-
-    # Fallback: strip any remaining [cachyos*] repo blocks (no markers)
-    python3 - "$PACMAN_CONF" <<'PYEOF'
-import sys, re
-
-path = sys.argv[1]
-text = open(path).read()
-
-# Remove any [cachyos*] section block (header + its lines until next section or EOF)
-cleaned = re.sub(
-    r'\n\[cachyos[^\]]*\][^\[]*',
-    '',
-    text,
-    flags=re.DOTALL,
-)
-# Collapse excessive blank lines
-cleaned = re.sub(r'\n{3,}', '\n\n', cleaned)
-open(path, 'w').write(cleaned)
-PYEOF
-
-    log_success "CachyOS repos removed from $PACMAN_CONF"
-    pacman -Syy && log_success "Package databases synced"
+    run_official_script --remove
+    log_success "CachyOS repos removed"
 }
 
 # ── UI ────────────────────────────────────────────────────────────────────────
