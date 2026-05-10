@@ -38,6 +38,7 @@ system = "protonplus"
 [[packages]]
 name   = "cachyos-gaming-meta"
 system = "cachyos-gaming-meta"
+optional = true
 
 [[packages]]
 name   = "goverlay"

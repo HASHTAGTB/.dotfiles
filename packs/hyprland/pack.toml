@@ -105,6 +105,10 @@ system    = "xdg-desktop-portal-termfilechooser-hunkyburrito-git"
 name   = "xdg-terminal-exec"
 system    = "xdg-terminal-exec"
 
+[[packages]]
+name = "wavemon"
+system = "wavemon"
+
 [[scripts]]
 name = "Enable Hyprland user services"
 file = "scripts/enable-hyprland-services.sh"

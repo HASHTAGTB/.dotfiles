@@ -20,12 +20,10 @@ optional = true
 [[packages]]
 name   = "nodejs"
 system = "nodejs"
-optional = true
 
 [[packages]]
 name   = "npm"
 system = "npm"
-optional = true
 
 [[packages]]
 name   = "stylua"
@@ -36,6 +34,14 @@ optional = true
 name   = "shfmt"
 system = "shfmt"
 optional = true
+
+[[packages]]
+name = "unzip"
+system = "unzip"
+
+[[packages]]
+name = "tree-sitter-cli"
+system = "tree-sitter-cli"
 
 [[dotfiles]]
 src = "files/.config/nvim"
