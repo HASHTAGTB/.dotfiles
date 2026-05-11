@@ -67,6 +67,11 @@ name = "Install/Update uosc"
 file = "scripts/install-update-uosc.sh"
 when = "post_dotfiles"
 
+[[scripts]]
+name = "Clone thumbfast"
+file = "scripts/clone-thumbfast.sh"
+when = "pre_dotfiles"
+
 [[dotfiles]]
 src = "files/.config/mpv"
 target_linux = "~/.config/mpv"

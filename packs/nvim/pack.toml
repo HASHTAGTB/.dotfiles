@@ -43,6 +43,11 @@ system = "unzip"
 name = "tree-sitter-cli"
 system = "tree-sitter-cli"
 
+[[scripts]]
+name = "Clone nvim configs"
+file = "scripts/clone-nvim.sh"
+when = "pre_dotfiles"
+
 [[dotfiles]]
 src = "files/.config/nvim"
 target_linux = "~/.config/nvim"

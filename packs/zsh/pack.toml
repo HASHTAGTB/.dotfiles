@@ -59,6 +59,11 @@ file = "scripts/install-p10k.sh"
 when = "pre_dotfiles"
 
 [[scripts]]
+name = "Install zsh plugins"
+file = "scripts/install-zsh-plugins.sh"
+when = "pre_dotfiles"
+
+[[scripts]]
 name = "Switch to zsh shell"
 file = "scripts/switch-to-zsh.sh"
 when = "post_packages"
