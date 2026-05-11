@@ -3,9 +3,59 @@ name        = "system"
 description = "System services and utilities"
 os          = "linux"
 
+# --- Core ---
+
+[[packages]]
+name   = "sudo"
+system = "sudo"
+
+[[packages]]
+name   = "openssh"
+system = "openssh"
+
+[[packages]]
+name   = "networkmanager"
+system = "networkmanager"
+
+[[packages]]
+name   = "nm-connection-editor"
+system = "nm-connection-editor"
+
+[[packages]]
+name   = "gnome-keyring"
+system = "gnome-keyring"
+
+[[packages]]
+name   = "power-profiles-daemon"
+system = "power-profiles-daemon"
+
+[[packages]]
+name   = "sof-firmware"
+system = "sof-firmware"
+
+[[packages]]
+name   = "which"
+system = "which"
+
+[[packages]]
+name   = "rsync"
+system = "rsync"
+
+# --- Display / Session ---
+
 [[packages]]
 name   = "sddm"
 system = "sddm"
+
+[[packages]]
+name   = "polkit-kde-agent"
+system = "polkit-kde-agent"
+
+[[packages]]
+name   = "xdg-user-dirs"
+system = "xdg-user-dirs"
+
+# --- Bluetooth ---
 
 [[packages]]
 name   = "blueman"
@@ -15,17 +65,136 @@ system = "blueman"
 name   = "bluez"
 system = "bluez"
 
+# --- Printing ---
+
 [[packages]]
-name   = "ufw"
-system = "ufw"
+name   = "cups"
+system = "cups"
+
+[[packages]]
+name   = "cups-pdf"
+system = "cups-pdf"
+
+# --- Filesystem ---
+
+[[packages]]
+name   = "ntfs-3g"
+system = "ntfs-3g"
+
+[[packages]]
+name   = "dosfstools"
+system = "dosfstools"
+optional = true
+
+[[packages]]
+name   = "exfatprogs"
+system = "exfatprogs"
+optional = true
+
+[[packages]]
+name   = "f2fs-tools"
+system = "f2fs-tools"
+optional = true
+
+[[packages]]
+name   = "xfsprogs"
+system = "xfsprogs"
+optional = true
+
+[[packages]]
+name   = "jfsutils"
+system = "jfsutils"
+optional = true
+
+[[packages]]
+name   = "nilfs-utils"
+system = "nilfs-utils"
+optional = true
+
+[[packages]]
+name   = "lvm2"
+system = "lvm2"
+optional = true
+
+[[packages]]
+name   = "mtools"
+system = "mtools"
+optional = true
+
+[[packages]]
+name   = "cpio"
+system = "cpio"
+optional = true
+
+# --- Snapshots ---
+
+[[packages]]
+name   = "snapper"
+system = "snapper"
 
 [[packages]]
 name   = "btrfs-assistant"
 system = "btrfs-assistant"
 
+# --- Firewall / Network ---
+
 [[packages]]
-name   = "cups-pdf"
-system = "cups-pdf"
+name   = "ufw"
+system = "ufw"
+
+[[packages]]
+name   = "networkmanager-openvpn"
+system = "networkmanager-openvpn"
+optional = true
+
+[[packages]]
+name   = "iwd"
+system = "iwd"
+optional = true
+
+[[packages]]
+name   = "nss-mdns"
+system = "nss-mdns"
+optional = true
+
+[[packages]]
+name   = "modemmanager"
+system = "modemmanager"
+optional = true
+
+[[packages]]
+name   = "dnsmasq"
+system = "dnsmasq"
+optional = true
+
+# --- Storage & Disk ---
+
+[[packages]]
+name   = "hdparm"
+system = "hdparm"
+optional = true
+
+[[packages]]
+name   = "smartmontools"
+system = "smartmontools"
+optional = true
+
+[[packages]]
+name   = "gptfdisk"
+system = "gptfdisk"
+optional = true
+
+[[packages]]
+name   = "sg3_utils"
+system = "sg3_utils"
+optional = true
+
+[[packages]]
+name   = "usb_modeswitch"
+system = "usb_modeswitch"
+optional = true
+
+# --- Backup ---
 
 [[packages]]
 name   = "flatpak"
@@ -41,12 +210,27 @@ system = "kopia"
 optional = true
 
 [[packages]]
-name   = "polkit-kde-agent"
-system = "polkit-kde-agent"
+name   = "fsarchiver"
+system = "fsarchiver"
+optional = true
 
 [[packages]]
-name   = "reflector"
-system = "reflector"
+name   = "plocate"
+system = "plocate"
+optional = true
+
+# --- Archive ---
+
+[[packages]]
+name   = "zip"
+system = "zip"
+
+[[packages]]
+name   = "unrar"
+system = "unrar"
+optional = true
+
+# --- OCR ---
 
 [[packages]]
 name   = "tesseract"
@@ -57,33 +241,83 @@ name   = "tesseract-data-eng"
 system = "tesseract-data-eng"
 
 [[packages]]
-name   = "chezmoi"
-system = "chezmoi"
-optional = true
+name   = "python-pytesseract"
+system = "python-pytesseract"
+
+# --- Audio system ---
 
 [[packages]]
-name   = "input-remapper-git"
-system    = "input-remapper-git"
-
-[[packages]]
-name = "easyeffects"
+name   = "easyeffects"
 system = "easyeffects"
 
 [[packages]]
-name = "lsp-plugins-lv2"
+name   = "lsp-plugins-lv2"
 system = "lsp-plugins-lv2"
 
 [[packages]]
-name = "zam-plugins-lv2"
+name   = "zam-plugins-lv2"
 system = "zam-plugins-lv2"
 
 [[packages]]
-name = "mda.lv2"
+name   = "mda.lv2"
 system = "mda.lv2"
 
 [[packages]]
-name = "calf"
+name   = "calf"
 system = "calf"
+
+# --- Input ---
+
+[[packages]]
+name   = "keyd"
+system = "keyd"
+
+[[packages]]
+name   = "input-remapper-git"
+system = "input-remapper-git"
+
+# --- Misc system tools ---
+
+[[packages]]
+name   = "reflector"
+system = "reflector"
+
+[[packages]]
+name   = "logrotate"
+system = "logrotate"
+optional = true
+
+[[packages]]
+name   = "bind"
+system = "bind"
+optional = true
+
+[[packages]]
+name   = "hwinfo"
+system = "hwinfo"
+optional = true
+
+[[packages]]
+name   = "hwdetect"
+system = "hwdetect"
+optional = true
+
+[[packages]]
+name   = "accountsservice"
+system = "accountsservice"
+optional = true
+
+[[packages]]
+name   = "seahorse"
+system = "seahorse"
+optional = true
+
+[[packages]]
+name   = "systemdgenie"
+system = "systemdgenie"
+optional = true
+
+# --- AUR helpers ---
 
 [[packages]]
 name = "yay"
@@ -92,6 +326,11 @@ system = "yay"
 [[packages]]
 name = "paru"
 system = "paru"
+optional = true
+
+[[packages]]
+name   = "chezmoi"
+system = "chezmoi"
 optional = true
 
 [[scripts]]

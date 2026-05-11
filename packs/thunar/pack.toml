@@ -1,0 +1,48 @@
+[meta]
+name        = "thunar"
+description = "Thunar GUI file manager with thumbnails and archive support"
+os          = "linux"
+
+[[packages]]
+name   = "thunar"
+system = "thunar"
+
+[[packages]]
+name   = "thunar-archive-plugin"
+system = "thunar-archive-plugin"
+
+[[packages]]
+name   = "thunar-volman"
+system = "thunar-volman"
+
+[[packages]]
+name   = "tumbler"
+system = "tumbler"
+
+[[packages]]
+name   = "ffmpegthumbnailer"
+system = "ffmpegthumbnailer"
+
+[[packages]]
+name   = "gvfs"
+system = "gvfs"
+
+[[packages]]
+name   = "gvfs-mtp"
+system = "gvfs-mtp"
+optional = true
+
+[[packages]]
+name   = "gvfs-smb"
+system = "gvfs-smb"
+optional = true
+
+[[packages]]
+name   = "gvfs-nfs"
+system = "gvfs-nfs"
+optional = true
+
+[[packages]]
+name   = "file-roller"
+system = "file-roller"
+optional = true

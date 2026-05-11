@@ -1,0 +1,30 @@
+[meta]
+name        = "nvidia"
+description = "Nvidia GPU drivers and OpenCL stack"
+os          = "linux"
+
+[[packages]]
+name   = "nvidia-settings"
+system = "nvidia-settings"
+
+[[packages]]
+name   = "libva-nvidia-driver"
+system = "libva-nvidia-driver"
+
+[[packages]]
+name   = "opencl-nvidia"
+system = "opencl-nvidia"
+
+[[packages]]
+name   = "lib32-opencl-nvidia"
+system = "lib32-opencl-nvidia"
+
+[[packages]]
+name   = "linux-cachyos-nvidia-open"
+system = "linux-cachyos-nvidia-open"
+optional = true
+
+[[packages]]
+name   = "linux-cachyos-lts-nvidia-open"
+system = "linux-cachyos-lts-nvidia-open"
+optional = true

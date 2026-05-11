@@ -48,6 +48,36 @@ system = "viu"
 name = "bat"
 system = "bat"
 
+[[packages]]
+name = "tree"
+system = "tree"
+
+[[packages]]
+name = "less"
+system = "less"
+
+[[packages]]
+name = "man-db"
+system = "man-db"
+
+[[packages]]
+name = "man-pages"
+system = "man-pages"
+
+[[packages]]
+name = "duf"
+system = "duf"
+
+[[packages]]
+name = "pv"
+system = "pv"
+optional = true
+
+[[packages]]
+name = "navi"
+system = "navi"
+optional = true
+
 [[dotfiles]]
 src = "files/.config/btop/btop.conf"
 target_linux = "~/.config/btop/btop.conf"

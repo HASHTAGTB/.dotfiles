@@ -1,6 +1,6 @@
 [meta]
 name        = "hyprland"
-description = "Wayland compositor and full session stack"
+description = "Hyprland compositor and session-specific stack (depends on wayland pack)"
 os          = "linux"
 
 [[packages]]
@@ -22,6 +22,10 @@ system = "hyprpicker"
 [[packages]]
 name   = "hyprpolkitagent"
 system = "hyprpolkitagent"
+
+[[packages]]
+name   = "hyprshade"
+system = "hyprshade"
 
 [[packages]]
 name   = "waybar"
@@ -49,65 +53,13 @@ name   = "wev"
 system = "wev"
 
 [[packages]]
-name   = "qt6-wayland"
-system = "qt6-wayland"
-
-[[packages]]
-name   = "uwsm"
-system = "uwsm"
-
-[[packages]]
-name   = "grim"
-system = "grim"
-
-[[packages]]
-name   = "slurp"
-system = "slurp"
-
-[[packages]]
-name   = "rofi"
-system = "rofi"
-
-[[packages]]
-name   = "fuzzel"
-system = "fuzzel"
-optional = true
-
-[[packages]]
-name   = "cliphist"
-system = "cliphist"
-
-[[packages]]
-name   = "wl-clipboard"
-system = "wl-clipboard"
-
-[[packages]]
 name   = "xdg-desktop-portal-hyprland"
 system = "xdg-desktop-portal-hyprland"
 
 [[packages]]
-name   = "xdg-desktop-portal-gtk"
-system = "xdg-desktop-portal-gtk"
-
-[[packages]]
-name   = "playerctl"
-system = "playerctl"
-
-[[packages]]
-name   = "hyprshade"
-system    = "hyprshade"
-
-[[packages]]
-name   = "xdg-desktop-portal-termfilechooser"
-system    = "xdg-desktop-portal-termfilechooser-hunkyburrito-git"
-
-[[packages]]
-name   = "xdg-terminal-exec"
-system    = "xdg-terminal-exec"
-
-[[packages]]
-name = "wavemon"
-system = "wavemon"
+name   = "quickshell-overview-git"
+system = "quickshell-overview-git"
+optional = true
 
 [[scripts]]
 name = "Enable Hyprland user services"
@@ -118,11 +70,6 @@ when = "post_packages"
 src          = "files/.config/hypr"
 target_linux = "~/.config/hypr"
 target_mac   = "~/.config/hypr"
-
-[[dotfiles]]
-src          = "files/.config/rofi"
-target_linux = "~/.config/rofi"
-target_mac   = "~/.config/rofi"
 
 [[dotfiles]]
 src          = "files/.config/swappy"
@@ -148,16 +95,6 @@ target_mac   = "~/.config/waybar"
 src          = "files/.config/waypaper"
 target_linux = "~/.config/waypaper"
 target_mac   = "~/.config/waypaper"
-
-[[dotfiles]]
-src = "files/.config/uwsm"
-target_linux = "~/.config/uwsm"
-target_mac = "~/.config/uwsm"
-
-[[dotfiles]]
-src = "files/.config/xdg-desktop-portal-termfilechooser/config"
-target_linux = "~/.config/xdg-desktop-portal-termfilechooser/config"
-target_mac = "~/.config/xdg-desktop-portal-termfilechooser/config"
 
 [[dotfiles]]
 src = "files/user_scripts"

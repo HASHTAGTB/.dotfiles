@@ -1,0 +1,88 @@
+[meta]
+name        = "wayland"
+description = "Compositor-agnostic Wayland tooling shared by Hyprland, Niri, and others"
+os          = "linux"
+
+[[packages]]
+name   = "grim"
+system = "grim"
+
+[[packages]]
+name   = "slurp"
+system = "slurp"
+
+[[packages]]
+name   = "wl-clipboard"
+system = "wl-clipboard"
+
+[[packages]]
+name   = "cliphist"
+system = "cliphist"
+
+[[packages]]
+name   = "rofi"
+system = "rofi"
+
+[[packages]]
+name   = "fuzzel"
+system = "fuzzel"
+optional = true
+
+[[packages]]
+name   = "uwsm"
+system = "uwsm"
+
+[[packages]]
+name   = "qt6-wayland"
+system = "qt6-wayland"
+
+[[packages]]
+name   = "xdg-desktop-portal-gtk"
+system = "xdg-desktop-portal-gtk"
+
+[[packages]]
+name   = "xdg-desktop-portal-termfilechooser"
+system = "xdg-desktop-portal-termfilechooser-hunkyburrito-git"
+
+[[packages]]
+name   = "xdg-terminal-exec"
+system = "xdg-terminal-exec"
+
+[[packages]]
+name   = "xdg-user-dirs"
+system = "xdg-user-dirs"
+
+[[packages]]
+name   = "playerctl"
+system = "playerctl"
+
+[[packages]]
+name   = "xorg-xwayland"
+system = "xorg-xwayland"
+
+[[packages]]
+name   = "udiskie"
+system = "udiskie"
+
+[[packages]]
+name   = "pipewire-alsa"
+system = "pipewire-alsa"
+
+[[packages]]
+name   = "gst-plugin-pipewire"
+system = "gst-plugin-pipewire"
+
+[[dotfiles]]
+src          = "files/.config/rofi"
+target_linux = "~/.config/rofi"
+target_mac   = "~/.config/rofi"
+
+[[dotfiles]]
+src          = "files/.config/uwsm"
+target_linux = "~/.config/uwsm"
+target_mac   = "~/.config/uwsm"
+
+[[dotfiles]]
+src = "files/.config/xdg-desktop-portal-termfilechooser/config"
+target_linux = "~/.config/xdg-desktop-portal-termfilechooser/config"
+target_mac = "~/.config/xdg-desktop-portal-termfilechooser/config"

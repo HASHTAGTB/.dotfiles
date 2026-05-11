@@ -50,6 +50,11 @@ optional = true
 name = "awww"
 system = "awww"
 
+[[packages]]
+name   = "xfce4-settings"
+system = "xfce4-settings"
+optional = true
+
 [[dotfiles]]
 src = "files/.config/matugen"
 target_linux = "~/.config/matugen"

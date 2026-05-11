@@ -50,3 +50,11 @@ system = "ttf-meslo-nerd"
 [[packages]]
 name   = "ttf-opensans"
 system = "ttf-opensans"
+
+[[packages]]
+name   = "otf-font-awesome"
+system = "otf-font-awesome"
+
+[[packages]]
+name   = "woff2-font-awesome"
+system = "woff2-font-awesome"

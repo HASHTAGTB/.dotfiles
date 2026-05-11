@@ -48,6 +48,11 @@ system = "fd"
 name = "ripgrep"
 system = "ripgrep"
 
+[[packages]]
+name = "bash-completion"
+system = "bash-completion"
+optional = true
+
 [[scripts]]
 name = "Install oh-my-zsh"
 file = "scripts/install-ohmyzsh.sh"

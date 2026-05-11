@@ -21,6 +21,9 @@
 #                   {pkg} = package name. Tries local data first, falls back
 #                   to a network query if not found. Pipes and shell syntax
 #                   are supported.
+# list (optional) : shell command that prints all installed packages, one name
+#                   per line. {try} expands to the detected binary. Used by the
+#                   package screen to find untracked installed packages.
 #
 # To disable a manager, comment out its [[managers]] block.
 # To add a new manager, append a [[managers]] block and use its id as a key
@@ -35,6 +38,7 @@ install   = "--noconfirm -S --needed {pkg}"
 uninstall = "--noconfirm -Rns {pkg}"
 check     = "{try} -Q {pkg}"
 info      = "{try} -Qi {pkg} 2>/dev/null || {try} -Si {pkg}"
+list      = "{try} -Qe | awk '{print $1}'"
 
 [[managers]]
 id        = "system"
@@ -43,6 +47,7 @@ install   = "install {pkg}"
 uninstall = "uninstall {pkg}"
 check     = "brew list --formula {pkg}"
 info      = "brew info {pkg}"
+list      = "{try} list --formula"
 
 [[managers]]
 id        = "flatpak"
@@ -51,6 +56,7 @@ install   = "install -y flathub {pkg}"
 uninstall = "uninstall -y {pkg}"
 check     = "flatpak info {pkg}"
 info      = "flatpak info {pkg} 2>/dev/null || flatpak remote-info flathub {pkg}"
+list      = "{try} list --app --columns=application"
 
 [[managers]]
 id        = "snap"
@@ -59,6 +65,7 @@ install   = "install {pkg}"
 uninstall = "remove {pkg}"
 check     = "snap list {pkg}"
 info      = "snap info {pkg}"
+list      = "{try} list 2>/dev/null | awk 'NR>1 {print $1}'"
 
 # ── Python ────────────────────────────────────────────────────────────────────
 # pack.toml key: python = "package-name"
@@ -71,6 +78,7 @@ install   = "tool install {pkg}"
 uninstall = "tool uninstall {pkg}"
 check     = "uv tool list | grep -E \"^{pkg}[[:space:]]\""
 info      = "uv tool list | grep -E \"^{pkg}[[:space:]]\" 2>/dev/null || pip show {pkg}"
+list      = "uv tool list 2>/dev/null | grep -E '^[a-z]' | awk '{print $1}'"
 
 [[managers]]
 id        = "python"
@@ -79,6 +87,7 @@ install   = "install {pkg}"
 uninstall = "uninstall {pkg}"
 check     = "pipx list | grep -E \"package {pkg}[[:space:]]\""
 info      = "pipx list | grep -E \"package {pkg}[[:space:]]\" 2>/dev/null || pip show {pkg}"
+list      = "pipx list 2>/dev/null | grep 'package ' | awk '{print $2}'"
 
 # ── Node ──────────────────────────────────────────────────────────────────────
 # pack.toml key: node = "package-name"
@@ -91,6 +100,7 @@ install   = "add -g {pkg}"
 uninstall = "remove -g {pkg}"
 check     = "bun pm ls -g 2>/dev/null | grep -q \" {pkg}@\""
 info      = "bun pm ls -g 2>/dev/null | grep \" {pkg}@\" || npm view {pkg}"
+list      = "bun pm ls -g 2>/dev/null | awk -F@ '/[├└]/{gsub(/[^a-zA-Z0-9._-]/, \"\", $1); if($1 != \"\") print $1}'"
 
 [[managers]]
 id        = "node"
@@ -99,6 +109,7 @@ install   = "add -g {pkg}"
 uninstall = "remove -g {pkg}"
 check     = "pnpm list -g --depth=0 {pkg}"
 info      = "pnpm list -g 2>/dev/null | grep {pkg} || pnpm view {pkg}"
+list      = "pnpm list -g --depth=0 --parseable 2>/dev/null | tail -n +2 | xargs -I{} basename {}"
 
 [[managers]]
 id        = "node"
@@ -107,6 +118,7 @@ install   = "global add {pkg}"
 uninstall = "global remove {pkg}"
 check     = "yarn global list 2>/dev/null | grep -q \" {pkg}@\""
 info      = "yarn global list 2>/dev/null | grep \" {pkg}@\" || yarn info {pkg}"
+list      = "yarn global list --depth=0 2>/dev/null | grep info | sed \"s/.*\\\"//; s/@.*//\""
 
 [[managers]]
 id        = "node"
@@ -115,6 +127,7 @@ install   = "install -g {pkg}"
 uninstall = "uninstall -g {pkg}"
 check     = "npm list -g --depth=0 {pkg}"
 info      = "npm list -g --depth=0 {pkg} 2>/dev/null | grep {pkg} || npm view {pkg}"
+list      = "npm list -g --depth=0 --parseable 2>/dev/null | tail -n +2 | xargs -I{} basename {}"
 
 # ── Rust ──────────────────────────────────────────────────────────────────────
 # pack.toml key: rust = "crate-name"
@@ -126,6 +139,7 @@ install   = "install {pkg}"
 uninstall = "uninstall {pkg}"
 check     = "cargo install --list | grep -q \"^{pkg} \""
 info      = "cargo install --list | grep -A1 \"^{pkg} \" || cargo search --limit 1 {pkg}"
+list      = "cargo install --list 2>/dev/null | grep -E '^[a-zA-Z]' | awk '{print $1}'"
 
 # ── Ruby ──────────────────────────────────────────────────────────────────────
 # pack.toml key: ruby = "gem-name"
@@ -137,3 +151,4 @@ install   = "install {pkg}"
 uninstall = "uninstall -x {pkg}"
 check     = "gem list -i \"^{pkg}$\""
 info      = "gem list --local {pkg} | grep -q \"^{pkg}\" && gem info {pkg} || gem info -r {pkg}"
+list      = "gem list --local 2>/dev/null | awk '{print $1}'"

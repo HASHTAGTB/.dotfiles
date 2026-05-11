@@ -24,8 +24,23 @@ name   = "wireplumber"
 system = "wireplumber"
 
 [[packages]]
-name   = "playerctl"
-system = "playerctl"
+name   = "alsa-utils"
+system = "alsa-utils"
+
+[[packages]]
+name   = "vlc-plugins-all"
+system = "vlc-plugins-all"
+optional = true
+
+[[packages]]
+name   = "libdvdcss"
+system = "libdvdcss"
+optional = true
+
+[[packages]]
+name   = "gst-plugin-va"
+system = "gst-plugin-va"
+optional = true
 
 [[packages]]
 name   = "spicetify-cli"
@@ -49,7 +64,7 @@ optional = true
 
 [[packages]]
 name   = "spotify"
-system    = "spotify"
+system = "spotify"
 optional = true
 
 [[scripts]]
