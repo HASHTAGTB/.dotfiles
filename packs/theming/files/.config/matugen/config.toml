@@ -299,3 +299,7 @@ output_path = '~/.config/pacseek/colors.json'
 input_path = '~/.config/matugen/templates/dotfiles_template.toml'
 output_path = '~/.dotfiles/themes/theme.toml'
 
+[template.zellij]
+input_path = '~/.config/matugen/templates/zellij-theme.kdl.tera'
+output_path = '~/.config/zellij/themes/matugen.kdl'
+post_hook = 'touch ~/.config/zellij/config.kdl' 

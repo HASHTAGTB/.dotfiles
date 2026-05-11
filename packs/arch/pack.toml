@@ -145,14 +145,6 @@ name   = "os-prober"
 system = "os-prober"
 optional = true
 
-[[packages]]
-name = "base"
-system = "base"
-
-[[packages]]
-name = "tk"
-system = "tk"
-
 [[scripts]]
 name = "Enable CachyOS system services"
 file = "scripts/enable-arch-services.sh"
