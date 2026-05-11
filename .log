@@ -213,3 +213,17 @@
 [17:53:34] → Loaded 15 packs from ~/.dotfiles/packs/
 [12:53:59] → Loaded 15 packs from ~/.dotfiles/packs/
 [13:01:48] → Loaded 15 packs from ~/.dotfiles/packs/
+[13:25:15] → Loaded 15 packs from ~/.dotfiles/packs/
+[13:25:22] ✓ 'Clone nvim configs' completed (pack 'nvim')
+[13:25:22] → Running script 'Clone nvim configs' for pack 'nvim'
+[13:25:45] ✓ 'Install zsh plugins' completed (pack 'zsh')
+[13:25:45] → Running script 'Install zsh plugins' for pack 'zsh'
+[13:25:57] ✓ 'Install powerlevel10k' completed (pack 'zsh')
+[13:25:57] → Running script 'Install powerlevel10k' for pack 'zsh'
+[13:26:18] ✓ 'Install powerlevel10k' completed (pack 'zsh')
+[13:26:18] → Running script 'Install powerlevel10k' for pack 'zsh'
+[13:26:22] → Loaded 15 packs from ~/.dotfiles/packs/
+[13:27:34] ✓ 'Install powerlevel10k' completed (pack 'zsh')
+[13:27:34] → Running script 'Install powerlevel10k' for pack 'zsh'
+[13:28:21] ✓ 'Clone thumbfast' completed (pack 'media')
+[13:28:21] → Running script 'Clone thumbfast' for pack 'media'
