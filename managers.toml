@@ -69,8 +69,8 @@ id        = "python"
 try       = ["uv"]
 install   = "tool install {pkg}"
 uninstall = "tool uninstall {pkg}"
-check     = "uv tool list | grep \"^{pkg} \""
-info      = "uv tool list | grep \"^{pkg} \" 2>/dev/null || pip show {pkg}"
+check     = "uv tool list | grep -E \"^{pkg}[[:space:]]\""
+info      = "uv tool list | grep -E \"^{pkg}[[:space:]]\" 2>/dev/null || pip show {pkg}"
 
 [[managers]]
 id        = "python"
