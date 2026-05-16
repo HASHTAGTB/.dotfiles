@@ -1,0 +1,74 @@
+@import url("file:///home/htb/.config/matugen/generated/wlogout-colors.css");
+
+window {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "JetBrainsMono Nerd Font", "Roboto", sans-serif;
+    font-size: 26px;
+}
+
+button {
+    color: @on_secondary_container;
+    background-color: @secondary_container;
+    outline-style: none;
+    border: none;
+    border-radius: 26px;
+    box-shadow: none;
+    text-shadow: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    transition:
+        background-size 0.3s cubic-bezier(.55, 0.0, .28, 1.682),
+        margin 0.3s cubic-bezier(.55, 0.0, .28, 1.682),
+        border-radius 0.3s cubic-bezier(.55, 0.0, .28, 1.682),
+        background-color 0.3s ease;
+}
+
+button:focus {
+    background-color: @tertiary_container;
+    color: @on_tertiary_container;
+    background-size: 30%;
+}
+
+button:hover {
+    background-color: @primary;
+    color: @on_primary;
+    background-size: 40%;
+    border-radius: 33px;
+}
+
+#lock {
+    background-image: image(url("/home/htb/.config/wlogout/icons/lock_white.png"), url("/usr/share/wlogout/icons/lock.png"));
+    margin: 66px 0;
+}
+button:hover#lock { margin: 46px 0; }
+
+#logout {
+    background-image: image(url("/home/htb/.config/wlogout/icons/logout_white.png"), url("/usr/share/wlogout/icons/logout.png"));
+    margin: 66px 0;
+}
+button:hover#logout { margin: 46px 0; }
+
+#suspend {
+    background-image: image(url("/home/htb/.config/wlogout/icons/suspend_white.png"), url("/usr/share/wlogout/icons/suspend.png"));
+    margin: 66px 0;
+}
+button:hover#suspend { margin: 46px 0; }
+
+#shutdown {
+    background-image: image(url("/home/htb/.config/wlogout/icons/shutdown_white.png"), url("/usr/share/wlogout/icons/shutdown.png"));
+    margin: 66px 0;
+}
+button:hover#shutdown { margin: 46px 0; }
+
+#soft-reboot {
+    background-image: image(url("/home/htb/.config/wlogout/icons/soft-reboot_white.png"), url("/usr/share/wlogout/icons/reboot.png"));
+    margin: 66px 0;
+}
+button:hover#soft-reboot { margin: 46px 0; }
+
+#reboot {
+    background-image: image(url("/home/htb/.config/wlogout/icons/reboot_white.png"), url("/usr/share/wlogout/icons/reboot.png"));
+    margin: 66px 0;
+}
+button:hover#reboot { margin: 46px 0; }

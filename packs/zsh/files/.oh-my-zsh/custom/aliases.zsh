@@ -36,3 +36,4 @@ y() {
 	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+alias wlogout="wlogout --protocol layer-shell --buttons-per-row 6 --column-spacing 2 --row-spacing 0"

@@ -131,7 +131,7 @@
     // NETWORK METER (CUSTOM)
     // ===================================================================
     "custom/net-speed": {
-        "exec": "$HOME/user_scripts/waybar/network/network_meter_calling.sh --horizontal",
+        "exec": "$HOME/Scripts/waybar/network/network_meter.sh --horizontal",
         "return-type": "json",
         "format": "{}",
         "interval": 1,
@@ -214,8 +214,7 @@
         "format": " {usage}%",
         "interval": 2,
         "on-click": "uwsm-app -- kitty --class htop -e htop",
-        "on-click-right": "uwsm-app -- kitty --class sysbench_benchmark.sh -e $HOME/user_scripts/performance/sysbench_benchmark.sh",
-        "tooltip-format": "CPU Usage: {usage}%\nAvg Frequency: {avg_frequency} GHz\n\nLMB: htop\nRMB: sysbench",
+        "tooltip-format": "CPU Usage: {usage}%\nAvg Frequency: {avg_frequency} GHz\n\nLMB: htop",
         "states": {
             "warning": 60,
             "critical": 80
@@ -223,7 +222,7 @@
     },
 
     "custom/gpu": {
-        "exec": "$HOME/user_scripts/waybar/gpu_usage.sh",
+        "exec": "$HOME/Scripts/waybar/gpu_usage.sh",
         "return-type": "json",
         "format": "󰢮 {}%",
         "interval": 2,
@@ -235,8 +234,7 @@
         "format": " {percentage}%",
         "format-alt": " {used:0.1f}G",
         "interval": 3,
-        "on-click-right": "uwsm-app -- kitty --class io_monitor.sh -e $HOME/user_scripts/drives/io_monitor.sh",
-        "tooltip-format": "RAM: {used:0.2f} GiB / {total:0.2f} GiB ({percentage}%)\nAvailable: {avail:0.2f} GiB\nSwap: {swapUsed:0.2f} GiB / {swapTotal:0.2f} GiB\n\nRMB: I/O Monitor",
+        "tooltip-format": "RAM: {used:0.2f} GiB / {total:0.2f} GiB ({percentage}%)\nAvailable: {avail:0.2f} GiB\nSwap: {swapUsed:0.2f} GiB / {swapTotal:0.2f} GiB",
         "states": {
             "warning": 70,
             "critical": 85
@@ -271,18 +269,6 @@
     // RIGHT MODULES - Connectivity
     // FIXED: Removed bandwidth from ethernet format to prevent duplication
     // ===================================================================
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-        "format-icons": ["󰃞", "󰃟", "󰃠"],
-        "tooltip-format": "Brightness: {percent}%\n\nLMB: Brightness Slider\nRMB: Hyprsunset Slider\nMMB: Shader Menu\nScroll: Adjust",
-        "on-click": "uwsm-app -- ~/user_scripts/sliders/dusky_sliders.py",
-        "on-click-right": "uwsm-app -- ~/user_scripts/sliders/dusky_sliders.py",
-        "on-click-middle": "uwsm-app -- ~/user_scripts/rofi/shader_menu.sh",
-        "on-scroll-up": "swayosd-client --brightness raise",
-        "on-scroll-down": "swayosd-client --brightness lower",
-        "interval": 60
-    },
 
     "network": {
         "format": "{ifname}",
@@ -353,8 +339,7 @@
             "warning": 30,
             "critical": 15
         },
-        "tooltip-format": "{timeTo}\nHealth: {health}%\nPower Draw: {power:.2f} W\nCycles: {cycles}\n\nLMB: Toggle Format\nRMB: Timeout Settings",
-        "on-click-right": "uwsm-app -- kitty --class dusky_hypridle.sh -e $HOME/user_scripts/hypridle/dusky_hypridle.sh"
+        "tooltip-format": "{timeTo}\nHealth: {health}%\nPower Draw: {power:.2f} W\nCycles: {cycles}\n\nLMB: Toggle Format",
     },
 
     // ===================================================================
@@ -363,7 +348,7 @@
     "custom/theme": {
         "format": "",
         "tooltip-format": "Theme Switcher\n\nSwitch wallpapers with waypaper\nor Super + # after toggling\nfor theme uniformity.\n\nLMB: Anime Mode\nRMB: Safe Mode\nMMB: Waypaper",
-        "on-click": "uwsm-app -- ~/user_scripts/theme_matugen/theme_ctl.sh set --mode anime",
+        "on-click": "uwsm-app -- ~/Scripts/theme/random-wallpaper",
         "on-click-right": "uwsm-app -- ~/user_scripts/theme_matugen/theme_ctl.sh set --mode safe",
         "on-click-middle": "uwsm-app -- waypaper"
     },
@@ -374,7 +359,7 @@
         "return-type": "json",
         "interval": 5,
         "signal": 9,
-        "on-click": "uwsm-app -- ~/user_scripts/waybar/toggle_hypridle.sh",
+        "on-click": "uwsm-app -- ~/Scripts/waybar/toggle_hypridle.sh",
         "escape": true
     },
 
@@ -408,7 +393,7 @@
     "custom/power": {
         "format": "⏻",
         "tooltip-format": "Power Menu\n\nLMB: Wlogout\nRMB: Lock Screen",
-        "on-click": "uwsm-app -- ~/user_scripts/wlogout/wlogout_scale.sh",
+        "on-click": "uwsm-app -- wlogout --protocol layer-shell --buttons-per-row 6 --column-spacing 2 --row-spacing 0",
         "on-click-right": "hyprlock"
     }
 

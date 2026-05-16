@@ -235,7 +235,7 @@ post_hook   = '''
 if command -v spicetify &> /dev/null && [ -d "$HOME/.config/spicetify/Themes/text/" ]; then
     ln -nfs $HOME/.config/matugen/generated/spotify-text.ini $HOME/.config/spicetify/Themes/text/color.ini;
     spicetify apply -n;
-    hyprctl dispatch sendshortcut "CTRL SHIFT, R, class:^(Spotify)$" || true;
+    hyprctl dispatch 'hl.dsp.send_shortcut({ mods = "CTRL SHIFT", key = "R", window = "class:^(Spotify)$"})' || true;
 fi
 '''
 
