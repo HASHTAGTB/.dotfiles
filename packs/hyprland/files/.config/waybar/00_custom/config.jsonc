@@ -349,7 +349,7 @@
         "format": "",
         "tooltip-format": "Theme Switcher\n\nSwitch wallpapers with waypaper\nor Super + # after toggling\nfor theme uniformity.\n\nLMB: Anime Mode\nRMB: Safe Mode\nMMB: Waypaper",
         "on-click": "uwsm-app -- ~/Scripts/theme/random-wallpaper",
-        "on-click-right": "uwsm-app -- ~/user_scripts/theme_matugen/theme_ctl.sh set --mode safe",
+        "on-click-right": "uwsm-app -- ~/Scripts/theme/cycle-appearance",
         "on-click-middle": "uwsm-app -- waypaper"
     },
 

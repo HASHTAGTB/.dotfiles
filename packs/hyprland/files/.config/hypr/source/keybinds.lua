@@ -34,19 +34,19 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("uwsm-app -- " .. browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("uwsm-app " .. fileManager))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("uwsm-app -- kitty --directory ~/Documents/Text/ -e " .. textEditor))
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd('pkill rofi; rofi -show drun -run-command "uwsm app -- {cmd}"'))
-hl.bind("CTRL + SHIFT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/keybindings.sh"))
+-- hl.bind("CTRL + SHIFT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/keybindings.sh"))
 hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/emoji.sh"))
-hl.bind(mainMod .. " + SHIFT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/rofi_theme.sh"))
+-- hl.bind(mainMod .. " + SHIFT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/rofi_theme.sh"))
 hl.bind("CTRL + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/rofi_wallpaper_selctor.sh"))
 hl.bind("CTRL + ALT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; uuctl"))
 
 -- Rofi Powermenu
-hl.bind(
-	"ALT + SHIFT + SPACE",
-	hl.dsp.exec_cmd(
-		"uwsm-app -- pkill rofi; rofi -show power-menu -modi power-menu:" .. scripts .. "/rofi/powermenu.sh"
-	)
-)
+-- hl.bind(
+-- 	"ALT + SHIFT + SPACE",
+-- 	hl.dsp.exec_cmd(
+-- 		"uwsm-app -- pkill rofi; rofi -show power-menu -modi power-menu:" .. scripts .. "/rofi/powermenu.sh"
+-- 	)
+-- )
 
 -- System Monitor
 hl.bind("CTRL + SHIFT + escape", hl.dsp.exec_cmd("uwsm-app -- " .. terminal .. " --class btop -e btop"))
@@ -144,7 +144,7 @@ hl.bind(
 -- Opacity / blur / visuals toggles
 hl.bind(
 	mainMod .. " + ALT + period",
-	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/hypr/hypr_blur_opacity_shadow_toggle.sh"),
+	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-appearance"),
 	{ locked = true }
 )
 hl.bind(mainMod .. " + period", hl.dsp.window.set_prop({ prop = "opaque", value = "toggle" }), { locked = true })
@@ -168,17 +168,17 @@ hl.bind(
 hl.bind("SUPER + BACKSPACE", hl.dsp.exec_cmd("hyprctl keyword cursor:zoom_factor 1.0"), { locked = true })
 
 -- Hyprshade
-hl.bind(mainMod .. " + ALT + S", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/shader_menu.sh"))
+-- hl.bind(mainMod .. " + ALT + S", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/shader_menu.sh"))
 hl.bind(mainMod .. " + ALT + X", hl.dsp.exec_cmd("hyprshade off"), { locked = true })
 hl.bind(mainMod .. " + ALT + V", hl.dsp.exec_cmd("hyprshade on saturation"), { locked = true })
 
 -- Animation menu
-hl.bind(
-	mainMod .. " + ALT + A",
-	hl.dsp.exec_cmd(
-		'uwsm-app -- pkill rofi; rofi -show animations -modi "animations:' .. scripts .. '/rofi/hypr_anim.sh"'
-	)
-)
+-- hl.bind(
+-- 	mainMod .. " + ALT + A",
+-- 	hl.dsp.exec_cmd(
+-- 		'uwsm-app -- pkill rofi; rofi -show animations -modi "animations:' .. scripts .. '/rofi/hypr_anim.sh"'
+-- 	)
+-- )
 
 -- Clipboard & screenshot
 hl.bind(
@@ -216,7 +216,8 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("pgrep -x slurp || (slurp | g
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("pgrep -x swappy || (grim - | uwsm-app -- swappy -f -)"))
 
 -- Google Image Search
-hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(scripts .. "/google_image_search/google_image_search.sh"))
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(scripts .. "/google/google_image_search.sh"))
+hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd(scripts .. "/google_image_search/google_image_search.sh"))
 
 -- OCR
 hl.bind(
@@ -250,7 +251,7 @@ hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 hl.bind(mainMod .. " + ALT + D", hl.dsp.exec_cmd("swaync-client --hide-all"), { locked = true })
 
 -- Screen lock
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/hyprlock/lock.sh"))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/lock"))
 
 -- ---------------------------------------------------------------------------
 -- 4. WINDOW MANAGEMENT
