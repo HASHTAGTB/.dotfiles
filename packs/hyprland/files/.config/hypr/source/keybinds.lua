@@ -217,7 +217,14 @@ hl.bind("SHIFT + Print", hl.dsp.exec_cmd("pgrep -x swappy || (grim - | uwsm-app 
 
 -- Google Image Search
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(scripts .. "/google/google_image_search.sh"))
-hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd(scripts .. "/google_image_search/google_image_search.sh"))
+
+-- OCR → Google text search (select region, OCR it, open Google search)
+hl.bind(
+	mainMod .. " + SHIFT + G",
+	hl.dsp.exec_cmd(
+		[=[bash -c 'q=$(slurp | grim -g - - | tesseract stdin stdout 2>/dev/null | python3 -c "import sys,urllib.parse; print(urllib.parse.quote(sys.stdin.read().strip()))"); xdg-open "https://www.google.com/search?q=$q"']=]
+	)
+)
 
 -- OCR
 hl.bind(
