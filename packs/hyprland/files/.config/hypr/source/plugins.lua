@@ -1,0 +1,15 @@
+-- PLUGINS
+-- Source: source/plugins.conf
+-- hyprpm reload is handled in autostart.lua (exec-once equivalent)
+
+-- hl.config({
+--     plugin = {
+--         hyprexpo = {
+--             columns          = 3,
+--             gap_size         = 5,
+--             bg_col           = 0xff111111,
+--             workspace_method = "first 1",
+--             gesture_distance = 300,
+--         },
+--     },
+-- })
