@@ -266,12 +266,22 @@ hl.bind(mainMod .. " + F", hl.dsp.layout("movetoroot"))
 hl.bind(mainMod .. " + X", hl.dsp.layout("swapsplit")) -- also on X (dual action, see source)
 
 -- Smart float: toggle float → resize to 90% → center
-hl.bind(
-	mainMod .. " + D",
-	hl.dsp.exec_cmd(
-		[[if hyprctl -j activewindow | jq -e '.floating | not'; then hyprctl --batch "dispatch togglefloating; dispatch resizeactive exact 90% 90%; dispatch centerwindow"; else hyprctl dispatch togglefloating; fi]]
-	)
-)
+hl.bind(mainMod .. " + D", function()
+	local win = hl.get_active_window()
+	if not win then
+		return
+	end
+	if not win.floating then
+		local mon = win.monitor or hl.get_active_monitor()
+		local w = mon and math.floor(mon.width * 0.9) or 1200
+		local h = mon and math.floor(mon.height * 0.9) or 800
+		hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
+		hl.dispatch(hl.dsp.window.resize({ exact = true, x = w, y = h }))
+		hl.dispatch(hl.dsp.window.center())
+	else
+		hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
+	end
+end)
 
 -- Focus (HJKL, repeating)
 hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }), { repeating = true })

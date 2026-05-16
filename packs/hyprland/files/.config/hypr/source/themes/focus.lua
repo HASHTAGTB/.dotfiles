@@ -32,8 +32,8 @@ hl.config({
 		rounding = 6,
 		rounding_power = 2.0,
 
-		active_opacity = 1.0,
-		inactive_opacity = 1.0,
+		active_opacity = 0.95,
+		inactive_opacity = 0.9,
 		fullscreen_opacity = 1.0,
 
 		dim_inactive = true,
