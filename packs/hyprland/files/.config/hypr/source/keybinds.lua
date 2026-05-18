@@ -119,7 +119,10 @@ hl.bind(
 )
 
 -- wlogout / reload
-hl.bind("ALT + F4", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/wlogout/wlogout_scale.sh"))
+hl.bind(
+	"ALT + F4",
+	hl.dsp.exec_cmd("wlogout --protocol layer-shell --buttons-per-row 6 --column-spacing 2 --row-spacing 0")
+)
 hl.bind("ALT + R", hl.dsp.exec_cmd("hyprctl reload"), { locked = true })
 
 -- Sliders
@@ -423,8 +426,8 @@ hl.bind("ALT + 5", function()
 end, { locked = true })
 
 hl.define_submap("mouse", function()
-	hl.bind("Q", hl.dsp.exec_cmd(scripts .. "/hypr/mouse_move.sh left"), { repeating = true })
-	hl.bind("E", hl.dsp.exec_cmd(scripts .. "/hypr/mouse_move.sh right"), { repeating = true })
+	hl.bind("Q", hl.dsp.exec_cmd(scripts .. "/mouse_move left"), { repeating = true })
+	hl.bind("E", hl.dsp.exec_cmd(scripts .. "/mouse_move right"), { repeating = true })
 	hl.bind(mainMod .. " + escape", function()
 		hl.dispatch(hl.dsp.exec_cmd('notify-send -u low -t 2000 "Mouse Mode Disabled" "Keybinds restored"'))
 		hl.dispatch(hl.dsp.submap("reset"))

@@ -62,5 +62,7 @@ hl.config({
 			vibrancy = 0.1696,
 			popups = false,
 		},
+
+		screen_shader = "~/.config/hypr/shaders/saturation.glsl",
 	},
 })

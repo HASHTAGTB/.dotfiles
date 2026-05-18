@@ -4,21 +4,21 @@ After making your changes, type "Reload custom CSS" in the command bar
 To open dev tools, open the command bar and type "open console" */
 
 :root {
-  --beeper-rosewater: #383a32;
-  --beeper-peach: #cceda4;
-  --beeper-green: #bbece8;
-  --beeper-blue: #1f4e4b;
-  --beeper-rosewater: #383a32;
-  --beeper-lavender: #bfcbad;
-  --beeper-text: #e2e3d8;
-  --beeper-subtext0: #e2e3d8
-  --beeper-subtext1: #c5c8ba
-  --beeper-surface2: #8e9285;
-  --beeper-surface1: #b1d18a;
-  --beeper-surface0: #282b24;
-  --beeper-base: #12140e;
-  --beeper-mantle: #1a1c16;
-  --beeper-crust: #e2e3d8;
+  --beeper-rosewater: #343b38;
+  --beeper-peach: #a0f2df;
+  --beeper-green: #c9e6ff;
+  --beeper-blue: #2b4a5f;
+  --beeper-rosewater: #343b38;
+  --beeper-lavender: #b1ccc4;
+  --beeper-text: #dee4e1;
+  --beeper-subtext0: #dee4e1
+  --beeper-subtext1: #bec9c5
+  --beeper-surface2: #89938f;
+  --beeper-surface1: #84d6c3;
+  --beeper-surface0: #252b29;
+  --beeper-base: #0e1513;
+  --beeper-mantle: #171d1b;
+  --beeper-crust: #dee4e1;
 
   --beeper-bg-main: var(--beeper-base);
   --beeper-bg-secondary: var(--beeper-mantle);

@@ -1,0 +1,56 @@
+[meta]
+name = "useless"
+description = ""
+os = "any"
+
+[[packages]]
+name = "base"
+system = "base"
+
+[[packages]]
+name = "libgsf"
+system = "libgsf"
+
+[[packages]]
+name = "libopenraw"
+system = "libopenraw"
+
+[[packages]]
+name = "netctl"
+system = "netctl"
+
+[[packages]]
+name = "nfs-utils"
+system = "nfs-utils"
+
+[[packages]]
+name = "poppler-glib"
+system = "poppler-glib"
+
+[[packages]]
+name = "qt5-multimedia"
+system = "qt5-multimedia"
+
+[[packages]]
+name = "s-nail"
+system = "s-nail"
+
+[[packages]]
+name = "texinfo"
+system = "texinfo"
+
+[[packages]]
+name = "tk"
+system = "tk"
+
+[[packages]]
+name = "xf86-video-amdgpu"
+system = "xf86-video-amdgpu"
+
+[[packages]]
+name = "xl2tpd"
+system = "xl2tpd"
+
+[[packages]]
+name = "yad"
+system = "yad"

@@ -21,7 +21,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("dbus-update-activation-environment --systemd --all")
 
 	-- Hyprshade (run after 5s delay so compositor is settled)
-	hl.exec_cmd("sleep 5 && hyprshade on saturation")
+	-- hl.exec_cmd("sleep 5 && hyprshade on saturation")
 
 	-- Input remapper (load saved presets)
 	hl.exec_cmd("input-remapper-control --command autoload")
@@ -34,6 +34,6 @@ end)
 -- approximated here. "hyprland.reload" may not exist in all Lua builds;
 -- verify against your Hyprland version. If unsupported, run hyprshade via
 -- a post-reload hook or add it to your shell reload alias instead.
-hl.on("config.reloaded", function()
-	hl.exec_cmd("hyprshade on saturation")
-end)
+-- hl.on("config.reloaded", function()
+-- 	hl.exec_cmd("hyprshade on saturation")
+-- end)

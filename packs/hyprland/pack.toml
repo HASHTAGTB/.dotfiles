@@ -26,6 +26,7 @@ system = "hyprpolkitagent"
 [[packages]]
 name   = "hyprshade"
 system = "hyprshade"
+optional = true
 
 [[packages]]
 name   = "waybar"

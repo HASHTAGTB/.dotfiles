@@ -1,6 +1,6 @@
 {
     "label": "lock",
-    "action": "$HOME/user_scripts/hyprlock/lock.sh",
+    "action": "$HOME/Scripts/lock",
     "text": "Lock",
     "keybind": "l"
 }
@@ -12,7 +12,7 @@
 }
 {
     "label": "suspend",
-    "action": "systemctl suspend",
+    "action": "$HOME/Scripts/lock & disown && systemctl suspend",
     "text": "Suspend",
     "keybind": "u"
 }

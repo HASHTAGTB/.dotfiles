@@ -2,7 +2,7 @@
 inputDevice=alsa_input.pci-0000_11_00.6.analog-stereo
 plugins=rnnoise#0,deepfilternet#0,autogain#0,gate#0,equalizer#0,limiter#0
 visiblePage=pluginsPage
-visiblePlugin=rnnoise#0
+visiblePlugin=deepfilternet#0
 
 [StreamOutputs]
 outputDevice=alsa_output.pci-0000_11_00.6.analog-stereo
@@ -16,5 +16,6 @@ forceBreezeTheme=false
 [Window]
 height=1382
 showTrayIcon=false
+visiblePage=inputPage
 visiblePresetSheetPage=autoloadingPage
-width=624
+width=1258

@@ -333,6 +333,10 @@ name   = "chezmoi"
 system = "chezmoi"
 optional = true
 
+[[packages]]
+name = "libdeep_filter_ladspa-bin"
+system = "libdeep_filter_ladspa-bin"
+
 [[scripts]]
 name = "Configure Reflector mirrors"
 file = "scripts/reflector-setup.sh"
