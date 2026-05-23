@@ -49,10 +49,8 @@ hl.bind("ALT + 2", hl.dsp.exec_cmd("uwsm-app -- blueman-manager"))
 hl.bind("ALT + 3", hl.dsp.exec_cmd("uwsm-app -- pavucontrol"))
 hl.bind("ALT + 4", hl.dsp.exec_cmd("uwsm-app -- waypaper"))
 hl.bind(mainMod .. " + numbersign", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/random-wallpaper"))
--- hl.bind(
--- 	mainMod .. " + SHIFT + numbersign",
--- 	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme_matugen/theme_ctl.sh set --mode safe")
--- )
+hl.bind(mainMod .. " + SHIFT + numbersign", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-wallpaper-pack"))
+hl.bind(mainMod .. " + CTRL + numbersign", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-animations"))
 
 -- Game Mode / Passthrough submap
 hl.bind("ALT + 6", function()

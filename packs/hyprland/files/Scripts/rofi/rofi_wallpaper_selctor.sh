@@ -20,7 +20,7 @@ if ! flock -n "$lock_fd"; then
 fi
 
 # --- CONFIGURATION ---
-readonly WALLPAPER_DIR="${HOME}/Pictures/wallpapers/all"
+readonly WALLPAPER_DIR="${HOME}/Pictures/wallpapers/active"
 readonly CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/rofi-wallpaper-thumbs"
 readonly CACHE_FILE="${CACHE_DIR}/rofi_input.cache"
 readonly PATH_MAP="${CACHE_DIR}/path_map.cache"

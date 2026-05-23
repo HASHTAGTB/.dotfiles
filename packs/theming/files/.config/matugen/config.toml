@@ -272,8 +272,8 @@ output_path = '/dev/null'
 post_hook   = '''
 bash -c '
 {
+  :
   # Add future scripts below this line with an `&` at the end
-
   # "$HOME/user_scripts/dusky_system/reload_cc/cc_restart.sh" --quiet &
   # "$HOME/user_scripts/sliders/reload_sliders/reload_sliders.sh" --quiet &
 
