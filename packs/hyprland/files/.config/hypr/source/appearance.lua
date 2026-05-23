@@ -3,7 +3,7 @@
 -- Animation preset:                     source/animations/
 
 require("source.themes.beautiful")
-require("source.animations.horizontal_main")
+require("source.animations.horizontal_minimal")
 
 -- ---------------------------------------------------------------------------
 -- LAYOUTS

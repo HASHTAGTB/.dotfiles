@@ -12,4 +12,4 @@ hl.animation({ leaf = "layers", enabled = true, speed = 2, bezier = "pro", style
 hl.animation({ leaf = "fade", enabled = true, speed = 2, bezier = "pro" })
 hl.animation({ leaf = "border", enabled = true, speed = 1, bezier = "linear" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "pro", style = "slide" })
-hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "pro", style = "slide" })
+hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "pro", style = "slidevert" })
