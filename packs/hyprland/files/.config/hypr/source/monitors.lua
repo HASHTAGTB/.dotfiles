@@ -16,6 +16,6 @@ hl.monitor({ output = "DP-5", mode = "1920x1080@60.00000", position = "2560x0", 
 -- vrr = 1 uses extra ~1W but makes idle feel smoother
 hl.config({
 	misc = {
-		vrr = 1,
+		vrr = 0,
 	},
 })

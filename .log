@@ -610,3 +610,12 @@
 [18:32:29]   ✓ fd (installed)
 [18:32:29]   ✓ ripgrep (installed)
 [18:32:29]   ✓ bash-completion (installed)
+[08:19:25] → Loaded 21 packs from ~/.dotfiles/packs/
+[08:19:47] → Unapply files/.oh-my-zsh/custom (currently: linked — will remove)
+[08:19:47] ✓ Removed symlink for files/.oh-my-zsh/custom
+[19:02:10] → Loaded 21 packs from ~/.dotfiles/packs/
+[19:02:18] → Unapply files/user_scripts (currently: linked — will remove)
+[19:02:18] ✓ Removed symlink for files/user_scripts
+[19:37:56] → Loaded 21 packs from ~/.dotfiles/packs/
+[13:14:44] → Loaded 21 packs from ~/.dotfiles/packs/
+[13:21:27] → Loaded 21 packs from ~/.dotfiles/packs/

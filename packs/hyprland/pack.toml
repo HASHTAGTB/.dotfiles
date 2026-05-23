@@ -111,3 +111,8 @@ target_mac = "~/Pictures/wallpapers"
 src = "files/.local/share/applications/custom"
 target_linux = "~/.local/share/applications/custom"
 target_mac = "~/.local/share/applications/custom"
+
+[[dotfiles]]
+src = "files/Scripts"
+target_linux = "~/Scripts"
+target_mac = "~/Scripts"

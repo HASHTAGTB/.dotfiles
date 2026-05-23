@@ -19,48 +19,40 @@
 -- ---------------------------------------------------------------------------
 local home = os.getenv("HOME")
 local terminal = "kitty"
-local fileManager = "-- kitty -e yazi"
+local fileManager = "kitty -e yazi"
 local browser = "zen-browser"
 local textEditor = "nvim"
 local scripts = home .. "/Scripts"
 local mainMod = "SUPER"
-local osdclient = "swayosd-client"
 
 -- ---------------------------------------------------------------------------
 -- 2. APPLICATION LAUNCHERS (UWSM wrapped)
 -- ---------------------------------------------------------------------------
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("uwsm-app -- " .. terminal))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("uwsm-app -- " .. browser))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("uwsm-app " .. fileManager))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("uwsm-app -- kitty --directory ~/Documents/Text/ -e " .. textEditor))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("uwsm-app -- " .. fileManager))
+hl.bind(
+	mainMod .. " + R",
+	hl.dsp.exec_cmd("uwsm-app -- " .. terminal .. " --directory ~/Documents/txt/ -e " .. textEditor)
+)
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd('pkill rofi; rofi -show drun -run-command "uwsm app -- {cmd}"'))
--- hl.bind("CTRL + SHIFT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/keybindings.sh"))
 hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/emoji.sh"))
--- hl.bind(mainMod .. " + SHIFT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/rofi_theme.sh"))
 hl.bind("CTRL + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/rofi_wallpaper_selctor.sh"))
 hl.bind("CTRL + ALT + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; uuctl"))
-
--- Rofi Powermenu
--- hl.bind(
--- 	"ALT + SHIFT + SPACE",
--- 	hl.dsp.exec_cmd(
--- 		"uwsm-app -- pkill rofi; rofi -show power-menu -modi power-menu:" .. scripts .. "/rofi/powermenu.sh"
--- 	)
--- )
 
 -- System Monitor
 hl.bind("CTRL + SHIFT + escape", hl.dsp.exec_cmd("uwsm-app -- " .. terminal .. " --class btop -e btop"))
 
 -- System Utilities
-hl.bind("ALT + 1", hl.dsp.exec_cmd("uwsm-app -- " .. terminal .. " --class wifitui -e wifitui"))
+hl.bind("ALT + 1", hl.dsp.exec_cmd("uwsm-app -- nm-connection-editor"))
 hl.bind("ALT + 2", hl.dsp.exec_cmd("uwsm-app -- blueman-manager"))
 hl.bind("ALT + 3", hl.dsp.exec_cmd("uwsm-app -- pavucontrol"))
 hl.bind("ALT + 4", hl.dsp.exec_cmd("uwsm-app -- waypaper"))
 hl.bind(mainMod .. " + numbersign", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/random-wallpaper"))
-hl.bind(
-	mainMod .. " + SHIFT + numbersign",
-	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme_matugen/theme_ctl.sh set --mode safe")
-)
+-- hl.bind(
+-- 	mainMod .. " + SHIFT + numbersign",
+-- 	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme_matugen/theme_ctl.sh set --mode safe")
+-- )
 
 -- Game Mode / Passthrough submap
 hl.bind("ALT + 6", function()
@@ -76,14 +68,6 @@ hl.define_submap("passthrough", function()
 		hl.dispatch(hl.dsp.submap("reset"))
 	end, { locked = true })
 end)
-
--- Screen rotate
-hl.bind("CTRL + ALT + R", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/hypr/screen_rotate.sh -90"), { locked = true })
-hl.bind(
-	"CTRL + ALT + SHIFT + R",
-	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/hypr/screen_rotate.sh +90"),
-	{ locked = true }
-)
 
 -- DPMS (timer-wrapped per docs: never dispatch DPMS directly from a keybind)
 hl.bind("ALT + F7", function()
@@ -110,13 +94,8 @@ hl.bind("ALT + F5", function()
 end, { locked = true })
 
 -- Waybar
-hl.bind("ALT + 9", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/waybar/waybar_autostart.sh"))
+hl.bind("ALT + 9", hl.dsp.exec_cmd("uwsm-app -- waybar"))
 hl.bind("ALT + 0", hl.dsp.exec_cmd("pkill waybar"), { locked = true })
-hl.bind(mainMod .. " + ALT + W", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/waybar/dusky_waybars.sh --toggle"))
-hl.bind(
-	mainMod .. " + ALT + SHIFT + W",
-	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/waybar/dusky_waybars.sh --back_toggle")
-)
 
 -- wlogout / reload
 hl.bind(
@@ -125,24 +104,9 @@ hl.bind(
 )
 hl.bind("ALT + R", hl.dsp.exec_cmd("hyprctl reload"), { locked = true })
 
--- Sliders
-hl.bind("ALT + V", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/sliders/dusky_sliders.py"))
-
 -- ---------------------------------------------------------------------------
 -- 3. CUSTOM SCRIPTS & UTILITIES
 -- ---------------------------------------------------------------------------
-
--- Display scale
-hl.bind(
-	mainMod .. " + CTRL + up",
-	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/hypr/adjust_scale.py +"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	mainMod .. " + CTRL + down",
-	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/hypr/adjust_scale.py -"),
-	{ locked = true, repeating = true }
-)
 
 -- Opacity / blur / visuals toggles
 hl.bind(
@@ -154,34 +118,28 @@ hl.bind(mainMod .. " + period", hl.dsp.window.set_prop({ prop = "opaque", value 
 hl.bind(mainMod .. " + comma", hl.dsp.window.set_prop({ prop = "no_blur", value = "toggle" }), { locked = true })
 
 -- Zoom
-hl.bind(
-	"SUPER + KP_Add",
-	hl.dsp.exec_cmd(
-		[[sh -c "hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1 {print $2 * 1.25}')\""]]
-	),
-	{ repeating = true }
-)
-hl.bind(
-	"SUPER + KP_Subtract",
-	hl.dsp.exec_cmd(
-		[[sh -c "hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1 {val = $2 / 1.25; if (val < 1.0) val = 1.0; print val}')\""]]
-	),
-	{ repeating = true }
-)
-hl.bind("SUPER + BACKSPACE", hl.dsp.exec_cmd("hyprctl keyword cursor:zoom_factor 1.0"), { locked = true })
+local function screen_zoom(delta)
+	local current_zoom = hl.get_config("cursor.zoom_factor")
+	local zoom = 1
+	if current_zoom >= 1 then
+		zoom = current_zoom + current_zoom * delta
+	end
+	hl.config({ cursor = { zoom_factor = zoom } })
+end
+
+hl.bind("SUPER + KP_Add", function()
+	screen_zoom(0.5)
+end, { repeating = true })
+hl.bind("SUPER + KP_Subtract", function()
+	screen_zoom(-0.5)
+end, { repeating = true })
+hl.bind("SUPER + BACKSPACE", function()
+	screen_zoom(-1)
+end, { repeating = true })
 
 -- Hyprshade
--- hl.bind(mainMod .. " + ALT + S", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/shader_menu.sh"))
-hl.bind(mainMod .. " + ALT + X", hl.dsp.exec_cmd("hyprshade off"), { locked = true })
-hl.bind(mainMod .. " + ALT + V", hl.dsp.exec_cmd("hyprshade on saturation"), { locked = true })
-
--- Animation menu
--- hl.bind(
--- 	mainMod .. " + ALT + A",
--- 	hl.dsp.exec_cmd(
--- 		'uwsm-app -- pkill rofi; rofi -show animations -modi "animations:' .. scripts .. '/rofi/hypr_anim.sh"'
--- 	)
--- )
+-- hl.bind(mainMod .. " + ALT + X", hl.dsp.exec_cmd("hyprshade off"), { locked = true })
+-- hl.bind(mainMod .. " + ALT + V", hl.dsp.exec_cmd("hyprshade on saturation"), { locked = true })
 
 -- Clipboard & screenshot
 hl.bind(
@@ -236,26 +194,6 @@ hl.bind(
 )
 hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd("grim - | tesseract stdin stdout -l eng | wl-copy"))
 
--- Ollama sidebar
-hl.bind(
-	mainMod .. " + ALT + O",
-	hl.dsp.exec_cmd("uwsm-app -- kitty --class ollama_terminal.sh -e " .. scripts .. "/llm/ollama_terminal.sh")
-)
-
--- Music recognition
-hl.bind(
-	mainMod .. " + ALT + M",
-	hl.dsp.exec_cmd(
-		"uwsm-app -- kitty --hold --class music_recognition.sh -e " .. scripts .. "/music/music_recognition.sh"
-	)
-)
-
--- Kokoro TTS
-hl.bind(
-	mainMod .. " + O",
-	hl.dsp.exec_cmd('wl-copy "$(wl-paste -p)" && uwsm-app -- ' .. scripts .. "/tts_stt/dusky_kokoro/trigger.sh")
-)
-
 -- Notifications
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 hl.bind(mainMod .. " + ALT + D", hl.dsp.exec_cmd("swaync-client --hide-all"), { locked = true })
@@ -273,7 +211,7 @@ hl.bind(mainMod .. " + X", hl.dsp.window.pin())
 hl.bind(mainMod .. " + Y", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + F", hl.dsp.layout("movetoroot"))
-hl.bind(mainMod .. " + X", hl.dsp.layout("swapsplit")) -- also on X (dual action, see source)
+hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.layout("swapsplit"))
 
 -- Smart float: toggle float → resize to 90% → center
 hl.bind(mainMod .. " + D", function()
@@ -306,10 +244,10 @@ hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "u" }), { re
 hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "d" }), { repeating = true })
 
 -- Window resizing (arrow keys, repeating)
-hl.bind(mainMod .. " + right", hl.dsp.window.resize({ x = 30, y = 0, relative = true }), { repeating = true })
-hl.bind(mainMod .. " + left", hl.dsp.window.resize({ x = -30, y = 0, relative = true }), { repeating = true })
-hl.bind(mainMod .. " + up", hl.dsp.window.resize({ x = 0, y = -30, relative = true }), { repeating = true })
-hl.bind(mainMod .. " + down", hl.dsp.window.resize({ x = 0, y = 30, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + h", hl.dsp.window.resize({ x = 30, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + l", hl.dsp.window.resize({ x = -30, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + k", hl.dsp.window.resize({ x = 0, y = -30, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + j", hl.dsp.window.resize({ x = 0, y = 30, relative = true }), { repeating = true })
 
 -- ---------------------------------------------------------------------------
 -- 5. WORKSPACE MANAGEMENT (context-aware multi-monitor script)
@@ -330,9 +268,6 @@ hl.bind(mainMod .. " + SHIFT + TAB", hl.dsp.focus({ workspace = "e+1" }), { repe
 hl.bind(mainMod .. " + Z", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.window.move({ workspace = "special:magic" }))
 
--- Spotify special workspace toggle
-hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/spotify/spotify_toggle.sh"))
-
 -- ---------------------------------------------------------------------------
 -- 6. MOUSE BINDINGS
 -- ---------------------------------------------------------------------------
@@ -346,65 +281,46 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- Volume & brightness (OSD client, locked + repeating)
 hl.bind(
 	"XF86AudioRaiseVolume",
-	hl.dsp.exec_cmd(osdclient .. " --output-volume raise"),
+	hl.dsp.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ +5%"),
 	{ locked = true, repeating = true }
 )
 hl.bind(
 	"XF86AudioLowerVolume",
-	hl.dsp.exec_cmd(osdclient .. " --output-volume lower"),
+	hl.dsp.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ -5%"),
 	{ locked = true, repeating = true }
 )
 hl.bind(
 	"XF86AudioMute",
-	hl.dsp.exec_cmd(osdclient .. " --output-volume mute-toggle"),
+	hl.dsp.exec_cmd("pactl set-sink-mute @DEFAULT_SINK@ toggle"),
 	{ locked = true, repeating = true }
 )
 hl.bind(
 	"XF86AudioMicMute",
-	hl.dsp.exec_cmd(osdclient .. " --input-volume mute-toggle"),
-	{ locked = true, repeating = true }
-)
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(osdclient .. " --brightness raise"), { locked = true, repeating = true })
-hl.bind(
-	"XF86MonBrightnessDown",
-	hl.dsp.exec_cmd(osdclient .. " --brightness lower"),
+	hl.dsp.exec_cmd("pactl set-source-mute @DEFAULT_SOURCE@ toggle"),
 	{ locked = true, repeating = true }
 )
 
 -- Precise adjustments (Alt modifier)
 hl.bind(
 	"ALT + XF86AudioRaiseVolume",
-	hl.dsp.exec_cmd(osdclient .. " --output-volume +1"),
+	hl.dsp.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ +1%"),
 	{ locked = true, repeating = true }
 )
 hl.bind(
 	"ALT + XF86AudioLowerVolume",
-	hl.dsp.exec_cmd(osdclient .. " --output-volume -1"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"ALT + XF86MonBrightnessUp",
-	hl.dsp.exec_cmd(osdclient .. " --brightness +1"),
-	{ locked = true, repeating = true }
-)
-hl.bind(
-	"ALT + XF86MonBrightnessDown",
-	hl.dsp.exec_cmd(osdclient .. " --brightness -1"),
+	hl.dsp.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ -1%"),
 	{ locked = true, repeating = true }
 )
 
 -- Player controls
-hl.bind("XF86AudioNext", hl.dsp.exec_cmd(osdclient .. " --playerctl next"), { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd(osdclient .. " --playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(osdclient .. " --playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPrev", hl.dsp.exec_cmd(osdclient .. " --playerctl previous"), { locked = true })
+hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
+hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 -- Manual media binds
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("ALT + P", hl.dsp.exec_cmd("pactl set-sink-mute @DEFAULT_SINK@ toggle"), { locked = true })
-
--- Mono audio toggle
-hl.bind("ALT + M", hl.dsp.exec_cmd(scripts .. "/audio/mono_audio_pipewire.sh"), { locked = true })
 
 -- Mic mute (keyboard key code 91 = [ on some layouts)
 hl.bind("code:91", hl.dsp.exec_cmd("pactl set-source-mute @DEFAULT_SOURCE@ toggle"))

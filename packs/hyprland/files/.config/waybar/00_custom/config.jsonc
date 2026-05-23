@@ -34,9 +34,10 @@
         "custom/gpu",
         "memory", 
         "disk", 
+        "disk#ntfs", 
+        // "disk#backup", 
         "temperature",
         "custom/separator",
-        "backlight", 
         "network", 
         "bluetooth", 
         "pulseaudio", 
@@ -251,7 +252,33 @@
             "warning": 75,
             "critical": 90
         },
-        "on-click-right": "uwsm-app -- thunar"
+        "on-click-right": "uwsm-app -- kitty -e yazi"
+    },
+
+    "disk#ntfs": {
+        "format": "󰋊 {percentage_used}%",
+        "format-alt": "󰋊 {used}/{total}",
+        "path": "/mnt/ntfs/",
+        "interval": 60,
+        "tooltip-format": "Disk Usage: {used}/{total} ({percentage_used}%)\nFree: {free}\nPath: {path}\n\nLMB: Toggle Format\nRMB: File Manager",
+        "states": {
+            "warning": 75,
+            "critical": 90
+        },
+        "on-click-right": "uwsm-app -- kitty -e yazi"
+    },
+
+    "disk#backup": {
+        "format": "󰋊 {percentage_used}%",
+        "format-alt": "󰋊 {used}/{total}",
+        "path": "/mnt/backup/",
+        "interval": 60,
+        "tooltip-format": "Disk Usage: {used}/{total} ({percentage_used}%)\nFree: {free}\nPath: {path}\n\nLMB: Toggle Format\nRMB: File Manager",
+        "states": {
+            "warning": 75,
+            "critical": 90
+        },
+        "on-click-right": "uwsm-app -- kitty -e yazi"
     },
 
     "temperature": {

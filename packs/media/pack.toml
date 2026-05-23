@@ -65,6 +65,7 @@ optional = true
 [[packages]]
 name = "spotdl"
 python = "spotdl"
+optional = true
 
 [[scripts]]
 name = "Enable audio services"

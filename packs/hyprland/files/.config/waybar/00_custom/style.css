@@ -1,10 +1,3 @@
-/* ═══════════════════════════════════════════════════════════════════════════
-   COMPACT HORIZONTAL WAYBAR THEME - GTK CSS COMPATIBLE
-   Uses Matugen colors via @import
-   
-   OPTIMIZED FOR MINIMAL HEIGHT - Target: ~28px
-   ═══════════════════════════════════════════════════════════════════════════ */
-
 @import url("../../.config/matugen/generated/waybar-colors.css");
 
 /* ═══════════════════════════════════════════════════════════════════════════

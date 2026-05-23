@@ -4,7 +4,7 @@
 
 hl.on("hyprland.start", function()
 	-- Plugins
-	hl.exec_cmd("hyprpm reload")
+	-- hl.exec_cmd("hyprpm reload")
 
 	-- Wallpaper engine
 	hl.exec_cmd("uwsm-app -- awww-daemon")
@@ -14,7 +14,8 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("uwsm-app -- wl-paste --type image --watch cliphist store")
 
 	-- Waybar (auto-starts with 1-min timer script)
-	hl.exec_cmd("uwsm-app -- " .. os.getenv("HOME") .. "/user_scripts/waybar/waybar_autostart.sh")
+	-- hl.exec_cmd("uwsm-app -- " .. os.getenv("HOME") .. "/user_scripts/waybar/waybar_autostart.sh")
+	hl.exec_cmd("uwsm-app -- waybar")
 
 	-- Fix slow app launch: import env into systemd + dbus
 	hl.exec_cmd("systemctl --user import-environment $(env | cut -d'=' -f 1)")
@@ -24,7 +25,7 @@ hl.on("hyprland.start", function()
 	-- hl.exec_cmd("sleep 5 && hyprshade on saturation")
 
 	-- Input remapper (load saved presets)
-	hl.exec_cmd("input-remapper-control --command autoload")
+	-- hl.exec_cmd("input-remapper-control --command autoload")
 
 	-- EasyEffects audio processing (background service mode)
 	hl.exec_cmd("easyeffects --gapplication-service")

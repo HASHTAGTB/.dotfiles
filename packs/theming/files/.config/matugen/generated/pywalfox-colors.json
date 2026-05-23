@@ -1,8 +1,8 @@
 {
-  "wallpaper": "/home/htb/.dotfiles/packs/hyprland/files/Pictures/wallpapers/all/active_theme/wallhaven-yq78rx.jpg",
+  "wallpaper": "/home/htb/.dotfiles/packs/hyprland/files/Pictures/wallpapers/all/active_theme/wallhaven-gpl8d3.jpg",
   "alpha": "100",
   "colors": {
-    "color0": "#0e1513",
+    "color0": "#141318",
     "color1": "",
     "color2": "",
     "color3": "",
@@ -12,11 +12,11 @@
     "color7": "",
     "color8": "",
     "color9": "",
-    "color10": "#84d6c3",
+    "color10": "#c7bfff",
     "color11": "",
     "color12": "",
-    "color13": "#343b38",
+    "color13": "#3a383e",
     "color14": "",
-    "color15": "#dee4e1"
+    "color15": "#e5e1e9"
   }
 }

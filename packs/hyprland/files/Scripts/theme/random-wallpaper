@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+WALLPAPER_DIR="${1:-$HOME/.dotfiles/packs/hyprland/files/Pictures/wallpapers/all/active_theme}"
+
+wallpaper=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.webp" -o -name "*.gif" \) | shuf -n 1)
+[[ -z "$wallpaper" ]] && { echo "No wallpapers found in $WALLPAPER_DIR"; exit 1; }
+
+awww img "$wallpaper" --transition-type grow --transition-duration 2 --transition-fps 60
+exec "$(dirname "$0")/refresh"
