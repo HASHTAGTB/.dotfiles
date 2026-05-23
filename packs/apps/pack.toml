@@ -36,6 +36,7 @@ system = "loupe"
 [[packages]]
 name   = "pinta"
 system = "pinta"
+optional = true
 
 [[packages]]
 name   = "zathura"
