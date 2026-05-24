@@ -28,7 +28,7 @@ hl.on("hyprland.start", function()
 	-- hl.exec_cmd("input-remapper-control --command autoload")
 
 	-- EasyEffects audio processing (background service mode)
-	hl.exec_cmd("easyeffects --gapplication-service")
+	-- hl.exec_cmd("easyeffects --gapplication-service")
 end)
 
 -- "exec = hyprshade on saturation" (runs on start AND every reload) is

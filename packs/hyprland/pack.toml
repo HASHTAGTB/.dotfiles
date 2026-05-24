@@ -62,6 +62,22 @@ name   = "quickshell-overview-git"
 system = "quickshell-overview-git"
 optional = true
 
+[[packages]]
+name = "surfraw"
+system = "surfraw"
+
+[[packages]]
+name = "python-pytesseract"
+system = "python-pytesseract"
+
+[[packages]]
+name = "tesseract"
+system = "tesseract"
+
+[[packages]]
+name = "tesseract-data-eng"
+system = "tesseract-data-eng"
+
 [[scripts]]
 name = "Enable Hyprland user services"
 file = "scripts/enable-hyprland-services.sh"

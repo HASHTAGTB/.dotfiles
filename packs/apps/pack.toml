@@ -126,3 +126,8 @@ optional = true
 src = "files/.config/pacseek/config.json"
 target_linux = "~/.config/pacseek/config.json"
 target_mac = "~/.config/pacseek/config.json"
+
+[[dotfiles]]
+src = "files/.config/vesktop-flags.conf"
+target_linux = "~/.config/vesktop-flags.conf"
+target_mac = "~/.config/vesktop-flags.conf"

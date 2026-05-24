@@ -3,9 +3,9 @@ set -euo pipefail
 
 animations=("horizontal_main" "vertical_main" "horizontal_minimal" "vertical_minimal") 
 
-APPEARANCE="$HOME/.config/hypr/source/appearance.lua"
+APPEARANCE="$HOME/.config/hypr/modules/appearance.lua"
 
-current=$(grep -oP '(?<=require\("source\.animations\.)\w+(?="\))' "$APPEARANCE")
+current=$(grep -oP '(?<=require\("modules\.animations\.)\w+(?="\))' "$APPEARANCE")
 
 next=""
 for i in "${!animations[@]}"; do
@@ -17,7 +17,7 @@ done
 
 [[ -z "$next" ]] && next="${animations[0]}"
 
-sed -i "s|require(\"source\.animations\.$current\")|require(\"source.animations.$next\")|" "$APPEARANCE"
+sed -i "s|require(\"modules\.animations\.$current\")|require(\"modules.animations.$next\")|" "$APPEARANCE"
 
 hyprctl reload
 echo "$current → $next"

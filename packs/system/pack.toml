@@ -230,41 +230,32 @@ name   = "unrar"
 system = "unrar"
 optional = true
 
-# --- OCR ---
-
-[[packages]]
-name   = "tesseract"
-system = "tesseract"
-
-[[packages]]
-name   = "tesseract-data-eng"
-system = "tesseract-data-eng"
-
-[[packages]]
-name   = "python-pytesseract"
-system = "python-pytesseract"
-
 # --- Audio system ---
 
 [[packages]]
 name   = "easyeffects"
 system = "easyeffects"
+optional = true
 
 [[packages]]
 name   = "lsp-plugins-lv2"
 system = "lsp-plugins-lv2"
+optional = true
 
 [[packages]]
 name   = "zam-plugins-lv2"
 system = "zam-plugins-lv2"
+optional = true
 
 [[packages]]
 name   = "mda.lv2"
 system = "mda.lv2"
+optional = true
 
 [[packages]]
 name   = "calf"
 system = "calf"
+optional = true
 
 # --- Input ---
 
@@ -275,6 +266,7 @@ system = "keyd"
 [[packages]]
 name   = "input-remapper-git"
 system = "input-remapper-git"
+optional = true
 
 # --- Misc system tools ---
 
@@ -336,6 +328,20 @@ optional = true
 [[packages]]
 name = "libdeep_filter_ladspa-bin"
 system = "libdeep_filter_ladspa-bin"
+optional = true
+
+[[packages]]
+name = "coppwr-bin"
+system = "coppwr-bin"
+optional = true
+
+[[packages]]
+name = "noise-suppression-for-voice"
+system = "noise-suppression-for-voice"
+
+[[packages]]
+name = "ydotool"
+system = "ydotool"
 
 [[scripts]]
 name = "Configure Reflector mirrors"
@@ -386,3 +392,8 @@ target_mac = "~/.config/mimeapps.list"
 src = "files/.config/xdg-terminals.list"
 target_linux = "~/.config/xdg-terminals.list"
 target_mac = "~/.config/xdg-terminals.list"
+
+[[dotfiles]]
+src = "files/.config/pipewire/pipewire.conf.d"
+target_linux = "~/.config/pipewire/pipewire.conf.d"
+target_mac = "~/.config/pipewire/pipewire.conf.d"

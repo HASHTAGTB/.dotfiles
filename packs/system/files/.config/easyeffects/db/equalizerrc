@@ -1,4 +1,5 @@
 [sie][Equalizer#0]
+bypass=true
 numBands=5
 
 [sie][Equalizer#0#left]

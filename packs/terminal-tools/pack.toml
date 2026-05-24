@@ -78,6 +78,14 @@ name = "navi"
 system = "navi"
 optional = true
 
+[[packages]]
+name = "dysk"
+system = "dysk"
+
+[[packages]]
+name = "tmux"
+system = "tmux"
+
 [[dotfiles]]
 src = "files/.config/btop/btop.conf"
 target_linux = "~/.config/btop/btop.conf"
@@ -87,3 +95,8 @@ target_mac = "~/.config/btop/btop.conf"
 src = "files/.config/fastfetch"
 target_linux = "~/.config/fastfetch"
 target_mac = "~/.config/fastfetch"
+
+[[dotfiles]]
+src = "files/.config/tmux"
+target_linux = "~/.config/tmux"
+target_mac = "~/.config/tmux"

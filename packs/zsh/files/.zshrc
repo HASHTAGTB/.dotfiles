@@ -7,16 +7,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # ========================================
-# SOURCE ALIASES AND OTHER STUFF
-# ========================================
-
-if [[ -d "$HOME/.config/shell" ]]; then
-    for file in "$HOME/.config/shell/"*{sh,zsh}; do
-        [[ -r "$file" ]] && source "$file"
-    done
-fi
-
-# ========================================
 # ADD ~/Scripts TO PATH
 # ========================================
 
@@ -31,9 +21,6 @@ fi
 setopt CORRECT
 setopt HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE SHARE_HISTORY
 
-# bindkey -v
-# export KEYTIMEOUT=1
-
 HISTSIZE=50000
 SAVEHIST=50000
 HISTFILE=~/.zsh_history
@@ -43,6 +30,16 @@ export HISTORY_IGNORE="(\&|[bf]g|c|clear|history|exit|q|pwd|* --help)"
 
 export LESS_TERMCAP_md="$(tput bold 2> /dev/null; tput setaf 2 2> /dev/null)"
 export LESS_TERMCAP_me="$(tput sgr0 2> /dev/null)"
+
+# ========================================
+# SOURCE ALIASES AND OTHER STUFF
+# ========================================
+
+if [[ -d "$HOME/.config/shell" ]]; then
+    for file in "$HOME/.config/shell/"*{sh,zsh}; do
+        [[ -r "$file" ]] && source "$file"
+    done
+fi
 
 # ========================================
 # ZINIT INTALL + LOAD
@@ -69,21 +66,21 @@ unalias zi
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # OMZ snippets (synchronous)
-# zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::extract
-zinit snippet OMZP::fzf
+zinit snippet OMZP::colored-man-pages
 # zinit ice load'![[ $PLUGINS = 'zoxide' ]]' unload'![[ $PLUGINS != 'zoxide' ]]'
 zinit snippet OMZP::zoxide
-
-# ========================================
-# ASYNCHRONOUS PLUGINS - TURBO MODE
-# ========================================
 
 # zsh vi mode
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
 zinit ice depth=1
 zinit light jeffreytse/zsh-vi-mode
+zvm_after_init_commands+=(eval "$(fzf --zsh)")
+
+# ========================================
+# ASYNCHRONOUS PLUGINS - TURBO MODE
+# ========================================
 
 # fast-syntax-highlighting before zsh-completions and zsh-autosuggestions
 zinit ice wait lucid atinit'ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay'
@@ -105,7 +102,7 @@ zinit load 'zsh-users/zsh-history-substring-search'
 zinit ice wait lucid atload'_zsh_autosuggest_start' 
 zinit light zsh-users/zsh-autosuggestions
 
-# Must be last
+# Must be last but fast-syntax-highlighting better
 # zinit ice wait lucid atinit'zicompinit; zicdreplay'
 # zinit light zsh-users/zsh-syntax-highlighting
 
