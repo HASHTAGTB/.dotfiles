@@ -343,6 +343,10 @@ system = "noise-suppression-for-voice"
 name = "ydotool"
 system = "ydotool"
 
+[[packages]]
+name = "qpwgraph"
+system = "qpwgraph"
+
 [[scripts]]
 name = "Configure Reflector mirrors"
 file = "scripts/reflector-setup.sh"
