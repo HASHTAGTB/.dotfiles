@@ -59,22 +59,22 @@ desc = "Go to ntfs Drive"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "s" ]
-run = "cd ~/Documents/"
+run = "cd ~/doc/"
 desc = "Go to Documents"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "i" ]
-run = "cd ~/Pictures/"
+run = "cd ~/img/"
 desc = "Go to Pictures"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "p" ]
-run = "cd ~/Projects/"
+run = "cd ~/dev/"
 desc = "Go to Projects"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "t" ]
-run = "cd ~/Documents/temp/"
+run = "cd ~/doc/temp/"
 desc = "Go to temp"
 
 [[mgr.prepend_keymap]]

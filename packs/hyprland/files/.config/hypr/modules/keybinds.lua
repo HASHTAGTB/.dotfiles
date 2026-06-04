@@ -18,11 +18,11 @@
 -- Variables
 -- ---------------------------------------------------------------------------
 local home = os.getenv("HOME")
-local terminal = "kitty"
-local fileManager = "kitty -e yazi"
+local terminal = "kitty -1"
+local fileManager = terminal .. " -e yazi"
 local browser = "zen-browser"
 local textEditor = "nvim"
-local scripts = home .. "/Scripts"
+local scripts = home .. "/scripts"
 local mainMod = "SUPER"
 
 -- ---------------------------------------------------------------------------
@@ -31,10 +31,7 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("uwsm-app -- " .. terminal))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("uwsm-app -- " .. browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("uwsm-app -- " .. fileManager))
-hl.bind(
-	mainMod .. " + R",
-	hl.dsp.exec_cmd("uwsm-app -- " .. terminal .. " --directory ~/Documents/txt/ -e " .. textEditor)
-)
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("uwsm-app -- " .. terminal .. " --directory ~/doc/txt/ -e " .. textEditor))
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd('pkill rofi; rofi -show drun -run-command "uwsm app -- {cmd}"'))
 hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/emoji.sh"))
 hl.bind("CTRL + SPACE", hl.dsp.exec_cmd("uwsm-app -- pkill rofi; " .. scripts .. "/rofi/rofi_wallpaper_selctor.sh"))
@@ -140,15 +137,7 @@ end, { repeating = true })
 -- hl.bind(mainMod .. " + ALT + V", hl.dsp.exec_cmd("hyprshade on saturation"), { locked = true })
 
 -- Clipboard & screenshot
-hl.bind(
-	mainMod .. " + V",
-	hl.dsp.exec_cmd(
-		scripts
-			.. '/clipboard/close_terminal_clipboard.sh uwsm-app -- kitty --class terminal_clipboard.sh -e "'
-			.. scripts
-			.. '/clipboard/terminal_clipboard.sh"'
-	)
-)
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(terminal .. ' --class terminal_clipboard.sh -e "' .. scripts .. '/tcl"'))
 
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("pkill hyprpicker || hyprpicker -a"))
 
@@ -156,7 +145,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("pkill hyprpicker || hyprpicker -a"))
 hl.bind(
 	mainMod .. " + S",
 	hl.dsp.exec_cmd(
-		"pgrep -x slurp || (slurp | grim -g - - | tee \"$HOME/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d-%H%M%S').png\" | wl-copy -t image/png)"
+		"pgrep -x slurp || (slurp | grim -g - - | tee \"$HOME/img/Screenshots/screenshot-$(date +'%Y-%m-%d-%H%M%S').png\" | wl-copy -t image/png)"
 	)
 )
 
@@ -164,7 +153,7 @@ hl.bind(
 hl.bind(
 	"Print",
 	hl.dsp.exec_cmd(
-		[[grim -o "$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')" - | tee "$HOME/Pictures/Screenshots/screenshot-$(date +'%Y-%m-%d-%H%M%S').png" | wl-copy -t image/png && notify-send "Fullscreen Screenshot"]]
+		[[grim -o "$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')" - | tee "$HOME/img/Screenshots/screenshot-$(date +'%Y-%m-%d-%H%M%S').png" | wl-copy -t image/png && notify-send "Fullscreen Screenshot"]]
 	)
 )
 

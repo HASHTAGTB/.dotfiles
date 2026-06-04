@@ -8,7 +8,7 @@
 #
 # Example: add custom/shortcuts.zsh for shortcuts to your local projects
 #
-# brainstormr=~/Projects/development/planetargon/brainstormr
+# brainstormr=~/dev/development/planetargon/brainstormr
 # cd $brainstormr
 
 alias update="sudo pacman -Syu"

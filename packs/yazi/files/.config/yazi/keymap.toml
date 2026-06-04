@@ -54,28 +54,38 @@ desc = "Enter the child directory, or open the file"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "w" ]
-run = "cd /mnt/ntfs/"
-desc = "Go to ntfs Drive"
+run = "cd /mnt/nvme/"
+desc = "Go to nvme Drive"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "d" ]
+run = "cd ~/dl"
+desc = "Go to Downloads"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "s" ]
-run = "cd ~/Documents/"
+run = "cd ~/doc"
 desc = "Go to Documents"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "i" ]
-run = "cd ~/Pictures/"
-desc = "Go to Pictures"
+run = "cd ~/img/"
+desc = "Go to Images"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "p" ]
-run = "cd ~/Projects/"
-desc = "Go to Projects"
+run = "cd ~/dev/"
+desc = "Go to dev"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "t" ]
-run = "cd ~/Documents/temp/"
+run = "cd ~/doc/temp/"
 desc = "Go to temp"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "m" ]
+run = "cd /mnt/"
+desc = "Go to mnt"
 
 [[mgr.prepend_keymap]]
 # on = ["R","b"]

@@ -46,3 +46,13 @@ optional = true
 name   = "file-roller"
 system = "file-roller"
 optional = true
+
+[[dotfiles]]
+src = "files/.config/gtk-3.0/bookmarks"
+target_linux = "~/.config/gtk-3.0/bookmarks"
+target_mac = "~/.config/gtk-3.0/bookmarks"
+
+[[dotfiles]]
+src = "files/.config/gtk-3.0/thunar.css"
+target_linux = "~/.config/gtk-3.0/thunar.css"
+target_mac = "~/.config/gtk-3.0/thunar.css"

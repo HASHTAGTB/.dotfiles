@@ -7,29 +7,24 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # ========================================
-# ADD ~/Scripts TO PATH
+# ADD ~/scripts TO PATH
 # ========================================
 
-if [[ -d "$HOME/Scripts" ]]; then
-    export PATH="$PATH:$HOME/Scripts"
+if [[ -d "$HOME/scripts" ]]; then
+    export PATH="$PATH:$HOME/scripts"
 fi
 
 # ========================================
 # OPTIONS
 # ========================================
 
-setopt CORRECT
-setopt HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE SHARE_HISTORY
+# setopt CORRECT
+setopt HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE SHARE_HISTORY HIST_REDUCE_BLANKS
 
 HISTSIZE=50000
 SAVEHIST=50000
 HISTFILE=~/.zsh_history
-
-export HISTCONTROL=ignoreboth
-export HISTORY_IGNORE="(\&|[bf]g|c|clear|history|exit|q|pwd|* --help)"
-
-export LESS_TERMCAP_md="$(tput bold 2> /dev/null; tput setaf 2 2> /dev/null)"
-export LESS_TERMCAP_me="$(tput sgr0 2> /dev/null)"
+HISTORY_IGNORE="(&|[bf]g|c|clear|history|exit|q|pwd|* --help)"
 
 # ========================================
 # SOURCE ALIASES AND OTHER STUFF
@@ -86,6 +81,8 @@ zvm_after_init_commands+=(eval "$(fzf --zsh)")
 zinit ice wait lucid atinit'ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay'
 zinit light zdharma-continuum/fast-syntax-highlighting
 
+# case insensitive completions
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # zsh-completions — blockf prevents it from overriding fpath entries
 zinit ice wait lucid blockf 
 zinit light zsh-users/zsh-completions

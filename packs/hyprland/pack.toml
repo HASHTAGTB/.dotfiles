@@ -119,16 +119,11 @@ target_linux = "~/user_scripts"
 target_mac = "~/user_scripts"
 
 [[dotfiles]]
-src = "files/Pictures/wallpapers"
-target_linux = "~/Pictures/wallpapers"
-target_mac = "~/Pictures/wallpapers"
+src = "files/img/wallpapers"
+target_linux = "~/img/wallpapers"
+target_mac = "~/img/wallpapers"
 
 [[dotfiles]]
 src = "files/.local/share/applications/custom"
 target_linux = "~/.local/share/applications/custom"
 target_mac = "~/.local/share/applications/custom"
-
-[[dotfiles]]
-src = "files/Scripts"
-target_linux = "~/Scripts"
-target_mac = "~/Scripts"

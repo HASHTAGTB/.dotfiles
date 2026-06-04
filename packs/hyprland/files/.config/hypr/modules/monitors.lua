@@ -19,6 +19,7 @@ hl.monitor({ output = "DP-5", mode = "1920x1080@60.00000", position = "2560x0", 
 -- 	-- 	vfr = false,
 -- 	-- },
 -- 	misc = {
--- 		vrr = 1,
+-- 		-- vrr = 1,
+-- 		-- render_unfocused_fps = 1,
 -- 	},
 -- })

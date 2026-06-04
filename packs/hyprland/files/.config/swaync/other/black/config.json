@@ -60,20 +60,20 @@
                 {
                     "label": "󰌪",
                     "type": "toggle",
-                    "command": "bash -c $HOME/.config/swaync/scripts/quiet.sh",
-                    "update-command": "bash -c $HOME/.config/swaync/scripts/update_quiet.sh"
+                    "command": "bash -c $HOME/.config/swaync/bin/quiet.sh",
+                    "update-command": "bash -c $HOME/.config/swaync/bin/update_quiet.sh"
                 },
                 {
                     "label": "",
                     "type": "toggle",
-                    "command": "bash -c $HOME/.config/swaync/scripts/inhibit.sh",
-                    "update-command": "sh -c $HOME/.config/swaync/scripts/update_inhibit.sh"
+                    "command": "bash -c $HOME/.config/swaync/bin/inhibit.sh",
+                    "update-command": "sh -c $HOME/.config/swaync/bin/update_inhibit.sh"
                 },
                 {
                     "label": "",
                     "type": "toggle",
                     "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-                    "update-command": "sh -c $HOME/.config/swaync/scripts/update_mic.sh"
+                    "update-command": "sh -c $HOME/.config/swaync/bin/update_mic.sh"
                 },
                 {
                     "label": "",

@@ -959,3 +959,19 @@
 [13:36:45] ✓ Uninstalled coppwr-bin (pack 'system')
 [13:36:45] → Checking install status for 'coppwr-bin'
 [13:36:45] → Uninstalling 'coppwr-bin'
+[10:47:04] → Loaded 21 packs from ~/.dotfiles/packs/
+[10:47:48] → Loaded 21 packs from ~/.dotfiles/packs/
+[10:48:21] ✓ Uninstalled kopia (pack 'system')
+[10:48:21] → Checking install status for 'kopia'
+[10:48:21] → Uninstalling 'kopia'
+[22:37:46] → Loaded 21 packs from ~/.dotfiles/packs/
+[22:38:07] ✓ Uninstalled hyprshade (pack 'hyprland')
+[22:38:07] → Checking install status for 'hyprshade'
+[22:38:07] → Uninstalling 'hyprshade'
+[14:12:23] → Loaded 21 packs from ~/.dotfiles/packs/
+[14:12:38] ✓ Restored files/scripts
+[11:25:23] → Loaded 21 packs from ~/.dotfiles/packs/
+[11:25:41] ✓ Restored files/.gitconfig
+[11:27:07] ✓ Restored files/.config/git/ignore
+[11:38:42] → Loaded 21 packs from ~/.dotfiles/packs/
+[15:00:18] → Loaded 21 packs from ~/.dotfiles/packs/

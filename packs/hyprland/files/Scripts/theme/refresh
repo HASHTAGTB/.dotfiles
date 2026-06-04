@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-wallpaper=$(awww query 2>/dev/null | grep -oP '(?<=image: ).*' | head -1)
-[[ -z "$wallpaper" ]] && { echo "No wallpaper set"; exit 1; }
-
-exec matugen image "$wallpaper" --source-color-index 0

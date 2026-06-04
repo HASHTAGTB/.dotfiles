@@ -186,8 +186,8 @@ output_path = '~/.config/matugen/generated/obsidian-theme.css'
 post_hook   = '''
 bash -c '
 {
-  mkdir -p "/mnt/ntfs/HTB/Obsidian Vault/.obsidian/snippets"
-  ln -nfs "$HOME/.config/matugen/generated/obsidian-theme.css" "/mnt/ntfs/HTB/Obsidian Vault/.obsidian/snippets/matugen-theme.css"
+  mkdir -p "$HOME/doc/VN/.obsidian/snippets"
+  ln -nfs "$HOME/.config/matugen/generated/obsidian-theme.css" "$HOME/doc/VN/.obsidian/snippets/matugen-theme.css"
 } >/dev/null 2>&1 </dev/null & disown
 '
 '''
