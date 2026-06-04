@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+animations=("horizontal_main" "vertical_main" "horizontal_minimal" "vertical_minimal") 
+
+APPEARANCE="$HOME/.config/hypr/modules/appearance.lua"
+
+current=$(grep -oP '(?<=require\("modules\.animations\.)\w+(?="\))' "$APPEARANCE")
+
+next=""
+for i in "${!animations[@]}"; do
+    if [[ "${animations[$i]}" == "$current" ]]; then
+        next="${animations[$(( (i + 1) % ${#animations[@]} ))]}"
+        break
+    fi
+done
+
+[[ -z "$next" ]] && next="${animations[0]}"
+
+sed -i "s|require(\"modules\.animations\.$current\")|require(\"modules.animations.$next\")|" "$APPEARANCE"
+
+hyprctl reload
+echo "$current → $next"
+notify-send "$next"

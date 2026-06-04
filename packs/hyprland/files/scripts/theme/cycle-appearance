@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+themes=("beautiful" "focus")
+
+APPEARANCE="$HOME/.config/hypr/modules/appearance.lua"
+
+current=$(grep -oP '(?<=require\("modules\.themes\.)\w+(?="\))' "$APPEARANCE")
+
+next=""
+for i in "${!themes[@]}"; do
+    if [[ "${themes[$i]}" == "$current" ]]; then
+        next="${themes[$(( (i + 1) % ${#themes[@]} ))]}"
+        break
+    fi
+done
+
+[[ -z "$next" ]] && next="${themes[0]}"
+
+sed -i "s|require(\"modules\.themes\.$current\")|require(\"modules.themes.$next\")|" "$APPEARANCE"
+
+hyprctl reload
+echo "$current → $next"
