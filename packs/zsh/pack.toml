@@ -92,3 +92,8 @@ target_mac = "~/.p10k.zsh"
 src = "files/.zshenv"
 target_linux = "~/.zshenv"
 target_mac = "~/.zshenv"
+
+[[dotfiles]]
+src = "files/.config/shell"
+target_linux = "~/.config/shell"
+target_mac = "~/.config/shell"

@@ -401,3 +401,13 @@ target_mac = "~/.config/xdg-terminals.list"
 src = "files/.config/pipewire/pipewire.conf.d"
 target_linux = "~/.config/pipewire/pipewire.conf.d"
 target_mac = "~/.config/pipewire/pipewire.conf.d"
+
+[[dotfiles]]
+src = "files/.config/fontconfig"
+target_linux = "~/.config/fontconfig"
+target_mac = "~/.config/fontconfig"
+
+[[dotfiles]]
+src = "files/.config/user-dirs.dirs"
+target_linux = "~/.config/user-dirs.dirs"
+target_mac = "~/.config/user-dirs.dirs"

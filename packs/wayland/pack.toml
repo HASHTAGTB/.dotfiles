@@ -83,6 +83,11 @@ target_linux = "~/.config/uwsm"
 target_mac   = "~/.config/uwsm"
 
 [[dotfiles]]
-src = "files/.config/xdg-desktop-portal-termfilechooser/config"
-target_linux = "~/.config/xdg-desktop-portal-termfilechooser/config"
-target_mac = "~/.config/xdg-desktop-portal-termfilechooser/config"
+src = "files/.config/xdg-desktop-portal"
+target_linux = "~/.config/xdg-desktop-portal"
+target_mac = "~/.config/xdg-desktop-portal"
+
+[[dotfiles]]
+src = "files/.config/xdg-desktop-portal-termfilechooser"
+target_linux = "~/.config/xdg-desktop-portal-termfilechooser"
+target_mac = "~/.config/xdg-desktop-portal-termfilechooser"

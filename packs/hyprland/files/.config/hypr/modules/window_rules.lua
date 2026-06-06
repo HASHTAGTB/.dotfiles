@@ -15,7 +15,7 @@ hl.window_rule({
 	match = { class = "^(mpv)$" },
 	float = true,
 	opaque = true,
-	size = "640 360",
+	size = "960 540",
 	center = true,
 })
 
