@@ -1,0 +1,365 @@
+[sources]
+system = ["yay", "paru", "pacman"]
+python = ["uv", "pipx"]
+node   = ["bun", "pnpm", "yarn", "npm"]
+rust   = ["cargo"]
+ruby   = ["gem"]
+
+# ── System packages ───────────────────────────────────────────────────────────
+
+[packages.system]
+
+# --- Arch / CachyOS core ---
+base-devel                    = { tags = ["arch"] }
+linux-firmware                = { tags = ["arch"] }
+linux-cachyos                 = { tags = ["arch"], opt = true }
+linux-cachyos-headers         = { tags = ["arch"], opt = true }
+linux-cachyos-lts             = { tags = ["arch"], opt = true }
+linux-cachyos-lts-headers     = { tags = ["arch"], opt = true }
+scx-scheds                    = { tags = ["arch"], opt = true }
+ananicy-cpp                   = { tags = ["arch"], opt = true }
+cachyos-settings              = { tags = ["arch"], opt = true }
+cachyos-keyring               = { tags = ["arch"], opt = true }
+cachyos-mirrorlist            = { tags = ["arch"], opt = true }
+cachyos-v3-mirrorlist         = { tags = ["arch"], opt = true }
+cachyos-v4-mirrorlist         = { tags = ["arch"], opt = true }
+cachyos-hooks                 = { tags = ["arch"], opt = true }
+cachyos-rate-mirrors          = { tags = ["arch"], opt = true }
+cachyos-hello                 = { tags = ["arch"], opt = true }
+cachyos-kernel-manager        = { tags = ["arch"], opt = true }
+cachyos-packageinstaller      = { tags = ["arch"], opt = true }
+cachyos-snapper-support       = { tags = ["arch"], opt = true }
+pacman-contrib                = { tags = ["arch"] }
+rebuild-detector              = { tags = ["arch"], opt = true }
+limine                        = { tags = ["arch"], opt = true }
+limine-mkinitcpio-hook        = { tags = ["arch"], opt = true }
+limine-snapper-sync           = { tags = ["arch"], opt = true }
+efibootmgr                    = { tags = ["arch"], opt = true }
+efitools                      = { tags = ["arch"], opt = true }
+os-prober                     = { tags = ["arch"], opt = true }
+
+# --- System core ---
+sudo                          = { tags = ["system"] }
+openssh                       = { tags = ["system"] }
+networkmanager                = { tags = ["system"] }
+nm-connection-editor          = { tags = ["system"] }
+gnome-keyring                 = { tags = ["system"] }
+power-profiles-daemon         = { tags = ["system"] }
+sof-firmware                  = { tags = ["system"] }
+which                         = { tags = ["system"] }
+rsync                         = { tags = ["system"] }
+sddm                          = { tags = ["system"] }
+polkit-kde-agent              = { tags = ["system"] }
+xdg-user-dirs                 = { tags = ["system", "wayland"] }
+blueman                       = { tags = ["system"] }
+bluez                         = { tags = ["system"] }
+cups                          = { tags = ["system"] }
+cups-pdf                      = { tags = ["system"] }
+ntfs-3g                       = { tags = ["system"] }
+dosfstools                    = { tags = ["system"], opt = true }
+exfatprogs                    = { tags = ["system"], opt = true }
+f2fs-tools                    = { tags = ["system"], opt = true }
+xfsprogs                      = { tags = ["system"], opt = true }
+jfsutils                      = { tags = ["system"], opt = true }
+nilfs-utils                   = { tags = ["system"], opt = true }
+lvm2                          = { tags = ["system"], opt = true }
+mtools                        = { tags = ["system"], opt = true }
+cpio                          = { tags = ["system"], opt = true }
+snapper                       = { tags = ["system"] }
+btrfs-assistant               = { tags = ["system"] }
+ufw                           = { tags = ["system"] }
+networkmanager-openvpn        = { tags = ["system"], opt = true }
+iwd                           = { tags = ["system"], opt = true }
+nss-mdns                      = { tags = ["system"], opt = true }
+modemmanager                  = { tags = ["system"], opt = true }
+dnsmasq                       = { tags = ["system"], opt = true }
+hdparm                        = { tags = ["system"], opt = true }
+smartmontools                 = { tags = ["system"], opt = true }
+gptfdisk                      = { tags = ["system"], opt = true }
+sg3_utils                     = { tags = ["system"], opt = true }
+usb_modeswitch                = { tags = ["system"], opt = true }
+flatpak                       = { tags = ["system"] }
+gnome-disk-utility            = { tags = ["system"] }
+kopia                         = { tags = ["system"], opt = true }
+fsarchiver                    = { tags = ["system"], opt = true }
+plocate                       = { tags = ["system"], opt = true }
+zip                           = { tags = ["system"] }
+unrar                         = { tags = ["system"], opt = true }
+easyeffects                   = { tags = ["system"], opt = true }
+lsp-plugins-lv2               = { tags = ["system"], opt = true }
+zam-plugins-lv2               = { tags = ["system"], opt = true }
+"mda.lv2"                     = { tags = ["system"], opt = true }
+calf                          = { tags = ["system"], opt = true }
+keyd                          = { tags = ["system"] }
+input-remapper-git            = { tags = ["system"], opt = true }
+reflector                     = { tags = ["system"] }
+logrotate                     = { tags = ["system"], opt = true }
+bind                          = { tags = ["system"], opt = true }
+hwinfo                        = { tags = ["system"], opt = true }
+hwdetect                      = { tags = ["system"], opt = true }
+accountsservice               = { tags = ["system"], opt = true }
+seahorse                      = { tags = ["system"], opt = true }
+systemdgenie                  = { tags = ["system"], opt = true }
+yay                           = { tags = ["system"] }
+paru                          = { tags = ["system"], opt = true }
+chezmoi                       = { tags = ["system"], opt = true }
+libdeep_filter_ladspa-bin     = { tags = ["system"], opt = true }
+coppwr-bin                    = { tags = ["system"], opt = true }
+noise-suppression-for-voice   = { tags = ["system"] }
+ydotool                       = { tags = ["system"] }
+qpwgraph                      = { tags = ["system"] }
+
+# --- Wayland stack ---
+grim                          = { tags = ["wayland"] }
+slurp                         = { tags = ["wayland"] }
+wl-clipboard                  = { tags = ["wayland"] }
+cliphist                      = { tags = ["wayland"] }
+rofi                          = { tags = ["wayland"] }
+fuzzel                        = { tags = ["wayland"], opt = true }
+uwsm                          = { tags = ["wayland"] }
+qt6-wayland                   = { tags = ["wayland"] }
+xdg-desktop-portal-gtk        = { tags = ["wayland"] }
+xdg-desktop-portal-termfilechooser-hunkyburrito-git = { tags = ["wayland"] }
+xdg-terminal-exec             = { tags = ["wayland"] }
+playerctl                     = { tags = ["wayland"] }
+xorg-xwayland                 = { tags = ["wayland"] }
+udiskie                       = { tags = ["wayland"] }
+pipewire-alsa                 = { tags = ["wayland"] }
+gst-plugin-pipewire           = { tags = ["wayland"] }
+
+# --- Hyprland ---
+hyprland                      = { tags = ["hyprland"] }
+hypridle                      = { tags = ["hyprland"] }
+hyprlock                      = { tags = ["hyprland"] }
+hyprpicker                    = { tags = ["hyprland"] }
+hyprpolkitagent               = { tags = ["hyprland"] }
+hyprshade                     = { tags = ["hyprland"], opt = true }
+waybar                        = { tags = ["hyprland"] }
+swaync                        = { tags = ["hyprland"] }
+wlogout                       = { tags = ["hyprland"] }
+swappy                        = { tags = ["hyprland"], opt = true }
+waypaper                      = { tags = ["hyprland"] }
+wev                           = { tags = ["hyprland"] }
+xdg-desktop-portal-hyprland   = { tags = ["hyprland"] }
+quickshell-overview-git       = { tags = ["hyprland"], opt = true }
+surfraw                       = { tags = ["hyprland"] }
+python-pytesseract            = { tags = ["hyprland"] }
+tesseract                     = { tags = ["hyprland"] }
+tesseract-data-eng            = { tags = ["hyprland"] }
+
+# --- Niri ---
+niri                          = { tags = ["niri"] }
+
+# --- Nvidia ---
+nvidia-settings               = { tags = ["nvidia"] }
+libva-nvidia-driver           = { tags = ["nvidia"] }
+opencl-nvidia                 = { tags = ["nvidia"] }
+lib32-opencl-nvidia           = { tags = ["nvidia"] }
+linux-cachyos-nvidia-open     = { tags = ["nvidia"], opt = true }
+linux-cachyos-lts-nvidia-open = { tags = ["nvidia"], opt = true }
+
+# --- Virtualization ---
+qemu-full                     = { tags = ["virt"] }
+virt-manager                  = { tags = ["virt"] }
+swtpm                         = { tags = ["virt"] }
+
+# --- Theming ---
+matugen                       = { tags = ["theming"] }
+adw-gtk-theme                 = { tags = ["theming"] }
+nwg-look                      = { tags = ["theming"] }
+qt5ct                         = { tags = ["theming"] }
+qt6ct                         = { tags = ["theming"] }
+qt5-graphicaleffects          = { tags = ["theming"] }
+kvantum                       = { tags = ["theming"], opt = true }
+kvantum-qt5                   = { tags = ["theming"], opt = true }
+fluent-icon-theme-git         = { tags = ["theming"] }
+bibata-cursor-theme           = { tags = ["theming"], opt = true }
+awww                          = { tags = ["theming"] }
+xfce4-settings                = { tags = ["theming"], opt = true }
+
+# --- Media ---
+mpv                           = { tags = ["media"] }
+mpv-mpris                     = { tags = ["media"] }
+pavucontrol                   = { tags = ["media"] }
+pipewire-pulse                = { tags = ["media"] }
+wireplumber                   = { tags = ["media"] }
+alsa-utils                    = { tags = ["media"] }
+vlc-plugins-all               = { tags = ["media"], opt = true }
+libdvdcss                     = { tags = ["media"], opt = true }
+gst-plugin-va                 = { tags = ["media"], opt = true }
+spicetify-cli                 = { tags = ["media"], opt = true }
+yt-dlp                        = { tags = ["media"], opt = true }
+quodlibet                     = { tags = ["media"], opt = true }
+spotify                       = { tags = ["media"], opt = true }
+
+# --- Gaming ---
+steam                         = { tags = ["gaming"] }
+gamemode                      = { tags = ["gaming"], opt = true }
+gamescope                     = { tags = ["gaming"] }
+mangohud                      = { tags = ["gaming"], opt = true }
+lib32-mangohud                = { tags = ["gaming"], opt = true }
+vkbasalt                      = { tags = ["gaming"], opt = true }
+protonplus                    = { tags = ["gaming"] }
+cachyos-gaming-meta           = { tags = ["gaming"], opt = true }
+goverlay                      = { tags = ["gaming"] }
+lutris                        = { tags = ["gaming"] }
+twintaillauncher-bin          = { tags = ["gaming"] }
+
+# --- Terminal tools ---
+btop                          = { tags = ["terminal-tools"] }
+fastfetch                     = { tags = ["terminal-tools"] }
+htop                          = { tags = ["terminal-tools"] }
+nvtop                         = { tags = ["terminal-tools"] }
+gdu                           = { tags = ["terminal-tools"] }
+wavemon                       = { tags = ["terminal-tools"] }
+cava                          = { tags = ["terminal-tools"], opt = true }
+ripgrep                       = { tags = ["terminal-tools", "yazi", "zsh", "nvim"] }
+fd                            = { tags = ["terminal-tools", "yazi", "zsh", "nvim"] }
+viu                           = { tags = ["terminal-tools"] }
+bat                           = { tags = ["terminal-tools"] }
+tree                          = { tags = ["terminal-tools"] }
+less                          = { tags = ["terminal-tools"] }
+man-db                        = { tags = ["terminal-tools"] }
+man-pages                     = { tags = ["terminal-tools"] }
+duf                           = { tags = ["terminal-tools"] }
+pv                            = { tags = ["terminal-tools"], opt = true }
+navi                          = { tags = ["terminal-tools"], opt = true }
+dysk                          = { tags = ["terminal-tools"] }
+tmux                          = { tags = ["terminal-tools"] }
+
+# --- Yazi ---
+yazi                          = { tags = ["yazi"] }
+imagemagick                   = { tags = ["yazi", "kitty"] }
+zoxide                        = { tags = ["yazi", "zsh"] }
+trash-cli                     = { tags = ["yazi"] }
+ffmpeg                        = { tags = ["yazi"] }
+7zip                          = { tags = ["yazi"] }
+poppler                       = { tags = ["yazi"] }
+jq                            = { tags = ["yazi"] }
+dragon-drop                   = { tags = ["yazi"] }
+
+# --- Zsh ---
+zsh                           = { tags = ["zsh"] }
+fzf                           = { tags = ["zsh"] }
+zsh-syntax-highlighting       = { tags = ["zsh"], opt = true }
+zsh-autosuggestions           = { tags = ["zsh"], opt = true }
+zsh-completions               = { tags = ["zsh"], opt = true }
+zsh-history-substring-search  = { tags = ["zsh"], opt = true }
+bash-completion               = { tags = ["zsh"], opt = true }
+
+# --- Neovim ---
+neovim                        = { tags = ["nvim"] }
+nodejs                        = { tags = ["nvim"] }
+npm                           = { tags = ["nvim"] }
+stylua                        = { tags = ["nvim"], opt = true }
+shfmt                         = { tags = ["nvim"], opt = true }
+unzip                         = { tags = ["nvim"] }
+tree-sitter-cli               = { tags = ["nvim"] }
+
+# --- Kitty ---
+kitty                         = { tags = ["kitty"] }
+
+# --- Git ---
+git                           = { tags = ["git"] }
+git-delta                     = { tags = ["git"] }
+lazygit                       = { tags = ["git"], opt = true }
+github-desktop                = { tags = ["git"], opt = true }
+
+# --- Thunar ---
+thunar                        = { tags = ["thunar"] }
+thunar-archive-plugin         = { tags = ["thunar"] }
+thunar-volman                 = { tags = ["thunar"] }
+tumbler                       = { tags = ["thunar"] }
+ffmpegthumbnailer             = { tags = ["thunar"] }
+gvfs                          = { tags = ["thunar"] }
+gvfs-mtp                      = { tags = ["thunar"], opt = true }
+gvfs-smb                      = { tags = ["thunar"], opt = true }
+gvfs-nfs                      = { tags = ["thunar"], opt = true }
+file-roller                   = { tags = ["thunar"], opt = true }
+
+# --- Fonts ---
+awesome-terminal-fonts        = { tags = ["fonts"] }
+cantarell-fonts               = { tags = ["fonts"] }
+noto-fonts                    = { tags = ["fonts"] }
+noto-fonts-cjk                = { tags = ["fonts"] }
+noto-fonts-emoji              = { tags = ["fonts"] }
+ttf-bitstream-vera            = { tags = ["fonts"] }
+ttf-cascadia-code-nerd        = { tags = ["fonts"] }
+ttf-dejavu                    = { tags = ["fonts"] }
+ttf-jetbrains-mono-nerd       = { tags = ["fonts"] }
+ttf-liberation                = { tags = ["fonts"] }
+ttf-meslo-nerd                = { tags = ["fonts"] }
+ttf-opensans                  = { tags = ["fonts"] }
+otf-font-awesome              = { tags = ["fonts"] }
+woff2-font-awesome            = { tags = ["fonts"] }
+
+# --- Dev ---
+python                        = { tags = ["dev"] }
+python-pip                    = { tags = ["dev"] }
+uv                            = { tags = ["dev"] }
+python-pipx                   = { tags = ["dev"], opt = true }
+python311                     = { tags = ["dev"], opt = true }
+python312                     = { tags = ["dev"], opt = true }
+code                          = { tags = ["dev"], opt = true }
+claude-code                   = { tags = ["dev"], opt = true }
+opencode                      = { tags = ["dev"], opt = true }
+android-studio                = { tags = ["dev"], opt = true }
+vim                           = { tags = ["dev"], opt = true }
+cmake                         = { tags = ["dev"], opt = true }
+meson                         = { tags = ["dev"], opt = true }
+postgresql                    = { tags = ["dev"], opt = true }
+prettier                      = { tags = ["dev"], opt = true }
+scrcpy                        = { tags = ["dev"], opt = true }
+socat                         = { tags = ["dev"], opt = true }
+inotify-tools                 = { tags = ["dev"], opt = true }
+
+# --- Apps ---
+zen-browser-bin               = { tags = ["apps"] }
+vivaldi                       = { tags = ["apps"], opt = true }
+ungoogled-chromium-bin        = { tags = ["apps"], opt = true }
+gnome-calculator              = { tags = ["apps"] }
+gnome-clocks                  = { tags = ["apps"] }
+loupe                         = { tags = ["apps"] }
+pinta                         = { tags = ["apps"], opt = true }
+zathura                       = { tags = ["apps"], opt = true }
+zathura-pdf-mupdf             = { tags = ["apps"], opt = true }
+pika-backup                   = { tags = ["apps"], opt = true }
+anki                          = { tags = ["apps"], opt = true }
+aria2                         = { tags = ["apps"], opt = true }
+uget                          = { tags = ["apps"], opt = true }
+wayscriber-bin                = { tags = ["apps"], opt = true }
+sqlitebrowser                 = { tags = ["apps"], opt = true }
+libreoffice-fresh             = { tags = ["apps"], opt = true }
+gimp                          = { tags = ["apps"], opt = true }
+krita                         = { tags = ["apps"], opt = true }
+obsidian                      = { tags = ["apps"], opt = true }
+vesktop-bin                   = { tags = ["apps"], opt = true }
+octopi                        = { tags = ["apps"] }
+pacseek-bin                   = { tags = ["apps"] }
+fsearch                       = { tags = ["apps"], opt = true }
+
+# --- Misc (previously "useless" pack) ---
+base                          = { tags = ["useless"] }
+libgsf                        = { tags = ["useless"] }
+libopenraw                    = { tags = ["useless"] }
+netctl                        = { tags = ["useless"] }
+nfs-utils                     = { tags = ["useless"] }
+poppler-glib                  = { tags = ["useless"] }
+qt5-multimedia                = { tags = ["useless"] }
+s-nail                        = { tags = ["useless"] }
+texinfo                       = { tags = ["useless"] }
+tk                            = { tags = ["useless"] }
+xf86-video-amdgpu             = { tags = ["useless"] }
+xl2tpd                        = { tags = ["useless"] }
+yad                           = { tags = ["useless"] }
+
+# ── Python packages ───────────────────────────────────────────────────────────
+
+[packages.python]
+rembg                         = { tags = ["yazi"], opt = true }
+spotdl                        = { tags = ["media"], opt = true }
+
+# ── Node packages ─────────────────────────────────────────────────────────────
+
+[packages.node]
+"claude-code"                 = { tags = ["dev"], opt = true }

@@ -1,0 +1,321 @@
+#!/usr/bin/env python3
+"""
+pkg-tui — interactive package restore selector
+
+Usage:  pkg-tui [packages_dir]
+Default packages_dir: ~/dotfiles/packages
+
+Keys:
+  ↑↓ / j k   navigate          Space   toggle item / group
+  g           collapse group    a / n   all / none in group
+  A / N       select / clear all        Enter   install selected
+  q / Esc     quit without installing
+"""
+
+import curses
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+
+# ── Install recipes ────────────────────────────────────────────────────────────
+
+def get_install_cmds(name: str, pkgs: list[str]) -> list[list[str]]:
+    """Return a list of shell commands to install the given packages."""
+    match name:
+        case "pacman":
+            return [["paru", "-S", "--needed", "--"] + pkgs]
+        case "aur":
+            return [["paru", "-S", "--needed", "--"] + pkgs]
+        case "cargo":
+            return [["cargo", "install"] + pkgs]
+        case "uv":
+            # uv tool install takes one package at a time
+            return [["uv", "tool", "install", p] for p in pkgs]
+        case "npm":
+            return [["npm", "install", "-g"] + pkgs]
+        case "flatpak":
+            return [["flatpak", "install", "-y", "flathub"] + pkgs]
+        case "pipx":
+            return [["pipx", "install", p] for p in pkgs]
+        case _:
+            return []  # unknown source — caller will warn
+
+
+# ── Package loading ────────────────────────────────────────────────────────────
+
+KNOWN_ORDER = ["pacman", "aur", "cargo", "uv", "npm", "flatpak", "pipx"]
+
+
+def load_sources(pkg_dir: Path) -> list[dict]:
+    files = {f.stem: f for f in sorted(pkg_dir.glob("*.txt")) if f.is_file()}
+    order = [n for n in KNOWN_ORDER if n in files] + sorted(set(files) - set(KNOWN_ORDER))
+    sources = []
+    for name in order:
+        pkgs = [
+            line.strip()
+            for line in files[name].read_text(errors="replace").splitlines()
+            if line.strip() and not line.startswith("#")
+        ]
+        if pkgs:
+            sources.append({"name": name, "packages": pkgs, "collapsed": False})
+    return sources
+
+
+# ── Install runner (runs after curses exits) ───────────────────────────────────
+
+def run_installs(sources: list[dict], sel: dict[tuple, bool]) -> None:
+    for src in sources:
+        name = src["name"]
+        chosen = [p for p in src["packages"] if sel.get((name, p), True)]
+        if not chosen:
+            continue
+        cmds = get_install_cmds(name, chosen)
+        if not cmds:
+            print(f"\n[pkg-tui] No install recipe for '{name}' — skipping: {chosen}")
+            continue
+        print(f"\n[pkg-tui] ── {name} ({len(chosen)} package{'s' if len(chosen)!=1 else ''}) ──")
+        for cmd in cmds:
+            exe = cmd[0]
+            if not shutil.which(exe):
+                print(f"[pkg-tui] '{exe}' not found, skipping: {' '.join(cmd[1:])}")
+                continue
+            subprocess.run(cmd)
+
+
+# ── TUI ────────────────────────────────────────────────────────────────────────
+
+C_HEADER  = 1   # black on cyan
+C_GROUP   = 2   # yellow bold
+C_OK      = 3   # green  (checked)
+C_OFF     = 4   # red    (unchecked)
+C_CURSOR  = 5   # black on white
+C_FOOTER  = 6   # cyan   (footer bar)
+C_DIM     = 7   # dim white (hints)
+C_BADGE   = 8   # magenta (source badge on item rows)
+
+
+def setup_colors() -> None:
+    curses.start_color()
+    curses.use_default_colors()
+    curses.init_pair(C_HEADER, curses.COLOR_BLACK,   curses.COLOR_CYAN)
+    curses.init_pair(C_GROUP,  curses.COLOR_YELLOW,  -1)
+    curses.init_pair(C_OK,     curses.COLOR_GREEN,   -1)
+    curses.init_pair(C_OFF,    curses.COLOR_RED,     -1)
+    curses.init_pair(C_CURSOR, curses.COLOR_BLACK,   curses.COLOR_WHITE)
+    curses.init_pair(C_FOOTER, curses.COLOR_BLACK,   curses.COLOR_CYAN)
+    curses.init_pair(C_DIM,    curses.COLOR_WHITE,   -1)
+    curses.init_pair(C_BADGE,  curses.COLOR_MAGENTA, -1)
+
+
+def safe_addstr(win, y: int, x: int, s: str, *attrs) -> None:
+    """addstr that silently eats the bottom-right corner curses.error."""
+    h, w = win.getmaxyx()
+    if y < 0 or y >= h or x < 0 or x >= w:
+        return
+    s = s[: w - x]
+    try:
+        if attrs:
+            attr = attrs[0]
+            for a in attrs[1:]:
+                attr |= a
+            win.addstr(y, x, s, attr)
+        else:
+            win.addstr(y, x, s)
+    except curses.error:
+        pass
+
+
+def build_rows(sources: list[dict]) -> list[tuple]:
+    """Flat list of (kind, source_name, pkg_or_None)."""
+    rows = []
+    for src in sources:
+        rows.append(("group", src["name"], None))
+        if not src["collapsed"]:
+            for pkg in src["packages"]:
+                rows.append(("pkg", src["name"], pkg))
+    return rows
+
+
+def find_source(sources: list[dict], name: str) -> dict:
+    return next(s for s in sources if s["name"] == name)
+
+
+def tui(stdscr, pkg_dir: Path) -> bool:
+    setup_colors()
+    curses.curs_set(0)
+
+    sources = load_sources(pkg_dir)
+    if not sources:
+        safe_addstr(stdscr, 0, 0, f"No .txt files found in {pkg_dir}")
+        safe_addstr(stdscr, 1, 0, "Run pkg-save first. Press any key to exit.")
+        stdscr.getch()
+        return False
+
+    # All packages selected by default
+    sel: dict[tuple, bool] = {
+        (src["name"], pkg): True
+        for src in sources
+        for pkg in src["packages"]
+    }
+
+    cursor   = 0
+    scroll   = 0
+    install  = False
+
+    while True:
+        rows   = build_rows(sources)
+        h, w   = stdscr.getmaxyx()
+        body_h = max(1, h - 4)   # 2 header + 2 footer rows
+
+        # Clamp + scroll
+        cursor = max(0, min(cursor, len(rows) - 1))
+        scroll = max(0, min(scroll, len(rows) - 1))
+        if cursor < scroll:
+            scroll = cursor
+        if cursor >= scroll + body_h:
+            scroll = cursor - body_h + 1
+
+        stdscr.erase()
+
+        # ── Header bar ──────────────────────────────────────────────────────
+        safe_addstr(stdscr, 0, 0,
+                    "  pkg-tui  package restore selector".ljust(w),
+                    curses.color_pair(C_HEADER) | curses.A_BOLD)
+
+        hints = "  ↑↓/jk Move   Spc Toggle   g Collapse   a/n Grp   A/N All   ↵ Install   q Quit"
+        safe_addstr(stdscr, 1, 0, hints[:w], curses.color_pair(C_DIM))
+
+        # ── Body ────────────────────────────────────────────────────────────
+        for i, (kind, sname, pkg) in enumerate(rows[scroll : scroll + body_h]):
+            y       = i + 2
+            row_idx = scroll + i
+            is_cur  = row_idx == cursor
+
+            if kind == "group":
+                src      = find_source(sources, sname)
+                total    = len(src["packages"])
+                sel_cnt  = sum(1 for p in src["packages"] if sel.get((sname, p), True))
+                arrow    = "▶" if src["collapsed"] else "▼"
+                badge    = f"[{sel_cnt}/{total}]"
+                left     = f"  {arrow} {sname}"
+                line     = left + " " * max(1, w - len(left) - len(badge) - 1) + badge
+
+                if is_cur:
+                    safe_addstr(stdscr, y, 0, line[:w],
+                                curses.color_pair(C_CURSOR) | curses.A_BOLD)
+                else:
+                    safe_addstr(stdscr, y, 0, line[:w],
+                                curses.color_pair(C_GROUP) | curses.A_BOLD)
+
+            else:  # pkg row
+                checked = sel.get((sname, pkg), True)
+                box     = "[✓]" if checked else "[ ]"
+                line    = f"     {box} {pkg}"
+
+                if is_cur:
+                    safe_addstr(stdscr, y, 0, line.ljust(w)[:w],
+                                curses.color_pair(C_CURSOR))
+                else:
+                    color = C_OK if checked else C_OFF
+                    safe_addstr(stdscr, y, 0, line[:w], curses.color_pair(color))
+
+        # ── Footer bar ──────────────────────────────────────────────────────
+        total_sel = sum(1 for v in sel.values() if v)
+        total_all = len(sel)
+        footer    = f"  {total_sel} / {total_all} packages selected  "
+        safe_addstr(stdscr, h - 1, 0, footer.ljust(w),
+                    curses.color_pair(C_FOOTER) | curses.A_BOLD)
+
+        stdscr.refresh()
+
+        # ── Input ────────────────────────────────────────────────────────────
+        key = stdscr.getch()
+        kind, sname, pkg = rows[cursor]
+        src = find_source(sources, sname)
+
+        if key in (ord("q"), ord("Q"), 27):        # quit
+            break
+
+        elif key in (curses.KEY_UP, ord("k")):
+            cursor = max(0, cursor - 1)
+
+        elif key in (curses.KEY_DOWN, ord("j")):
+            cursor = min(len(rows) - 1, cursor + 1)
+
+        elif key == curses.KEY_PPAGE:              # Page Up
+            cursor = max(0, cursor - body_h)
+
+        elif key == curses.KEY_NPAGE:              # Page Down
+            cursor = min(len(rows) - 1, cursor + body_h)
+
+        elif key == curses.KEY_HOME:
+            cursor = 0
+
+        elif key == curses.KEY_END:
+            cursor = len(rows) - 1
+
+        elif key == ord(" "):
+            if kind == "pkg":
+                sel[(sname, pkg)] = not sel.get((sname, pkg), True)
+            else:  # group: toggle all
+                want = not all(sel.get((sname, p), True) for p in src["packages"])
+                for p in src["packages"]:
+                    sel[(sname, p)] = want
+
+        elif key == ord("g"):
+            src["collapsed"] = not src["collapsed"]
+            # Move cursor to group header if items just collapsed under it
+            if src["collapsed"] and kind == "pkg":
+                rows2 = build_rows(sources)
+                cursor = next(
+                    (i for i, r in enumerate(rows2) if r == ("group", sname, None)),
+                    cursor,
+                )
+
+        elif key == ord("a"):                      # select all in group
+            for p in src["packages"]:
+                sel[(sname, p)] = True
+
+        elif key == ord("n"):                      # deselect all in group
+            for p in src["packages"]:
+                sel[(sname, p)] = False
+
+        elif key == ord("A"):                      # select everything
+            for k in sel:
+                sel[k] = True
+
+        elif key == ord("N"):                      # deselect everything
+            for k in sel:
+                sel[k] = False
+
+        elif key in (curses.KEY_ENTER, 10, 13):   # install
+            install = True
+            break
+
+    if install:
+        curses.endwin()
+        run_installs(sources, sel)
+
+    return install
+
+
+# ── Entry point ────────────────────────────────────────────────────────────────
+
+def main() -> None:
+    pkg_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home() / ".config" / "dotfiles" / "packages"
+
+    if not pkg_dir.exists():
+        print(f"Error: directory not found: {pkg_dir}")
+        print("Run pkg-save first to generate package lists.")
+        sys.exit(1)
+
+    try:
+        curses.wrapper(tui, pkg_dir)
+    except KeyboardInterrupt:
+        pass
+
+
+if __name__ == "__main__":
+    main()
