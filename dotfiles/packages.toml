@@ -254,7 +254,7 @@ npm                           = { tags = ["nvim"] }
 stylua                        = { tags = ["nvim"], opt = true }
 shfmt                         = { tags = ["nvim"], opt = true }
 unzip                         = { tags = ["nvim"] }
-tree-sitter-cli               = { tags = ["nvim"] }
+tree-sitter-cli               = { tags = ["nvim"] , opt = true }
 
 # --- Kitty ---
 kitty                         = { tags = ["kitty"] }
@@ -334,7 +334,7 @@ gimp                          = { tags = ["apps"], opt = true }
 krita                         = { tags = ["apps"], opt = true }
 obsidian                      = { tags = ["apps"], opt = true }
 vesktop-bin                   = { tags = ["apps"], opt = true }
-octopi                        = { tags = ["apps"] }
+octopi                        = { tags = ["apps"] , opt = true }
 pacseek-bin                   = { tags = ["apps"] }
 fsearch                       = { tags = ["apps"], opt = true }
 

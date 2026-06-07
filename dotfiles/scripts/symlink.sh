@@ -1,23 +1,24 @@
 #!/usr/bin/env bash
-# symlink.sh -i <repo_path> <target_path>   — apply (create symlink)
-# symlink.sh -x <repo_path> <target_path>   — unapply (remove symlink)
+# symlink.sh -i <rel>   — link $HOME/<rel> → $DOTFILES_DIR/<rel>
+# symlink.sh -x <rel>   — unlink $HOME/<rel> if it points to $DOTFILES_DIR/<rel>
 set -euo pipefail
 
+DOTFILES_DIR="${DOTFILES_DIR:-$HOME/.dotfiles}"
 cmd=$1
-repo_path=$2   # absolute path to file in dotfiles repo
-target_path=$3 # absolute path where symlink should live (in $HOME)
+rel=$2
+
+repo_path="$DOTFILES_DIR/$rel"
+target_path="$HOME/$rel"
 
 case $cmd in
   -i)
+    if [ -L "$target_path" ] && [ "$(readlink "$target_path")" = "$repo_path" ]; then
+      echo "already linked: $target_path"
+      exit 0
+    fi
     if [ -L "$target_path" ]; then
-      current=$(readlink "$target_path")
-      if [ "$current" = "$repo_path" ]; then
-        echo "already linked: $target_path"
-        exit 0
-      else
-        echo "conflict: $target_path -> $current (expected $repo_path)" >&2
-        exit 1
-      fi
+      echo "conflict: $target_path -> $(readlink "$target_path") (expected $repo_path)" >&2
+      exit 1
     fi
     if [ -e "$target_path" ]; then
       backup="${target_path}.bak.$(date +%s)"
@@ -37,7 +38,7 @@ case $cmd in
     fi
     ;;
   *)
-    echo "usage: symlink.sh -i|-x <repo_path> <target_path>" >&2
+    echo "usage: symlink.sh -i|-x <rel_path>" >&2
     exit 1
     ;;
 esac

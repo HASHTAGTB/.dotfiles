@@ -188,6 +188,7 @@ bash -c '
 {
   mkdir -p "$HOME/doc/VN/.obsidian/snippets"
   ln -nfs "$HOME/.config/matugen/generated/obsidian-theme.css" "$HOME/doc/VN/.obsidian/snippets/matugen-theme.css"
+  ln -nfs "$HOME/.config/matugen/generated/obsidian-theme.css" "$HOME/doc/notes/.obsidian/snippets/matugen-theme.css"
 } >/dev/null 2>&1 </dev/null & disown
 '
 '''
