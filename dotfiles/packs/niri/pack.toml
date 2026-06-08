@@ -1,8 +1,0 @@
-[meta]
-name        = "niri"
-description = "Niri scrollable-tiling Wayland compositor (depends on wayland pack)"
-os          = "linux"
-
-[[packages]]
-name   = "niri"
-system = "niri"

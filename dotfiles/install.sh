@@ -3,8 +3,9 @@ set -euo pipefail
 
 REPO="https://github.com/HASHTAGTB/.dotfiles.git"
 DOTFILES_DIR="$HOME/.dotfiles"
+DOTFILES_LOGIC="$DOTFILES_DIR/dotfiles"
 BIN_DIR="$HOME/.local/bin"
-BIN_NAME="dotfiles"
+BIN_NAME="dots"
 
 if [ -d "$DOTFILES_DIR" ]; then
     echo "~/.dotfiles already exists, pulling latest..."
@@ -14,7 +15,7 @@ else
     git clone "$REPO" "$DOTFILES_DIR"
 fi
 
-BIN_PATH="$DOTFILES_DIR/$BIN_NAME"
+BIN_PATH="$DOTFILES_LOGIC/$BIN_NAME"
 
 if [ ! -f "$BIN_PATH" ]; then
     echo "Error: binary not found at $BIN_PATH" >&2
