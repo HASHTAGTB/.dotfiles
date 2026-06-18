@@ -167,10 +167,17 @@ hl.bind("SHIFT + Print", hl.dsp.exec_cmd("pgrep -x swappy || (grim - | uwsm-app 
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(scripts .. "/google/google_image_search.sh"))
 
 -- OCR → Google text search (select region, OCR it, open Google search)
+-- hl.bind(
+-- 	mainMod .. " + SHIFT + G",
+-- 	hl.dsp.exec_cmd(
+-- 		[=[bash -c 'q=$(slurp | grim -g - - | tesseract stdin stdout 2>/dev/null | python3 -c "import sys,urllib.parse; print(urllib.parse.quote(sys.stdin.read().strip()))"); xdg-open "https://www.google.com/search?q=$q"']=]
+-- 	)
+-- )
+
 hl.bind(
 	mainMod .. " + SHIFT + G",
 	hl.dsp.exec_cmd(
-		[=[bash -c 'q=$(slurp | grim -g - - | tesseract stdin stdout 2>/dev/null | python3 -c "import sys,urllib.parse; print(urllib.parse.quote(sys.stdin.read().strip()))"); xdg-open "https://www.google.com/search?q=$q"']=]
+		[=[bash -c 'q=$(slurp | grim -g - - | tesseract stdin stdout 2>/dev/null | python3 -c "import sys,urllib.parse; print(urllib.parse.quote(sys.stdin.read().strip()))"); xdg-open "https://search.brave.com/search?q=$q"']=]
 	)
 )
 
@@ -219,22 +226,26 @@ hl.bind(mainMod .. " + D", function()
 end)
 
 -- Focus (HJKL, repeating)
-hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }), { repeating = true })
-hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }), { repeating = true })
-hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }), { repeating = true })
-hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }), { repeating = true })
+hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "left" }), { repeating = true })
+hl.bind(mainMod .. " + semicolon", hl.dsp.focus({ direction = "right" }), { repeating = true })
+hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "up" }), { repeating = true })
+hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "down" }), { repeating = true })
 
 -- Window movement (SHIFT+HJKL, repeating)
-hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "l" }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "r" }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "u" }), { repeating = true })
-hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "d" }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "l" }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + semicolon", hl.dsp.window.move({ direction = "r" }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "u" }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "d" }), { repeating = true })
 
 -- Window resizing (arrow keys, repeating)
-hl.bind(mainMod .. " + CTRL + h", hl.dsp.window.resize({ x = 30, y = 0, relative = true }), { repeating = true })
-hl.bind(mainMod .. " + CTRL + l", hl.dsp.window.resize({ x = -30, y = 0, relative = true }), { repeating = true })
-hl.bind(mainMod .. " + CTRL + k", hl.dsp.window.resize({ x = 0, y = -30, relative = true }), { repeating = true })
-hl.bind(mainMod .. " + CTRL + j", hl.dsp.window.resize({ x = 0, y = 30, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + j", hl.dsp.window.resize({ x = 30, y = 0, relative = true }), { repeating = true })
+hl.bind(
+	mainMod .. " + CTRL + semicolon",
+	hl.dsp.window.resize({ x = -30, y = 0, relative = true }),
+	{ repeating = true }
+)
+hl.bind(mainMod .. " + CTRL + l", hl.dsp.window.resize({ x = 0, y = -30, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + k", hl.dsp.window.resize({ x = 0, y = 30, relative = true }), { repeating = true })
 
 -- ---------------------------------------------------------------------------
 -- 5. WORKSPACE MANAGEMENT (context-aware multi-monitor script)

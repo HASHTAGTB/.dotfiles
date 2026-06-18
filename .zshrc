@@ -108,3 +108,5 @@ zinit light zsh-users/zsh-autosuggestions
 # ========================================
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+. "$HOME/.local/share/../bin/env"

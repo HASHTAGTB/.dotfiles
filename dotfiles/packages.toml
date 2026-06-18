@@ -90,7 +90,7 @@ lsp-plugins-lv2               = { tags = ["system"], opt = true }
 zam-plugins-lv2               = { tags = ["system"], opt = true }
 "mda.lv2"                     = { tags = ["system"], opt = true }
 calf                          = { tags = ["system"], opt = true }
-keyd                          = { tags = ["system"] }
+keyd                          = { tags = ["system"] , opt = true }
 input-remapper-git            = { tags = ["system"], opt = true }
 reflector                     = { tags = ["system"] }
 logrotate                     = { tags = ["system"], opt = true }

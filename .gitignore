@@ -1,12 +1,2 @@
 .state
 themes/matugen.sh
-
-# cloned repos (not tracked as subtrees)
-packs/zsh/files/.oh-my-zsh/custom/themes/powerlevel10k/
-packs/zsh/files/.oh-my-zsh/custom/plugins/zsh-autosuggestions/
-packs/zsh/files/.oh-my-zsh/custom/plugins/zsh-completions/
-packs/zsh/files/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-packs/zsh/files/.oh-my-zsh/custom/plugins/zsh-history-substring-search/
-packs/media/files/.config/mpv/scripts/thumbfast_repo/
-packs/nvim/files/.config/nvim/
-packs/nvim/files/.config/nvim.own/

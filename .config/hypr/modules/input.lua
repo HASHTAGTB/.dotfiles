@@ -7,16 +7,16 @@ local osdclient = "swayosd-client"
 hl.config({
 	input = {
 		-- [source had: kb_layout = "us"]
-		kb_layout = "de,us",
-		-- kb_variant = ",colemak_dh_iso",
-		kb_model = "",
+		kb_layout = "us,us",
+		kb_variant = "altgr-intl,colemak_dh_iso",
+		-- kb_model = "",
 		kb_options = "grp:win_space_toggle",
-		kb_rules = "",
+		-- kb_rules = "",
 
 		resolve_binds_by_sym = false,
-		numlock_by_default = true,
+		numlock_by_default = false,
 		repeat_rate = 35,
-		repeat_delay = 250,
+		repeat_delay = 300,
 
 		follow_mouse = 1,
 
