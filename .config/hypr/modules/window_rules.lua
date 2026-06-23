@@ -919,10 +919,23 @@ hl.window_rule({
 -- ---------------------------------------------------------------------------
 -- FROM edit_here/source/window_rules.conf
 -- ---------------------------------------------------------------------------
+
 hl.window_rule({
 	name = "pacseek",
 	match = { title = ".*pacseek.*" },
 	float = true,
 	size = "1080 607",
 	center = true,
+})
+
+hl.window_rule({
+	name = "spotify",
+	match = { class = "Spotify" },
+	workspace = 10,
+})
+
+hl.window_rule({
+	name = "vesktop",
+	match = { class = "vesktop" },
+	workspace = 6,
 })

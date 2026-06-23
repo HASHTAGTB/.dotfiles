@@ -14,12 +14,23 @@ hl.monitor({ output = "DP-5", mode = "1920x1080@60.00000", position = "2560x0", 
 
 -- VRR (from source/monitors.conf)
 -- vrr = 1 uses extra ~1W but makes idle feel smoother
--- hl.config({
--- 	-- debug = {
--- 	-- 	vfr = false,
--- 	-- },
--- 	misc = {
--- 		-- vrr = 1,
--- 		-- render_unfocused_fps = 1,
--- 	},
--- })
+hl.config({
+	-- debug = {
+	-- 	vfr = false,
+	-- },
+	misc = {
+		vrr = 1,
+		-- render_unfocused_fps = 1,
+	},
+})
+
+hl.workspace_rule({ workspace = "1", monitor = "desc:AOC Q27G42XE 1O0R3HA007458", default = true })
+hl.workspace_rule({ workspace = "2", monitor = "desc:AOC Q27G42XE 1O0R3HA007458" })
+hl.workspace_rule({ workspace = "3", monitor = "desc:AOC Q27G42XE 1O0R3HA007458" })
+hl.workspace_rule({ workspace = "4", monitor = "desc:AOC Q27G42XE 1O0R3HA007458" })
+hl.workspace_rule({ workspace = "5", monitor = "desc:AOC Q27G42XE 1O0R3HA007458" })
+hl.workspace_rule({ workspace = "6", monitor = "desc:ViewSonic Corporation VG2448 V5E191920340" })
+hl.workspace_rule({ workspace = "7", monitor = "desc:ViewSonic Corporation VG2448 V5E191920340" })
+hl.workspace_rule({ workspace = "8", monitor = "desc:ViewSonic Corporation VG2448 V5E191920340" })
+hl.workspace_rule({ workspace = "9", monitor = "desc:ViewSonic Corporation VG2448 V5E191920340", default = true })
+hl.workspace_rule({ workspace = "10", monitor = "desc:ViewSonic Corporation VG2448 V5E191920340" })

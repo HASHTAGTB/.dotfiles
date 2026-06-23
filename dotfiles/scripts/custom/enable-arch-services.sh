@@ -23,7 +23,7 @@ fi
 
 readonly TARGET_SERVICES=(
     "ananicy-cpp.service"
-    "scx.service"
+    # "scx.service"
 )
 
 main() {

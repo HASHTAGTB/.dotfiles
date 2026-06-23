@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+BACKUP_ID='7a6c1eb8-b3d6-4ab7-8631-9ec7c1a29904'
+
+if [[ ! -e /dev/mapper/backup ]]; then
+    sudo cryptsetup open /dev/disk/by-uuid/"$BACKUP_ID" backup
+else
+    echo 'backup already open' >&2
+fi
+
+if [[ -L /dev/mapper/backup ]]; then
+    for dir in borg phone storage snapshots; do
+        if mountpoint -q /mnt/backup/"$dir"; then 
+            echo "$dir already mounted" >&2
+        else
+            sudo mount -o subvol=@"$dir" /dev/mapper/backup /mnt/backup/"$dir" && echo "mounted $dir" || echo "failed to mount $dir" >&2
+        fi
+    done
+else
+    echo 'backup drive not open' >&2
+fi

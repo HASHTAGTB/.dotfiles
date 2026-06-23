@@ -23,7 +23,7 @@ fi
 
 readonly TARGET_SERVICES=(
     "NetworkManager.service"
-    "udisks2.service"
+    # "udisks2.service"
     "bluetooth.service"
     "cups.socket"
     "sddm.service"

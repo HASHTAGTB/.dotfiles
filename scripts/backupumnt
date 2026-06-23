@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+BACKUP_ID='7a6c1eb8-b3d6-4ab7-8631-9ec7c1a29904'
+
+if [[ -L /dev/mapper/backup ]]; then
+    for dir in borg phone storage snapshots; do
+        lsblk | grep "/mnt/backup/$dir" &>/dev/null || { echo "$dir not mounted"; continue; }
+        fuser -m /mnt/backup/"$dir" && read -sp $'kill processes or cd out, then press any key to continue...\n'
+        if sudo umount /mnt/backup/"$dir"; then 
+            echo "$dir unmounted"
+        else
+            sudo umount -l /mnt/backup/"$dir" && echo "lazy unmounted $dir" || echo "$dir failed to unmount" >&2
+        fi
+    done
+    if sudo cryptsetup close backup; then
+        echo 'backup drive closed'
+        sudo udisksctl power-off -b /dev/disk/by-uuid/"$BACKUP_ID" && echo 'powered off' || echo 'failed to power off'
+    fi
+else
+    echo 'backup drive not open' >&2
+    sudo udisksctl power-off -b /dev/disk/by-uuid/"$BACKUP_ID" && echo 'powered off' || echo 'failed to power off'
+fi
