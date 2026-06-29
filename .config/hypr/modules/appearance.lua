@@ -2,7 +2,7 @@
 -- Visual theme (general + decoration):  source/themes/
 -- Animation preset:                     source/animations/
 
-require("modules.themes.beautiful")
+require("modules.themes.focus")
 require("modules.animations.vertical_minimal")
 
 -- ---------------------------------------------------------------------------
