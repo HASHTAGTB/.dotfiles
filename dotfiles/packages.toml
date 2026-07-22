@@ -119,7 +119,7 @@ fuzzel                        = { tags = ["wayland"], opt = true }
 uwsm                          = { tags = ["wayland"] }
 qt6-wayland                   = { tags = ["wayland"] }
 xdg-desktop-portal-gtk        = { tags = ["wayland"] }
-xdg-desktop-portal-termfilechooser-hunkyburrito-git = { tags = ["wayland"] }
+xdg-desktop-portal-termfilechooser-hunkyburrito-git = { tags = ["wayland"] , opt = true }
 xdg-terminal-exec             = { tags = ["wayland"] }
 playerctl                     = { tags = ["wayland"] }
 xorg-xwayland                 = { tags = ["wayland"] }
@@ -221,7 +221,7 @@ tree                          = { tags = ["terminal-tools"] }
 less                          = { tags = ["terminal-tools"] }
 man-db                        = { tags = ["terminal-tools"] }
 man-pages                     = { tags = ["terminal-tools"] }
-duf                           = { tags = ["terminal-tools"] }
+duf                           = { tags = ["terminal-tools"] , opt = true }
 pv                            = { tags = ["terminal-tools"], opt = true }
 navi                          = { tags = ["terminal-tools"], opt = true }
 dysk                          = { tags = ["terminal-tools"] }
