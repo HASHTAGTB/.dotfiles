@@ -101,7 +101,7 @@
     },
     "noBuffer": false,
     "key": {
-      "width": 15,
+      "width": 0,
       "type": "string",
       "paddingLeft": 0
     },
@@ -137,11 +137,6 @@
       "times": 0
     },
     {
-      "type": "custom",
-      "format": " SYSTEM",
-      "outputColor": "90"
-    },
-    {
       "type": "os",
       "keyIcon": ""
     },
@@ -158,20 +153,6 @@
       "keyIcon": ""
     },
     {
-      "type": "command",
-      "key": " Installed",
-      "keyIcon": "",
-      "shell": "/bin/sh",
-      "text": "date -d @$(stat -c %W /) +%Y-%m-%d"
-    },
-    {
-      "type": "command",
-      "key": " OS Age",
-      "keyIcon": "",
-      "shell": "/bin/sh",
-      "text": "b=$(stat -c %W /); n=$(date +%s); d=$(( (n-b)/86400 )); y=$((d/365)); d=$((d%365)); m=$((d/30)); d=$((d%30)); o=\"\"; [ $y -gt 0 ] && o=\"${o}${y}y \"; [ $m -gt 0 ] && o=\"${o}${m}mo \"; o=\"${o}${d}d\"; echo \"$o\""
-    },
-    {
       "type": "packages",
       "keyIcon": "󰏖",
       "disabled": [
@@ -183,12 +164,6 @@
       "type": "shell",
       "keyIcon": ""
     },
-    "break",
-    {
-      "type": "custom",
-      "format": " DESKTOP",
-      "outputColor": "90"
-    },
     {
       "type": "display",
       "keyIcon": "󰍹",
@@ -197,9 +172,17 @@
       "order": null
     },
     {
+      "type": "de",
+      "keyIcon": ""
+    },
+    {
       "type": "wm",
       "keyIcon": "",
       "detectPlugin": false
+    },
+    {
+      "type": "wmtheme",
+      "keyIcon": "󰓸"
     },
     {
       "type": "theme",
@@ -221,11 +204,9 @@
       "type": "terminal",
       "keyIcon": ""
     },
-    "break",
     {
-      "type": "custom",
-      "format": " HARDWARE",
-      "outputColor": "90"
+      "type": "terminalfont",
+      "keyIcon": ""
     },
     {
       "type": "cpu",
@@ -256,6 +237,16 @@
       }
     },
     {
+      "type": "swap",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      },
+      "keyIcon": "󰓡",
+      "separate": false
+    },
+    {
       "type": "disk",
       "keyIcon": "",
       "showRegular": true,
@@ -273,6 +264,40 @@
         "yellow": 80,
         "type": 0
       }
+    },
+    {
+      "type": "localip",
+      "keyIcon": "󰩟",
+      "showIpv4": true,
+      "showIpv6": false,
+      "showMac": false,
+      "showLoop": false,
+      "showPrefixLen": true,
+      "showMtu": false,
+      "showSpeed": false,
+      "showFlags": false,
+      "compact": false,
+      "defaultRouteOnly": true,
+      "showAllIps": false,
+      "namePrefix": ""
+    },
+    {
+      "type": "battery",
+      "keyIcon": "",
+      "temp": false,
+      "percent": {
+        "green": 50,
+        "yellow": 20,
+        "type": 0
+      }
+    },
+    {
+      "type": "poweradapter",
+      "keyIcon": "󰚥"
+    },
+    {
+      "type": "locale",
+      "keyIcon": ""
     },
     "break",
     {

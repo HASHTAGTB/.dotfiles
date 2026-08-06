@@ -79,3 +79,4 @@ xdg-terminals    = { path = ".config/xdg-terminals.list",    tags = ["system"] }
 user-dirs        = { path = ".config/user-dirs.dirs",        tags = ["system"] }
 easyeffects      = { path = ".config/easyeffects/db",        tags = ["system"], opt = true }
 input-remapper   = { path = ".config/input-remapper-2",      tags = ["system"], opt = true }
+qmk = { path = ".config/qmk/qmk.ini", tags = ["keyboard"] }
