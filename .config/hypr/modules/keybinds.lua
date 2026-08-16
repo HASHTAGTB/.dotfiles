@@ -89,7 +89,7 @@ hl.bind("ALT + F5", function()
 end, { locked = true })
 
 -- Waybar
-hl.bind("ALT + 9", hl.dsp.exec_cmd("uwsm-app -- waybar"))
+hl.bind("ALT + 9", hl.dsp.exec_cmd("pidof waybar || uwsm-app -- waybar"))
 hl.bind("ALT + 0", hl.dsp.exec_cmd("pkill waybar"), { locked = true })
 
 -- wlogout / reload
