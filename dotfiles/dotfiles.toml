@@ -9,20 +9,20 @@ shell-config     = { path = ".config/shell",                 tags = ["zsh"] }
 
 # ── Hyprland ──────────────────────────────────────────────────────────────────
 hypr             = { path = ".config/hypr",                  tags = ["hyprland"] }
-swappy           = { path = ".config/swappy",                tags = ["hyprland"] }
-swaync           = { path = ".config/swaync",                tags = ["hyprland"] }
-wlogout          = { path = ".config/wlogout",               tags = ["hyprland"] }
-waybar           = { path = ".config/waybar",                tags = ["hyprland"] }
-waypaper         = { path = ".config/waypaper",              tags = ["hyprland"] }
+swappy           = { path = ".config/swappy",                tags = ["hyprland", "screenshot"] }
+swaync           = { path = ".config/swaync",                tags = ["hyprland", "notification"] }
+wlogout          = { path = ".config/wlogout",               tags = ["hyprland", "session"] }
+waybar           = { path = ".config/waybar",                tags = ["hyprland", "statusbar"] }
+waypaper         = { path = ".config/waypaper",              tags = ["hyprland", "wallpaper"] }
 scripts          = { path = "scripts",                       tags = ["hyprland"] }
-wallpapers       = { path = "img/wallpapers",                tags = ["hyprland"] }
+wallpapers       = { path = "img/wallpapers",                tags = ["hyprland", "wallpaper"] }
 app-shortcuts    = { path = ".local/share/applications/custom", tags = ["hyprland"] }
 
 # ── Wayland ───────────────────────────────────────────────────────────────────
-rofi             = { path = ".config/rofi",                  tags = ["wayland"] }
-uwsm             = { path = ".config/uwsm",                  tags = ["wayland"] }
-xdg-portal       = { path = ".config/xdg-desktop-portal",   tags = ["wayland"] }
-xdg-portal-term  = { path = ".config/xdg-desktop-portal-termfilechooser", tags = ["wayland"] }
+rofi             = { path = ".config/rofi",                  tags = ["wayland", "launcher"] }
+uwsm             = { path = ".config/uwsm",                  tags = ["wayland", "session"] }
+xdg-portal       = { path = ".config/xdg-desktop-portal",   tags = ["wayland", "portal"] }
+xdg-portal-term  = { path = ".config/xdg-desktop-portal-termfilechooser", tags = ["wayland", "portal"] }
 
 # ── Neovim ────────────────────────────────────────────────────────────────────
 nvim             = { path = ".config/nvim",                  tags = ["nvim"] }
@@ -30,9 +30,9 @@ nvim-lazyvim     = { path = ".config/nvim.lazyvim",          tags = ["nvim"] }
 nvim-own         = { path = ".config/nvim.own",              tags = ["nvim"] }
 
 # ── Terminal tools ────────────────────────────────────────────────────────────
-tmux             = { path = ".config/tmux",                  tags = ["terminal-tools"] }
-btop             = { path = ".config/btop/btop.conf",        tags = ["terminal-tools"] }
-fastfetch        = { path = ".config/fastfetch",             tags = ["terminal-tools"] }
+tmux             = { path = ".config/tmux",                  tags = ["terminal", "session"] }
+btop             = { path = ".config/btop/btop.conf",        tags = ["terminal", "monitoring"] }
+fastfetch        = { path = ".config/fastfetch",             tags = ["terminal", "system-info"] }
 
 # ── Kitty ─────────────────────────────────────────────────────────────────────
 kitty            = { path = ".config/kitty/kitty.conf",      tags = ["kitty"] }
@@ -42,41 +42,41 @@ yazi             = { path = ".config/yazi",                  tags = ["yazi"] }
 
 # ── Git ───────────────────────────────────────────────────────────────────────
 git-config       = { path = ".config/git",                   tags = ["git"] }
-lazygit          = { path = ".config/lazygit/config.yml",    tags = ["git"] }
+lazygit          = { path = ".config/lazygit/config.yml",    tags = ["git", "tui"] }
 
 # ── Theming ───────────────────────────────────────────────────────────────────
 matugen          = { path = ".config/matugen",               tags = ["theming"] }
-gtk2             = { path = ".gtkrc-2.0",                    tags = ["theming"] }
-gtk3-settings    = { path = ".config/gtk-3.0/settings.ini", tags = ["theming"] }
-gtk4             = { path = ".config/gtk-4.0",               tags = ["theming"] }
-qt5ct-conf       = { path = ".config/qt5ct/qt5ct.conf",      tags = ["theming"] }
-qt5ct-colors     = { path = ".config/qt5ct/style-colors.conf", tags = ["theming"] }
-qt6ct-conf       = { path = ".config/qt6ct/qt6ct.conf",      tags = ["theming"] }
-qt6ct-colors     = { path = ".config/qt6ct/style-colors.conf", tags = ["theming"] }
-xsettingsd       = { path = ".config/xsettingsd/xsettingsd.conf", tags = ["theming"] }
+gtk2             = { path = ".gtkrc-2.0",                    tags = ["theming", "gtk-theme"] }
+gtk3-settings    = { path = ".config/gtk-3.0/settings.ini", tags = ["theming", "gtk-theme"] }
+gtk4             = { path = ".config/gtk-4.0",               tags = ["theming", "gtk-theme"] }
+qt5ct-conf       = { path = ".config/qt5ct/qt5ct.conf",      tags = ["theming", "qt-theme"] }
+qt5ct-colors     = { path = ".config/qt5ct/style-colors.conf", tags = ["theming", "qt-theme"] }
+qt6ct-conf       = { path = ".config/qt6ct/qt6ct.conf",      tags = ["theming", "qt-theme"] }
+qt6ct-colors     = { path = ".config/qt6ct/style-colors.conf", tags = ["theming", "qt-theme"] }
+xsettingsd       = { path = ".config/xsettingsd/xsettingsd.conf", tags = ["theming", "gtk-theme"] }
 
 # ── Thunar ────────────────────────────────────────────────────────────────────
 gtk3-bookmarks   = { path = ".config/gtk-3.0/bookmarks",    tags = ["thunar"] }
 gtk3-thunar-css  = { path = ".config/gtk-3.0/thunar.css",   tags = ["thunar"] }
 
 # ── Media ─────────────────────────────────────────────────────────────────────
-mpv              = { path = ".config/mpv",                   tags = ["media"] }
-spicetify        = { path = ".config/spicetify",             tags = ["media"] }
+mpv              = { path = ".config/mpv",                   tags = ["media", "video"] }
+spicetify        = { path = ".config/spicetify",             tags = ["media", "audio"] }
 
 # ── Gaming ────────────────────────────────────────────────────────────────────
-mangohud         = { path = ".config/MangoHud/MangoHud.conf", tags = ["gaming"] }
+mangohud         = { path = ".config/MangoHud/MangoHud.conf", tags = ["gaming", "monitoring"] }
 
 # ── Apps ──────────────────────────────────────────────────────────────────────
-pacseek          = { path = ".config/pacseek/config.json",   tags = ["apps"] }
-vesktop          = { path = ".config/vesktop-flags.conf",    tags = ["apps"] }
+pacseek          = { path = ".config/pacseek/config.json",   tags = ["apps", "package-management"] }
+vesktop          = { path = ".config/vesktop-flags.conf",    tags = ["apps", "chat"] }
 
 # ── System ────────────────────────────────────────────────────────────────────
 systemd-user     = { path = ".config/systemd/user",          tags = ["system"] }
-pipewire         = { path = ".config/pipewire/pipewire.conf.d", tags = ["system"] }
-fontconfig       = { path = ".config/fontconfig",            tags = ["system"] }
+pipewire         = { path = ".config/pipewire/pipewire.conf.d", tags = ["system", "audio"] }
+fontconfig       = { path = ".config/fontconfig",            tags = ["system", "fonts"] }
 mimeapps         = { path = ".config/mimeapps.list",         tags = ["system"] }
 xdg-terminals    = { path = ".config/xdg-terminals.list",    tags = ["system"] }
 user-dirs        = { path = ".config/user-dirs.dirs",        tags = ["system"] }
-easyeffects      = { path = ".config/easyeffects/db",        tags = ["system"], opt = true }
-input-remapper   = { path = ".config/input-remapper-2",      tags = ["system"], opt = true }
-qmk = { path = ".config/qmk/qmk.ini", tags = ["keyboard"] }
+easyeffects      = { path = ".config/easyeffects/db",        tags = ["system", "audio"], opt = true }
+input-remapper   = { path = ".config/input-remapper-2",      tags = ["system", "input"], opt = true }
+qmk = { path = ".config/qmk/qmk.ini", tags = ["keyboard", "input"] }

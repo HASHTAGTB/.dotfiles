@@ -47,7 +47,8 @@ hl.bind("ALT + 3", hl.dsp.exec_cmd("uwsm-app -- pavucontrol"))
 hl.bind("ALT + 4", hl.dsp.exec_cmd("uwsm-app -- waypaper"))
 hl.bind(mainMod .. " + backslash", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/random-wallpaper"))
 hl.bind(mainMod .. " + SHIFT + backslash", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-wallpaper-pack"))
-hl.bind(mainMod .. " + CTRL + backslash", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-animations"))
+hl.bind(mainMod .. " + CTRL + backslash", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/th animations next"))
+-- hl.bind(mainMod .. " + CTRL + backslash", hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-animations"))
 
 -- Game Mode / Passthrough submap
 hl.bind("ALT + 6", function()
@@ -106,7 +107,8 @@ hl.bind("ALT + R", hl.dsp.exec_cmd("hyprctl reload"), { locked = true })
 -- Opacity / blur / visuals toggles
 hl.bind(
 	mainMod .. " + ALT + period",
-	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-appearance"),
+	hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/th theme next"),
+	-- hl.dsp.exec_cmd("uwsm-app -- " .. scripts .. "/theme/cycle-appearance"),
 	{ locked = true }
 )
 hl.bind(mainMod .. " + period", hl.dsp.window.set_prop({ prop = "opaque", value = "toggle" }), { locked = true })

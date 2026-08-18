@@ -92,3 +92,29 @@
 [09:17:56] → Loaded 53 dotfile(s), 305 package(s)
 [09:19:38] → Loaded 53 dotfile(s), 305 package(s)
 [09:19:59] → Loaded 53 dotfile(s), 305 package(s)
+[14:13:54] → Loaded 53 dotfile(s), 305 package(s)
+[14:53:30] → Loaded 53 dotfile(s), 306 package(s)
+[14:56:24] → Loaded 53 dotfile(s), 306 package(s)
+[15:00:45] ✓ Added package 'python/betteradbsync'
+[15:00:53] ✓ Added package 'python/qmk'
+[15:01:19] ✓ Added package 'rust/rustlings'
+[15:01:44] ✓ Added package 'system/adbfs-rootless-git'
+[15:09:17] ✓ Added package 'system/arch-install-scripts'
+[15:09:33] ✓ Added package 'system/borgmatic'
+[15:10:44] ✓ Added package 'system/distrobox'
+[15:10:48] ✓ Added package 'system/docker'
+[15:10:50] ✓ Added package 'system/docker-compose'
+[15:12:11] ✓ Added package 'system/dos2unix'
+[15:12:25] ✓ Added package 'system/downgrade'
+[15:12:29] ✓ Added package 'system/ghostty'
+[15:13:29] ✓ Added package 'system/glow'
+[15:13:38] ✓ Added package 'system/go'
+[15:14:32] ✓ Added package 'system/lftp'
+[15:14:42] ✓ Added package 'system/podman'
+[15:15:03] ✓ Added package 'system/python-pyfuse3'
+[15:15:14] ✓ Added package 'system/shelly'
+[15:15:31] ✓ Added package 'system/starship'
+[15:15:49] ✓ Added package 'system/syncthing'
+[15:16:05] ✓ Added package 'system/tealdeer'
+[15:16:14] ✓ Added package 'system/zed'
+[15:16:29] ✓ Added package 'system/zk'

@@ -12,7 +12,7 @@
 }
 {
     "label": "suspend",
-    "action": "pidof hyprlock || $HOME/scripts/lock; sleep 3; systemctl suspend",
+    "action": "pidof hyprlock || $HOME/scripts/lock & disown; sleep 3; systemctl suspend",
     "text": "Suspend",
     "keybind": "u"
 }
