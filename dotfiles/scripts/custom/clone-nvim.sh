@@ -2,8 +2,8 @@
 set -euo pipefail
 
 DOTFILES_DIR="${HOME}/.dotfiles"
-NVIM_DIR="${DOTFILES_DIR}/packs/nvim/files/.config"
-REPO="https://github.com/HASHTAGTB/kickstart.nvim.git"
+CONFIG_DIR="${DOTFILES_DIR}.config"
+REPO="git@github.com:HASHTAGTB/nvim.git"
 
 clone_or_update() {
     local url="$1" dir="$2" branch="$3"
@@ -16,6 +16,5 @@ clone_or_update() {
     fi
 }
 
-mkdir -p "$NVIM_DIR"
-clone_or_update "$REPO" "$NVIM_DIR/nvim" "master"
-clone_or_update "$REPO" "$NVIM_DIR/nvim.own" "own"
+mkdir -p "$CONFIG_DIR"
+clone_or_update "$REPO" "$CONFIG_DIR/nvim" "main"
