@@ -6,5 +6,6 @@ case $cmd in
   -x) pnpm remove -g "$@" ;;
   -c) pnpm list -g --depth=0 "$1" &>/dev/null ;;
   -l) pnpm list -g --depth=0 --parseable 2>/dev/null | tail -n +2 | xargs -I{} basename {} ;;
-  *) echo "usage: pnpm.sh -i|-x|-c|-l [pkg...]" >&2; exit 1 ;;
+  -q) npm view "$1" 2>/dev/null || echo "(no info available)" ;;
+  *) echo "usage: pnpm.sh -i|-x|-c|-l|-q [pkg...]" >&2; exit 1 ;;
 esac

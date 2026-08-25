@@ -6,5 +6,6 @@ case $cmd in
   -x) pacman --noconfirm -Rns "$@" ;;
   -c) pacman -Q "$1" &>/dev/null ;;
   -l) pacman -Qe | awk '{print $1}' ;;
-  *) echo "usage: pacman.sh -i|-x|-c|-l [pkg...]" >&2; exit 1 ;;
+  -q) pacman -Qi "$1" 2>/dev/null || pacman -Si "$1" 2>/dev/null || echo "(no info available)" ;;
+  *) echo "usage: pacman.sh -i|-x|-c|-l|-q [pkg...]" >&2; exit 1 ;;
 esac

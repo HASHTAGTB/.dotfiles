@@ -6,5 +6,6 @@ case $cmd in
   -x) paru --noconfirm -Rns "$@" ;;
   -c) paru -Q "$1" &>/dev/null ;;
   -l) paru -Qe | awk '{print $1}' ;;
-  *) echo "usage: paru.sh -i|-x|-c|-l [pkg...]" >&2; exit 1 ;;
+  -q) paru -Qi "$1" 2>/dev/null || paru -Si "$1" 2>/dev/null || echo "(no info available)" ;;
+  *) echo "usage: paru.sh -i|-x|-c|-l|-q [pkg...]" >&2; exit 1 ;;
 esac

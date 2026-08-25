@@ -6,5 +6,6 @@ case $cmd in
   -x) bun remove -g "$@" ;;
   -c) bun pm ls -g 2>/dev/null | grep -q " $1@" ;;
   -l) bun pm ls -g 2>/dev/null | awk -F@ '/[├└]/{gsub(/[^a-zA-Z0-9._-]/, "", $1); if($1 != "") print $1}' ;;
-  *) echo "usage: bun.sh -i|-x|-c|-l [pkg...]" >&2; exit 1 ;;
+  -q) npm view "$1" 2>/dev/null || echo "(no info available)" ;;
+  *) echo "usage: bun.sh -i|-x|-c|-l|-q [pkg...]" >&2; exit 1 ;;
 esac
