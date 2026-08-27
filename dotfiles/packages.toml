@@ -10,375 +10,375 @@ ruby   = ["gem"]
 [packages.system]
 
 # --- Arch / CachyOS core ---
-base-devel                    = { tags = ["arch", "build"] , priority = "medium" }
-linux-firmware                = { tags = ["arch", "kernel", "test"], priority = "high" }
-linux-cachyos                 = { tags = ["arch", "kernel"]}
-linux-cachyos-headers         = { tags = ["arch", "kernel"]}
-linux-cachyos-lts             = { tags = ["arch", "kernel"]}
-linux-cachyos-lts-headers     = { tags = ["arch", "kernel"]}
-scx-scheds                    = { tags = ["arch", "kernel", "performance"]}
-ananicy-cpp                   = { tags = ["arch", "performance", "gaming"] }
-cachyos-settings              = { tags = ["arch", "cachyos-meta", "test"] }
-cachyos-keyring               = { tags = ["arch", "cachyos-meta", "package-management"], priority = "medium" }
-cachyos-mirrorlist            = { tags = ["arch", "cachyos-meta", "package-management"], priority = "medium" }
-cachyos-v3-mirrorlist         = { tags = ["arch", "cachyos-meta", "package-management"], priority = "medium" }
-cachyos-v4-mirrorlist         = { tags = ["arch", "cachyos-meta", "package-management"], priority = "medium" }
-cachyos-hooks                 = { tags = ["arch", "cachyos-meta"], priority = "medium" }
-cachyos-rate-mirrors          = { tags = ["arch", "cachyos-meta", "package-management", "test"] }
-cachyos-hello                 = { tags = ["arch", "cachyos-meta"], priority = "useless" }
-cachyos-kernel-manager        = { tags = ["arch", "cachyos-meta", "kernel"]}
-cachyos-packageinstaller      = { tags = ["arch", "cachyos-meta", "package-management"], priority = "useless" }
-cachyos-snapper-support       = { tags = ["arch", "cachyos-meta", "backup", "test"] }
-pacman-contrib                = { tags = ["arch", "package-management"] , priority = "high" }
-rebuild-detector              = { tags = ["arch", "package-management"]}
-limine                        = { tags = ["arch", "boot"]}
-limine-mkinitcpio-hook        = { tags = ["arch", "boot"]}
-limine-snapper-sync           = { tags = ["arch", "boot", "backup"]}
-efibootmgr                    = { tags = ["arch", "boot"]}
-efitools                      = { tags = ["arch", "boot", "test"] }
-os-prober                     = { tags = ["arch", "boot"]}
+base-devel                    = { priority = "medium" }
+linux-firmware                = { priority = "high" }
+linux-cachyos                 = { }
+linux-cachyos-headers         = { }
+linux-cachyos-lts             = { }
+linux-cachyos-lts-headers     = { }
+scx-scheds                    = { }
+ananicy-cpp                   = { }
+cachyos-settings              = { }
+cachyos-keyring               = { priority = "medium" }
+cachyos-mirrorlist            = { priority = "medium" }
+cachyos-v3-mirrorlist         = { priority = "medium" }
+cachyos-v4-mirrorlist         = { priority = "medium" }
+cachyos-hooks                 = { priority = "medium" }
+cachyos-rate-mirrors          = { }
+cachyos-hello                 = { priority = "useless" }
+cachyos-kernel-manager        = { }
+cachyos-packageinstaller      = { priority = "useless" }
+cachyos-snapper-support       = { }
+pacman-contrib                = { priority = "high" }
+rebuild-detector              = { }
+limine                        = { }
+limine-mkinitcpio-hook        = { }
+limine-snapper-sync           = { }
+efibootmgr                    = { }
+efitools                      = { }
+os-prober                     = { }
 
 # --- System core ---
-sudo                          = { tags = ["system", "security"] , priority = "high" }
-openssh                       = { tags = ["system", "network"] , priority = "high" }
-networkmanager                = { tags = ["system", "network"] , priority = "essential" }
-nm-connection-editor          = { tags = ["system", "network"] , priority = "high" }
-gnome-keyring                 = { tags = ["system", "security"] , priority = "high" }
-power-profiles-daemon         = { tags = ["system", "power", "test"], priority = "medium" }
-sof-firmware                  = { tags = ["system", "audio"] , priority = "medium" }
-which                         = { tags = ["system", "cli"] , priority = "high" }
-rsync                         = { tags = ["system", "backup"] , priority = "high" }
-sddm                          = { tags = ["system", "display-manager"] , priority = "high" }
-polkit-kde-agent              = { tags = ["system", "security"] , priority = "high" }
-xdg-user-dirs                 = { tags = ["system", "wayland", "filesystem"] , priority = "high" }
-blueman                       = { tags = ["system", "bluetooth"] , priority = "high" }
-cups                          = { tags = ["system", "printing"] , priority = "medium" }
-cups-pdf                      = { tags = ["system", "printing"] , priority = "medium" }
-ntfs-3g                       = { tags = ["system", "filesystem"] , priority = "medium" }
-dosfstools                    = { tags = ["system", "filesystem"]}
-exfatprogs                    = { tags = ["system", "filesystem", "test"] }
-f2fs-tools                    = { tags = ["system", "filesystem", "test"] }
-xfsprogs                      = { tags = ["system", "filesystem"]}
-jfsutils                      = { tags = ["system", "filesystem", "test"] }
-nilfs-utils                   = { tags = ["system", "filesystem"]}
-lvm2                          = { tags = ["system", "filesystem"]}
-mtools                        = { tags = ["system", "filesystem"]}
-cpio                          = { tags = ["system", "filesystem", "archive"]}
-snapper                       = { tags = ["system", "backup"] , priority = "high" }
-btrfs-assistant               = { tags = ["system", "backup", "filesystem"] , priority = "medium" }
-btrfs-progs                   = { tags = ["system", "backup", "filesystem"] , priority = "high" }
-ufw                           = { tags = ["system", "security", "network"] , priority = "essential" }
-networkmanager-openvpn        = { tags = ["system", "network"]}
-iwd                           = { tags = ["system", "network", "test"] }
-nss-mdns                      = { tags = ["system", "network"]}
-modemmanager                  = { tags = ["system", "network"]}
-dnsmasq                       = { tags = ["system", "network", "test"] }
-hdparm                        = { tags = ["system", "filesystem", "hardware", "test"] }
-smartmontools                 = { tags = ["system", "filesystem", "monitoring"], priority = "medium" }
-gptfdisk                      = { tags = ["system", "filesystem", "test"] }
-sg3_utils                     = { tags = ["system", "filesystem", "hardware"]}
-usb_modeswitch                = { tags = ["system", "hardware", "test"] }
-flatpak                       = { tags = ["system", "package-management"] }
-gnome-disk-utility            = { tags = ["system", "filesystem"] , priority = "medium" }
-kopia                         = { tags = ["system", "backup"], priority = "useless" }
-fsarchiver                    = { tags = ["system", "backup", "archive", "test"] }
-plocate                       = { tags = ["system", "cli", "search"]}
-zip                           = { tags = ["system", "archive"] , priority = "medium" }
-unrar                         = { tags = ["system", "archive"]}
-easyeffects                   = { tags = ["system", "media", "audio"], priority = "useless" }
-lsp-plugins-lv2               = { tags = ["system", "audio"], priority = "useless" }
-zam-plugins-lv2               = { tags = ["system", "audio"]}
-"mda.lv2"                     = { tags = ["system", "audio"]}
-calf                          = { tags = ["system", "audio"], priority = "useless" }
-keyd                          = { tags = ["system", "keyboard", "input"] }
-input-remapper-git            = { tags = ["system", "keyboard", "input"], priority = "useless" }
-qmk                           = { tags = ["keyboard", "input"], priority = "useless" }
-reflector                     = { tags = ["system", "package-management"] , priority = "high" }
-logrotate                     = { tags = ["system", "logging"]}
-bind                          = { tags = ["system", "network", "test"] }
-hwinfo                        = { tags = ["system", "hardware", "monitoring", "test"] }
-hwdetect                      = { tags = ["system", "hardware", "test"] }
-accountsservice               = { tags = ["system", "security", "test"] }
-seahorse                      = { tags = ["system", "security"]}
-systemdgenie                  = { tags = ["system", "system-utils"]}
-yay                           = { tags = ["system", "package-management"] , priority = "essential" }
-paru                          = { tags = ["system", "package-management"]}
-chezmoi                       = { tags = ["system", "dotfiles-tooling"], priority = "useless" }
-libdeep_filter_ladspa-bin     = { tags = ["system", "media", "audio"]}
-coppwr-bin                    = { tags = ["system", "media", "audio"], priority = "useless" }
-noise-suppression-for-voice   = { tags = ["system", "media", "audio"] , priority = "high" }
-ydotool                       = { tags = ["system", "input"] , priority = "medium" }
-qpwgraph                      = { tags = ["system", "media", "audio"] , priority = "medium" }
+sudo                          = { priority = "high" }
+openssh                       = { priority = "high" }
+networkmanager                = { priority = "essential" }
+nm-connection-editor          = { priority = "high" }
+gnome-keyring                 = { priority = "high" }
+power-profiles-daemon         = { priority = "medium" }
+sof-firmware                  = { priority = "medium" }
+which                         = { priority = "high" }
+rsync                         = { priority = "high" }
+sddm                          = { priority = "high" }
+polkit-kde-agent              = { priority = "high" }
+xdg-user-dirs                 = { priority = "high" }
+blueman                       = { priority = "high" }
+cups                          = { priority = "medium" }
+cups-pdf                      = { priority = "medium" }
+ntfs-3g                       = { priority = "medium" }
+dosfstools                    = { }
+exfatprogs                    = { }
+f2fs-tools                    = { }
+xfsprogs                      = { }
+jfsutils                      = { }
+nilfs-utils                   = { }
+lvm2                          = { }
+mtools                        = { }
+cpio                          = { }
+snapper                       = { priority = "high" }
+btrfs-assistant               = { priority = "medium" }
+btrfs-progs                   = { priority = "high" }
+ufw                           = { priority = "essential" }
+networkmanager-openvpn        = { }
+iwd                           = { }
+nss-mdns                      = { }
+modemmanager                  = { }
+dnsmasq                       = { }
+hdparm                        = { }
+smartmontools                 = { priority = "medium" }
+gptfdisk                      = { }
+sg3_utils                     = { }
+usb_modeswitch                = { }
+flatpak                       = { }
+gnome-disk-utility            = { priority = "medium" }
+kopia                         = { priority = "useless" }
+fsarchiver                    = { }
+plocate                       = { }
+zip                           = { priority = "medium" }
+unrar                         = { }
+easyeffects                   = { priority = "useless" }
+lsp-plugins-lv2               = { priority = "useless" }
+zam-plugins-lv2               = { }
+"mda.lv2"                     = { }
+calf                          = { priority = "useless" }
+keyd                          = { }
+input-remapper-git            = { priority = "useless" }
+qmk                           = { priority = "useless" }
+reflector                     = { priority = "high" }
+logrotate                     = { }
+bind                          = { }
+hwinfo                        = { }
+hwdetect                      = { }
+accountsservice               = { }
+seahorse                      = { }
+systemdgenie                  = { }
+yay                           = { priority = "essential" }
+paru                          = { }
+chezmoi                       = { priority = "useless" }
+libdeep_filter_ladspa-bin     = { }
+coppwr-bin                    = { priority = "useless" }
+noise-suppression-for-voice   = { priority = "high" }
+ydotool                       = { priority = "medium" }
+qpwgraph                      = { priority = "medium" }
 
 # --- Wayland stack ---
-grim                          = { tags = ["wayland", "hyprland", "screenshot"] , priority = "essential" }
-slurp                         = { tags = ["wayland", "hyprland", "screenshot"] , priority = "high" }
-wl-clipboard                  = { tags = ["wayland", "hyprland", "clipboard"] , priority = "essential" }
-cliphist                      = { tags = ["wayland", "hyprland", "clipboard"] , priority = "essential" }
-rofi                          = { tags = ["wayland", "hyprland", "launcher"] , priority = "essential" }
-fuzzel                        = { tags = ["wayland", "hyprland", "launcher"], priority = "useless" }
-uwsm                          = { tags = ["wayland", "session"] , priority = "essential" }
-qt6-wayland                   = { tags = ["wayland", "compat"] , priority = "medium" }
-xdg-desktop-portal-gtk        = { tags = ["wayland", "portal"] , priority = "high" }
-xdg-desktop-portal-termfilechooser-hunkyburrito-git = { tags = ["wayland", "portal"] }
-xdg-terminal-exec             = { tags = ["wayland", "portal", "session"] , priority = "high" }
-playerctl                     = { tags = ["wayland", "hyprland", "audio"] , priority = "high" }
-xorg-xwayland                 = { tags = ["wayland", "compat"] , priority = "high" }
-udiskie                       = { tags = ["wayland", "hyprland", "filesystem"] }
-pipewire-alsa                 = { tags = ["wayland", "media", "audio"] , priority = "high" }
-gst-plugin-pipewire           = { tags = ["wayland", "media", "audio", "test"], priority = "high" }
+grim                          = { priority = "essential" }
+slurp                         = { priority = "high" }
+wl-clipboard                  = { priority = "essential" }
+cliphist                      = { priority = "essential" }
+rofi                          = { priority = "essential" }
+fuzzel                        = { priority = "useless" }
+uwsm                          = { priority = "essential" }
+qt6-wayland                   = { priority = "medium" }
+xdg-desktop-portal-gtk        = { priority = "high" }
+xdg-desktop-portal-termfilechooser-hunkyburrito-git = { }
+xdg-terminal-exec             = { priority = "high" }
+playerctl                     = { priority = "high" }
+xorg-xwayland                 = { priority = "high" }
+udiskie                       = { }
+pipewire-alsa                 = { priority = "high" }
+gst-plugin-pipewire           = { priority = "high" }
 
 # --- Hyprland ---
-hyprland                      = { tags = ["hyprland"] , priority = "essential" }
-hypridle                      = { tags = ["hyprland", "power"] , priority = "high" }
-hyprlock                      = { tags = ["hyprland", "security"] , priority = "essential" }
-hyprpicker                    = { tags = ["hyprland", "image"] , priority = "high" }
-hyprpolkitagent               = { tags = ["hyprland", "security"] , priority = "essential" }
-hyprshade                     = { tags = ["hyprland", "display"], priority = "useless" }
-waybar                        = { tags = ["hyprland", "statusbar"] , priority = "essential" }
-swaync                        = { tags = ["hyprland", "notification"] , priority = "essential" }
-wlogout                       = { tags = ["hyprland", "session"] , priority = "essential" }
-swappy                        = { tags = ["hyprland", "screenshot"]}
-waypaper                      = { tags = ["hyprland", "wallpaper"] , priority = "high" }
-wev                           = { tags = ["hyprland", "input"] , priority = "medium" }
-xdg-desktop-portal-hyprland   = { tags = ["hyprland", "portal"] , priority = "high" }
-quickshell-overview-git       = { tags = ["hyprland", "session"]}
-surfraw                       = { tags = ["hyprland", "cli"] , priority = "medium" }
-python-pytesseract            = { tags = ["hyprland", "ocr"] , priority = "medium" }
-tesseract                     = { tags = ["hyprland", "ocr"] , priority = "high" }
-tesseract-data-eng            = { tags = ["hyprland", "ocr"] , priority = "high" }
+hyprland                      = { priority = "essential" }
+hypridle                      = { priority = "high" }
+hyprlock                      = { priority = "essential" }
+hyprpicker                    = { priority = "high" }
+hyprpolkitagent               = { priority = "essential" }
+hyprshade                     = { priority = "useless" }
+waybar                        = { priority = "essential" }
+swaync                        = { priority = "essential" }
+wlogout                       = { priority = "essential" }
+swappy                        = { }
+waypaper                      = { priority = "high" }
+wev                           = { priority = "medium" }
+xdg-desktop-portal-hyprland   = { priority = "high" }
+quickshell-overview-git       = { }
+surfraw                       = { priority = "medium" }
+python-pytesseract            = { priority = "medium" }
+tesseract                     = { priority = "high" }
+tesseract-data-eng            = { priority = "high" }
 
 # --- Niri ---
-niri                          = { tags = ["niri"] }
+niri                          = { }
 
 # --- Nvidia ---
-nvidia-settings               = { tags = ["nvidia", "gpu"] , priority = "medium" }
-libva-nvidia-driver           = { tags = ["nvidia", "gpu"] , priority = "medium" }
-opencl-nvidia                 = { tags = ["nvidia", "gpu"] , priority = "medium" }
-lib32-opencl-nvidia           = { tags = ["nvidia", "gpu", "test"], priority = "medium" }
-linux-cachyos-nvidia-open     = { tags = ["nvidia", "gpu", "kernel"]}
-linux-cachyos-lts-nvidia-open = { tags = ["nvidia", "gpu", "kernel"]}
+nvidia-settings               = { priority = "medium" }
+libva-nvidia-driver           = { priority = "medium" }
+opencl-nvidia                 = { priority = "medium" }
+lib32-opencl-nvidia           = { priority = "medium" }
+linux-cachyos-nvidia-open     = { }
+linux-cachyos-lts-nvidia-open = { }
 
 # --- Virtualization ---
-qemu-full                     = { tags = ["virt"] , priority = "high" }
-virt-manager                  = { tags = ["virt"] , priority = "medium" }
-swtpm                         = { tags = ["virt"] , priority = "medium" }
+qemu-full                     = { priority = "high" }
+virt-manager                  = { priority = "medium" }
+swtpm                         = { priority = "medium" }
 
 # --- Theming ---
-matugen                       = { tags = ["theming"] , priority = "essential" }
-adw-gtk-theme                 = { tags = ["theming", "gtk-theme"] , priority = "high" }
-nwg-look                      = { tags = ["theming", "gtk-theme"] , priority = "medium" }
-qt5ct                         = { tags = ["theming", "qt-theme"] , priority = "medium" }
-qt6ct                         = { tags = ["theming", "qt-theme"] , priority = "medium" }
-qt5-graphicaleffects          = { tags = ["theming", "qt-theme"] , priority = "medium" }
-kvantum                       = { tags = ["theming", "qt-theme"]}
-kvantum-qt5                   = { tags = ["theming", "qt-theme"]}
-fluent-icon-theme-git         = { tags = ["theming"] , priority = "high" }
-bibata-cursor-theme           = { tags = ["theming"]}
-awww                          = { tags = ["theming", "wallpaper"] , priority = "essential" }
-xfce4-settings                = { tags = ["theming", "gtk-theme"]}
+matugen                       = { priority = "essential" }
+adw-gtk-theme                 = { priority = "high" }
+nwg-look                      = { priority = "medium" }
+qt5ct                         = { priority = "medium" }
+qt6ct                         = { priority = "medium" }
+qt5-graphicaleffects          = { priority = "medium" }
+kvantum                       = { }
+kvantum-qt5                   = { }
+fluent-icon-theme-git         = { priority = "high" }
+bibata-cursor-theme           = { }
+awww                          = { priority = "essential" }
+xfce4-settings                = { }
 
 # --- Media ---
-mpv                           = { tags = ["media", "video"] , priority = "high" }
-mpv-mpris                     = { tags = ["media", "video"] , priority = "high" }
-pavucontrol                   = { tags = ["media", "audio"] , priority = "high" }
-pipewire-pulse                = { tags = ["media", "audio"] , priority = "high" }
-wireplumber                   = { tags = ["media", "audio"] , priority = "essential" }
-alsa-utils                    = { tags = ["media", "audio"] , priority = "medium" }
-vlc-plugins-all               = { tags = ["media", "video"]}
-libdvdcss                     = { tags = ["media", "video"]}
-gst-plugin-va                 = { tags = ["media", "video", "test"] }
-spicetify-cli                 = { tags = ["media", "audio"], priority = "medium" }
-yt-dlp                        = { tags = ["media", "video", "download"]}
-quodlibet                     = { tags = ["media", "audio"]}
-spotify                       = { tags = ["media", "audio"], priority = "high" }
+mpv                           = { priority = "high" }
+mpv-mpris                     = { priority = "high" }
+pavucontrol                   = { priority = "high" }
+pipewire-pulse                = { priority = "high" }
+wireplumber                   = { priority = "essential" }
+alsa-utils                    = { priority = "medium" }
+vlc-plugins-all               = { }
+libdvdcss                     = { }
+gst-plugin-va                 = { }
+spicetify-cli                 = { priority = "medium" }
+yt-dlp                        = { }
+quodlibet                     = { }
+spotify                       = { priority = "high" }
 
 # --- Gaming ---
-steam                         = { tags = ["gaming"] , priority = "medium" }
-gamemode                      = { tags = ["gaming", "performance"]}
-gamescope                     = { tags = ["gaming"] , priority = "medium" }
-mangohud                      = { tags = ["gaming", "monitoring"]}
-lib32-mangohud                = { tags = ["gaming", "monitoring"]}
-vkbasalt                      = { tags = ["gaming", "graphics"]}
-protonplus                    = { tags = ["gaming"] , priority = "medium" }
-cachyos-gaming-meta           = { tags = ["gaming"], priority = "medium" }
-goverlay                      = { tags = ["gaming", "monitoring"] , priority = "high" }
-lutris                        = { tags = ["gaming"] , priority = "high" }
-twintaillauncher-bin          = { tags = ["gaming"] , priority = "high" }
+steam                         = { priority = "medium" }
+gamemode                      = { }
+gamescope                     = { priority = "medium" }
+mangohud                      = { }
+lib32-mangohud                = { }
+vkbasalt                      = { }
+protonplus                    = { priority = "medium" }
+cachyos-gaming-meta           = { priority = "medium" }
+goverlay                      = { priority = "high" }
+lutris                        = { priority = "high" }
+twintaillauncher-bin          = { priority = "high" }
 
 # --- Terminal tools ---
-btop                          = { tags = ["terminal", "monitoring"] , priority = "medium" }
-fastfetch                     = { tags = ["terminal", "system-info"] , priority = "medium" }
-htop                          = { tags = ["terminal", "monitoring"] , priority = "medium" }
-nvtop                         = { tags = ["terminal", "monitoring", "gpu"] , priority = "medium" }
-gdu                           = { tags = ["terminal", "filesystem", "monitoring"] , priority = "high" }
-wavemon                       = { tags = ["terminal", "monitoring", "network"] , priority = "medium" }
-cava                          = { tags = ["terminal", "audio"], priority = "useless" }
-ripgrep                       = { tags = ["terminal", "yazi", "zsh", "nvim", "search"] , priority = "essential" }
-fd                            = { tags = ["terminal", "yazi", "zsh", "nvim", "search"] , priority = "high" }
-viu                           = { tags = ["terminal", "image"] }
-bat                           = { tags = ["terminal", "cli"] , priority = "high" }
-tree                          = { tags = ["terminal", "filesystem"] , priority = "high" }
-less                          = { tags = ["terminal", "cli"] , priority = "high" }
-man-db                        = { tags = ["terminal", "cli", "documentation"] , priority = "medium" }
-man-pages                     = { tags = ["terminal", "cli", "documentation"] , priority = "medium" }
-duf                           = { tags = ["terminal", "filesystem", "monitoring"] }
-pv                            = { tags = ["terminal", "cli"]}
-navi                          = { tags = ["terminal", "cli"]}
-dysk                          = { tags = ["terminal", "filesystem", "monitoring"] , priority = "medium" }
-tmux                          = { tags = ["terminal", "session"] , priority = "essential" }
+btop                          = { priority = "medium" }
+fastfetch                     = { priority = "medium" }
+htop                          = { priority = "medium" }
+nvtop                         = { priority = "medium" }
+gdu                           = { priority = "high" }
+wavemon                       = { priority = "medium" }
+cava                          = { priority = "useless" }
+ripgrep                       = { priority = "essential" }
+fd                            = { priority = "high" }
+viu                           = { }
+bat                           = { priority = "high" }
+tree                          = { priority = "high" }
+less                          = { priority = "high" }
+man-db                        = { priority = "medium" }
+man-pages                     = { priority = "medium" }
+duf                           = { }
+pv                            = { }
+navi                          = { }
+dysk                          = { priority = "medium" }
+tmux                          = { priority = "essential" }
 
 # --- Yazi ---
-yazi                          = { tags = ["yazi"] , priority = "essential" }
-imagemagick                   = { tags = ["yazi", "kitty", "image"] , priority = "high" }
-zoxide                        = { tags = ["yazi", "zsh", "navigation"] , priority = "essential" }
-trash-cli                     = { tags = ["yazi", "filesystem"] , priority = "essential" }
-ffmpeg                        = { tags = ["yazi", "video"] , priority = "high" }
-jq                            = { tags = ["yazi", "cli"] , priority = "medium" }
-dragon-drop                   = { tags = ["yazi", "filesystem"] , priority = "high" }
+yazi                          = { priority = "essential" }
+imagemagick                   = { priority = "high" }
+zoxide                        = { priority = "essential" }
+trash-cli                     = { priority = "essential" }
+ffmpeg                        = { priority = "high" }
+jq                            = { priority = "medium" }
+dragon-drop                   = { priority = "high" }
 
 # --- Zsh ---
-zsh                           = { tags = ["zsh"] , priority = "essential" }
-fzf                           = { tags = ["zsh", "search"] , priority = "essential" }
-zsh-syntax-highlighting       = { tags = ["zsh", "shell-plugin"]}
-zsh-autosuggestions           = { tags = ["zsh", "shell-plugin"]}
-zsh-completions               = { tags = ["zsh", "shell-plugin"]}
-zsh-history-substring-search  = { tags = ["zsh", "shell-plugin"]}
-bash-completion               = { tags = ["zsh", "shell-plugin"], priority = "useless" }
+zsh                           = { priority = "essential" }
+fzf                           = { priority = "essential" }
+zsh-syntax-highlighting       = { }
+zsh-autosuggestions           = { }
+zsh-completions               = { }
+zsh-history-substring-search  = { }
+bash-completion               = { priority = "useless" }
 
 # --- Neovim ---
-neovim                        = { tags = ["nvim"] , priority = "essential" }
-nodejs                        = { tags = ["nvim", "dev"] , priority = "medium" }
-npm                           = { tags = ["nvim", "dev", "package-management"] , priority = "medium" }
-stylua                        = { tags = ["nvim", "formatter"]}
-shfmt                         = { tags = ["nvim", "formatter"]}
-unzip                         = { tags = ["nvim", "archive"] }
-tree-sitter-cli               = { tags = ["nvim", "dev"] }
+neovim                        = { priority = "essential" }
+nodejs                        = { priority = "medium" }
+npm                           = { priority = "medium" }
+stylua                        = { }
+shfmt                         = { }
+unzip                         = { }
+tree-sitter-cli               = { }
 
 # --- Kitty ---
-kitty                         = { tags = ["kitty"] , priority = "essential" }
+kitty                         = { priority = "essential" }
 
 # --- Git ---
-git                           = { tags = ["git"] , priority = "essential" }
-git-delta                     = { tags = ["git", "cli"] , priority = "high" }
-lazygit                       = { tags = ["git", "tui"]}
-github-desktop                = { tags = ["git", "gui"]}
+git                           = { priority = "essential" }
+git-delta                     = { priority = "high" }
+lazygit                       = { }
+github-desktop                = { }
 
 # --- Thunar ---
-thunar                        = { tags = ["thunar"] , priority = "medium" }
-thunar-archive-plugin         = { tags = ["thunar", "archive"] , priority = "medium" }
-thunar-volman                 = { tags = ["thunar", "filesystem"] , priority = "medium" }
-tumbler                       = { tags = ["thunar", "thumbnails", "test"], priority = "high" }
-ffmpegthumbnailer             = { tags = ["thunar", "video", "thumbnails"] }
-gvfs                          = { tags = ["thunar", "filesystem", "test"], priority = "high" }
-gvfs-mtp                      = { tags = ["thunar", "filesystem", "test"] }
-gvfs-smb                      = { tags = ["thunar", "filesystem", "network", "test"] }
-gvfs-nfs                      = { tags = ["thunar", "filesystem", "network", "test"] }
-file-roller                   = { tags = ["thunar", "archive"]}
+thunar                        = { priority = "medium" }
+thunar-archive-plugin         = { priority = "medium" }
+thunar-volman                 = { priority = "medium" }
+tumbler                       = { priority = "high" }
+ffmpegthumbnailer             = { }
+gvfs                          = { priority = "high" }
+gvfs-mtp                      = { }
+gvfs-smb                      = { }
+gvfs-nfs                      = { }
+file-roller                   = { }
 
 # --- Fonts ---
-awesome-terminal-fonts        = { tags = ["fonts", "icon-font"] , priority = "high" }
-cantarell-fonts               = { tags = ["fonts", "test"], priority = "medium" }
-noto-fonts                    = { tags = ["fonts"] , priority = "essential" }
-noto-fonts-cjk                = { tags = ["fonts"] , priority = "high" }
-noto-fonts-emoji              = { tags = ["fonts"] , priority = "high" }
-ttf-bitstream-vera            = { tags = ["fonts"] , priority = "high" }
-ttf-cascadia-code-nerd        = { tags = ["fonts", "nerd-font", "monospace"] , priority = "high" }
-ttf-dejavu                    = { tags = ["fonts"] , priority = "high" }
-ttf-jetbrains-mono-nerd       = { tags = ["fonts", "nerd-font", "monospace"] , priority = "essential" }
-ttf-liberation                = { tags = ["fonts"] , priority = "high" }
-ttf-meslo-nerd                = { tags = ["fonts", "nerd-font", "monospace"] , priority = "high" }
-ttf-opensans                  = { tags = ["fonts"] , priority = "high" }
-otf-font-awesome              = { tags = ["fonts", "icon-font"] , priority = "medium" }
-woff2-font-awesome            = { tags = ["fonts", "icon-font"] , priority = "high" }
+awesome-terminal-fonts        = { priority = "high" }
+cantarell-fonts               = { priority = "medium" }
+noto-fonts                    = { priority = "essential" }
+noto-fonts-cjk                = { priority = "high" }
+noto-fonts-emoji              = { priority = "high" }
+ttf-bitstream-vera            = { priority = "high" }
+ttf-cascadia-code-nerd        = { priority = "high" }
+ttf-dejavu                    = { priority = "high" }
+ttf-jetbrains-mono-nerd       = { priority = "essential" }
+ttf-liberation                = { priority = "high" }
+ttf-meslo-nerd                = { priority = "high" }
+ttf-opensans                  = { priority = "high" }
+otf-font-awesome              = { priority = "medium" }
+woff2-font-awesome            = { priority = "high" }
 
 # --- Dev ---
-python                        = { tags = ["dev", "python"] , priority = "medium" }
-python-pip                    = { tags = ["dev", "python"] , priority = "medium" }
-uv                            = { tags = ["dev", "python"] , priority = "high" }
-python-pipx                   = { tags = ["dev", "python"]}
-python311                     = { tags = ["dev", "python"]}
-python312                     = { tags = ["dev", "python"]}
-code                          = { tags = ["dev", "editor"]}
-claude-code                   = { tags = ["dev", "ai"], priority = "medium" }
-opencode                      = { tags = ["dev", "editor", "ai"]}
-android-studio                = { tags = ["dev", "editor", "mobile-dev"]}
-vim                           = { tags = ["dev", "editor"]}
-cmake                         = { tags = ["dev", "build"]}
-meson                         = { tags = ["dev", "build"]}
-postgresql                    = { tags = ["dev", "database"]}
-prettier                      = { tags = ["dev", "formatter"]}
-scrcpy                        = { tags = ["dev", "mobile-dev"], priority = "medium" }
-socat                         = { tags = ["dev", "network"]}
-inotify-tools                 = { tags = ["dev", "cli", "test"] }
+python                        = { priority = "medium" }
+python-pip                    = { priority = "medium" }
+uv                            = { priority = "high" }
+python-pipx                   = { }
+python311                     = { }
+python312                     = { }
+code                          = { }
+claude-code                   = { priority = "medium" }
+opencode                      = { }
+android-studio                = { }
+vim                           = { }
+cmake                         = { }
+meson                         = { }
+postgresql                    = { }
+prettier                      = { }
+scrcpy                        = { priority = "medium" }
+socat                         = { }
+inotify-tools                 = { }
 
 # --- Apps ---
-zen-browser-bin               = { tags = ["apps", "browser"] , priority = "essential" }
-vivaldi                       = { tags = ["apps", "browser"]}
-ungoogled-chromium-bin        = { tags = ["apps", "browser"]}
-gnome-calculator              = { tags = ["apps", "utility"] , priority = "high" }
-gnome-clocks                  = { tags = ["apps", "utility"] , priority = "medium" }
-loupe                         = { tags = ["apps", "image"] , priority = "high" }
-pinta                         = { tags = ["apps", "image"], priority = "useless" }
-zathura                       = { tags = ["apps", "pdf"]}
-zathura-pdf-mupdf             = { tags = ["apps", "pdf"]}
-pika-backup                   = { tags = ["apps", "backup"], priority = "useless" }
-anki                          = { tags = ["apps", "productivity"]}
-aria2                         = { tags = ["apps", "download"], priority = "medium" }
-uget                          = { tags = ["apps", "download"]}
-wayscriber-bin                = { tags = ["apps", "screenshot"], priority = "high" }
-sqlitebrowser                 = { tags = ["apps", "database"]}
-libreoffice-fresh             = { tags = ["apps"]}
-gimp                          = { tags = ["apps", "image"]}
-krita                         = { tags = ["apps", "image"]}
-obsidian                      = { tags = ["apps", "productivity"]}
-vesktop-bin                   = { tags = ["apps", "chat"], priority = "medium" }
-octopi                        = { tags = ["apps", "package-management"] }
-pacseek-bin                   = { tags = ["apps", "package-management"] , priority = "medium" }
-fsearch                       = { tags = ["apps", "search"], priority = "useless" }
+zen-browser-bin               = { priority = "essential" }
+vivaldi                       = { }
+ungoogled-chromium-bin        = { }
+gnome-calculator              = { priority = "high" }
+gnome-clocks                  = { priority = "medium" }
+loupe                         = { priority = "high" }
+pinta                         = { priority = "useless" }
+zathura                       = { }
+zathura-pdf-mupdf             = { }
+pika-backup                   = { priority = "useless" }
+anki                          = { }
+aria2                         = { priority = "medium" }
+uget                          = { }
+wayscriber-bin                = { priority = "high" }
+sqlitebrowser                 = { }
+libreoffice-fresh             = { }
+gimp                          = { }
+krita                         = { }
+obsidian                      = { }
+vesktop-bin                   = { priority = "medium" }
+octopi                        = { }
+pacseek-bin                   = { priority = "medium" }
+fsearch                       = { priority = "useless" }
 
 # --- Misc (previously "useless" pack) ---
-base                          = { tags = ["base"] , priority = "useless" }
-libgsf                        = { tags = ["library"] , priority = "useless" }
-libopenraw                    = { tags = ["library", "image"] , priority = "useless" }
-netctl                        = { tags = ["network"] , priority = "useless" }
-nfs-utils                     = { tags = ["network", "filesystem"] , priority = "useless" }
-qt5-multimedia                = { tags = ["media"] , priority = "useless" }
-s-nail                        = { tags = ["mail"] , priority = "useless" }
-texinfo                       = { tags = ["documentation"] , priority = "useless" }
-tk                            = { tags = ["library"] , priority = "useless" }
-xf86-video-amdgpu             = { tags = ["driver", "gpu"] , priority = "useless" }
-xl2tpd                        = { tags = ["network"] , priority = "useless" }
-yad                           = { tags = ["gui"] , priority = "useless" }
-adbfs-rootless-git = { tags = ["android", "cli"] }
-arch-install-scripts = { tags = ["arch"] , priority = "useless" }
-borgmatic = { tags = ["system", "backup"] , priority = "high" }
-distrobox = { tags = ["dev"] }
-docker = { tags = ["dev"] }
-docker-compose = { tags = ["dev"] }
-dos2unix = { tags = ["dev", "cli"] }
-downgrade = { tags = ["system", "cli", "package-management"] , priority = "medium" }
-ghostty = { tags = ["terminal"] , priority = "medium" }
-glow = { tags = ["terminal", "cli", "markdown"] , priority = "high" }
-go = { tags = ["dev"] , priority = "medium" }
-lftp = { tags = ["terminal", "cli"] }
-podman = { tags = ["dev"] }
-python-pyfuse3 = { tags = ["dev"] , priority = "medium" }
-shelly = { tags = ["package-management", "apps"] , priority = "medium" }
-starship = { tags = ["terminal"] , priority = "medium" }
-syncthing = { tags = ["apps", "backup", "android"] , priority = "medium" }
-tealdeer = { tags = ["terminal", "cli", "tldr"] , priority = "essential" }
-zed = { tags = ["dev", "editor"] }
-zk = { tags = ["terminal", "cli", "notes"] , priority = "high" }
+base                          = { priority = "useless" }
+libgsf                        = { priority = "useless" }
+libopenraw                    = { priority = "useless" }
+netctl                        = { priority = "useless" }
+nfs-utils                     = { priority = "useless" }
+qt5-multimedia                = { priority = "useless" }
+s-nail                        = { priority = "useless" }
+texinfo                       = { priority = "useless" }
+tk                            = { priority = "useless" }
+xf86-video-amdgpu             = { priority = "useless" }
+xl2tpd                        = { priority = "useless" }
+yad                           = { priority = "useless" }
+adbfs-rootless-git = { }
+arch-install-scripts = { priority = "useless" }
+borgmatic = { priority = "high" }
+distrobox = { }
+docker = { }
+docker-compose = { }
+dos2unix = { }
+downgrade = { priority = "medium" }
+ghostty = { priority = "medium" }
+glow = { priority = "high" }
+go = { priority = "medium" }
+lftp = { }
+podman = { }
+python-pyfuse3 = { priority = "medium" }
+shelly = { priority = "medium" }
+starship = { priority = "medium" }
+syncthing = { priority = "medium" }
+tealdeer = { priority = "essential" }
+zed = { }
+zk = { priority = "high" }
 
 # ── Python packages ───────────────────────────────────────────────────────────
 
 [packages.python]
-rembg                         = { tags = ["yazi", "image"], priority = "medium" }
-spotdl                        = { tags = ["media", "audio", "download"], priority = "medium" }
-betteradbsync = { tags = ["android", "cli"] }
-qmk = { tags = ["keyboard"] , priority = "high" }
+rembg                         = { priority = "medium" }
+spotdl                        = { priority = "medium" }
+betteradbsync = { }
+qmk = { priority = "high" }
 
 
 [packages.rust]
-rustlings = { tags = ["dev"] , priority = "high" }
+rustlings = { priority = "high" }

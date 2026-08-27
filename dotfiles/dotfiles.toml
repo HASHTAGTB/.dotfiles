@@ -1,74 +1,74 @@
 [dotfiles]
 
 # ── Zsh ───────────────────────────────────────────────────────────────────────
-zshrc            = { path = ".zshrc",                        tags = ["zsh"] , priority = "essential" }
-zshenv           = { path = ".zshenv",                       tags = ["zsh"] , priority = "useless" }
-p10k             = { path = ".p10k.zsh",                     tags = ["zsh"] , priority = "essential" }
-zsh-custom       = { path = ".oh-my-zsh/custom",             tags = ["zsh"] , priority = "useless" }
-shell-config     = { path = ".config/shell",                 tags = ["zsh"] , priority = "essential" }
+zshrc            = { path = ".zshrc", priority = "essential" }
+zshenv           = { path = ".zshenv", priority = "useless" }
+p10k             = { path = ".p10k.zsh", priority = "essential" }
+zsh-custom       = { path = ".oh-my-zsh/custom", priority = "useless" }
+shell-config     = { path = ".config/shell", priority = "essential" }
 
 # ── Hyprland ──────────────────────────────────────────────────────────────────
-hypr             = { path = ".config/hypr",                  tags = ["hyprland"] , priority = "essential" }
-swappy           = { path = ".config/swappy",                tags = ["hyprland", "screenshot"] , priority = "high" }
-swaync           = { path = ".config/swaync",                tags = ["hyprland", "notification"] , priority = "high" }
-wlogout          = { path = ".config/wlogout",               tags = ["hyprland", "session"] , priority = "high" }
-waybar           = { path = ".config/waybar",                tags = ["hyprland", "statusbar"] , priority = "high" }
-waypaper         = { path = ".config/waypaper",              tags = ["hyprland", "wallpaper"] , priority = "medium" }
-scripts          = { path = "scripts",                       tags = ["hyprland"] , priority = "essential" }
-wallpapers       = { path = "img/wallpapers",                tags = ["hyprland", "wallpaper"] , priority = "essential" }
-app-shortcuts    = { path = ".local/share/applications/custom", tags = ["hyprland"] }
+hypr             = { path = ".config/hypr", priority = "essential" }
+swappy           = { path = ".config/swappy", priority = "high" }
+swaync           = { path = ".config/swaync", priority = "high" }
+wlogout          = { path = ".config/wlogout", priority = "high" }
+waybar           = { path = ".config/waybar", priority = "high" }
+waypaper         = { path = ".config/waypaper", priority = "medium" }
+scripts          = { path = "scripts", priority = "essential" }
+wallpapers       = { path = "img/wallpapers", priority = "essential" }
+app-shortcuts    = { path = ".local/share/applications/custom" }
 
 # ── Wayland ───────────────────────────────────────────────────────────────────
-rofi             = { path = ".config/rofi",                  tags = ["wayland", "launcher"] , priority = "essential" }
-uwsm             = { path = ".config/uwsm",                  tags = ["wayland", "session"] , priority = "essential" }
-xdg-portal       = { path = ".config/xdg-desktop-portal", tags = ["wayland", "portal", "test"], priority = "medium" }
-xdg-portal-term  = { path = ".config/xdg-desktop-portal-termfilechooser", tags = ["wayland", "portal"] , priority = "useless" }
+rofi             = { path = ".config/rofi", priority = "essential" }
+uwsm             = { path = ".config/uwsm", priority = "essential" }
+xdg-portal       = { path = ".config/xdg-desktop-portal", priority = "medium" }
+xdg-portal-term  = { path = ".config/xdg-desktop-portal-termfilechooser", priority = "useless" }
 
 # ── Neovim ────────────────────────────────────────────────────────────────────
-nvim             = { path = ".config/nvim",                  tags = ["nvim"] , priority = "essential" }
+nvim             = { path = ".config/nvim", priority = "essential" }
 
 # ── Terminal tools ────────────────────────────────────────────────────────────
-tmux             = { path = ".config/tmux",                  tags = ["terminal", "session"] , priority = "essential" }
-btop             = { path = ".config/btop",                  tags = ["terminal", "monitoring"] }
-fastfetch        = { path = ".config/fastfetch",             tags = ["terminal", "system-info"] }
+tmux             = { path = ".config/tmux", priority = "essential" }
+btop             = { path = ".config/btop" }
+fastfetch        = { path = ".config/fastfetch" }
 
 # ── Kitty ─────────────────────────────────────────────────────────────────────
-kitty            = { path = ".config/kitty",                 tags = ["kitty"] , priority = "essential" }
+kitty            = { path = ".config/kitty", priority = "essential" }
 
 # ── Yazi ──────────────────────────────────────────────────────────────────────
-yazi             = { path = ".config/yazi",                  tags = ["yazi"] , priority = "essential" }
+yazi             = { path = ".config/yazi", priority = "essential" }
 
 # ── Git ───────────────────────────────────────────────────────────────────────
-git-config       = { path = ".config/git",                   tags = ["git"] , priority = "essential" }
-lazygit          = { path = ".config/lazygit",               tags = ["git", "tui"] , priority = "useless" }
+git-config       = { path = ".config/git", priority = "essential" }
+lazygit          = { path = ".config/lazygit", priority = "useless" }
 
 # ── Theming ───────────────────────────────────────────────────────────────────
-matugen          = { path = ".config/matugen",               tags = ["theming"] , priority = "high" }
-gtk2             = { path = ".gtkrc-2.0",                    tags = ["theming", "gtk-theme"] , priority = "high" }
-gtk4             = { path = ".config/gtk-4.0",               tags = ["theming", "gtk-theme"] , priority = "high" }
-qt5ct            = { path = ".config/qt5ct",                 tags = ["theming", "qt-theme"] , priority = "high" }
-qt6ct            = { path = ".config/qt6ct",                 tags = ["theming", "qt-theme"] , priority = "high" }
-xsettingsd       = { path = ".config/xsettingsd", tags = ["theming", "gtk-theme", "test"], priority = "high" }
+matugen          = { path = ".config/matugen", priority = "high" }
+gtk2             = { path = ".gtkrc-2.0", priority = "high" }
+gtk4             = { path = ".config/gtk-4.0", priority = "high" }
+qt5ct            = { path = ".config/qt5ct", priority = "high" }
+qt6ct            = { path = ".config/qt6ct", priority = "high" }
+xsettingsd       = { path = ".config/xsettingsd", priority = "high" }
 
 # ── Media ─────────────────────────────────────────────────────────────────────
-mpv              = { path = ".config/mpv",                   tags = ["media", "video"] , priority = "medium" }
-spicetify        = { path = ".config/spicetify",             tags = ["media", "audio"] , priority = "medium" }
+mpv              = { path = ".config/mpv", priority = "medium" }
+spicetify        = { path = ".config/spicetify", priority = "medium" }
 
 # ── Gaming ────────────────────────────────────────────────────────────────────
-mangohud         = { path = ".config/MangoHud",              tags = ["gaming", "monitoring"] , priority = "medium" }
+mangohud         = { path = ".config/MangoHud", priority = "medium" }
 
 # ── Apps ──────────────────────────────────────────────────────────────────────
-pacseek          = { path = ".config/pacseek",               tags = ["apps", "package-management"] , priority = "medium" }
-vesktop          = { path = ".config/vesktop-flags.conf",    tags = ["apps", "chat"] }
+pacseek          = { path = ".config/pacseek", priority = "medium" }
+vesktop          = { path = ".config/vesktop-flags.conf" }
 
 # ── System ────────────────────────────────────────────────────────────────────
-systemd-user     = { path = ".config/systemd/user",          tags = ["system"] , priority = "high" }
-pipewire         = { path = ".config/pipewire",              tags = ["system", "audio"] , priority = "essential" }
-fontconfig       = { path = ".config/fontconfig", tags = ["system", "fonts", "test"], priority = "useless" }
-mimeapps         = { path = ".config/mimeapps.list",         tags = ["system"] , priority = "medium" }
-xdg-terminals    = { path = ".config/xdg-terminals.list", tags = ["system", "test"], priority = "medium" }
-user-dirs        = { path = ".config/user-dirs.dirs",        tags = ["system"] , priority = "medium" }
-easyeffects      = { path = ".config/easyeffects",           tags = ["system", "audio"], priority = "useless" }
-input-remapper   = { path = ".config/input-remapper-2",      tags = ["system", "input"], priority = "useless" }
-qmk = { path = ".config/qmk", tags = ["keyboard", "input"] }
-gtk3 = { path = ".config/gtk-3.0", tags = ["thunar", "theming", "gtk-theme"] , priority = "high" }
+systemd-user     = { path = ".config/systemd/user", priority = "high" }
+pipewire         = { path = ".config/pipewire", priority = "essential" }
+fontconfig       = { path = ".config/fontconfig", priority = "useless" }
+mimeapps         = { path = ".config/mimeapps.list", priority = "medium" }
+xdg-terminals    = { path = ".config/xdg-terminals.list", priority = "medium" }
+user-dirs        = { path = ".config/user-dirs.dirs", priority = "medium" }
+easyeffects      = { path = ".config/easyeffects", priority = "useless" }
+input-remapper   = { path = ".config/input-remapper-2", priority = "useless" }
+qmk = { path = ".config/qmk" }
+gtk3 = { path = ".config/gtk-3.0", priority = "high" }
