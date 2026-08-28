@@ -173,7 +173,7 @@ qt6ct                         = { priority = "medium" }
 qt5-graphicaleffects          = { priority = "medium" }
 kvantum                       = { }
 kvantum-qt5                   = { }
-fluent-icon-theme-git         = { priority = "high" }
+fluent-icon-theme-git         = {}
 bibata-cursor-theme           = { }
 awww                          = { priority = "essential" }
 xfce4-settings                = { }
